@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  atom-navigation:
+    container_name: atom-navigation
+    stdin_open: true
+    tty: true
+    build: .
+    ports:
+      - '9003:9003'
+    volumes:
+      - ${PWD}/src:/app/src
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - COMPOSE_CONVERT_WINDOWS_PATHS=1
