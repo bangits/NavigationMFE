@@ -1,6 +1,5 @@
-
 export const logoutTypes = {
-    LOG_OUT: `LOG_OUT`,
+  LOG_OUT: `LOG_OUT`
 } as const;
 
 export const logoutActions = {
