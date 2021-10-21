@@ -48,3 +48,4 @@ jobs:
           atomfrontcr.azurecr.io/atomaks:${{ github.sha }}
         imagepullsecrets: |
           atomaksdockerauth
+          
