@@ -7229,6 +7229,11 @@ single-spa-react@^4.2.0:
   resolved "https://registry.yarnpkg.com/single-spa-react/-/single-spa-react-4.4.0.tgz#c28ccc0531d752745270bc1bb69126ba3d5686c1"
   integrity sha512-tyvVayCqCWKL7dtv52f2Uzh7Iilu7+GB6upO/F1UMZcqa1+fUziIgkcofwwRE+HMZWCEl1KJW48VgrlK2HvMnQ==
 
+single-spa@^5.9.3:
+  version "5.9.3"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/single-spa/-/single-spa-5.9.3.tgz#2d151cbb3b273629a5b27b30a3b8ca847dcba4c5"
+  integrity sha1-LRUcuzsnNimlsnswo7jKhH3LpMU=
+
 sirv@^1.0.7:
   version "1.0.17"
   resolved "https://registry.yarnpkg.com/sirv/-/sirv-1.0.17.tgz#86e2c63c612da5a1dace1c16c46f524aaa26ac45"
