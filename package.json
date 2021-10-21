@@ -18,7 +18,7 @@
     "pre-push": "yarn format"
   },
   "devDependencies": {
-    "@atom/design-system": "1.0.2",
+    "@atom/design-system": "^1.1.0",
     "@babel/core": "^7.14.6",
     "@babel/eslint-parser": "^7.14.7",
     "@babel/plugin-proposal-decorators": "^7.15.8",

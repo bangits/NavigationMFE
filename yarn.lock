@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@atom/design-system@1.0.2":
-  version "1.0.2"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@atom/design-system/-/design-system-1.0.2.tgz#6b8d086591462e29159a70b81a16b9dc36c7d104"
-  integrity sha1-a40IZZFGLikVmnC4Gha53DbH0QQ=
+"@atom/design-system@^1.1.0":
+  version "1.1.0"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@atom/design-system/-/design-system-1.1.0.tgz#1037faab85b3f355c7960f2f2eb42bacf067db22"
+  integrity sha1-EDf6q4Wz81XHlg8vLrQrrPBn2yI=
   dependencies:
     "@my-ui/core" "^2.3.3"
     classnames "^2.3.1"

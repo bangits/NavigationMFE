@@ -20,6 +20,6 @@ module.exports = (webpackConfigEnv, argv) => {
       port: webpackConfigEnv.port || 9003,
       host: '0.0.0.0' // To accept connections from outside container
     },
-    externals: !isDevelopment ? ['react', 'react-dom', '@atom/design-system'] : [],
+    externals: ['react', 'react-dom', /^@atom/]
   });
 };
