@@ -1,6 +1,5 @@
-import { DiFiles } from '@/di';
+// import { DiFiles } from '@/di';
 import { Middleware } from 'redux';
-import logger from 'redux-logger';
 import createSagaMiddleware, { SagaMiddleware } from 'redux-saga';
 
 type GetMiddlewaresReturnType = {
@@ -8,7 +7,7 @@ type GetMiddlewaresReturnType = {
   sagaMiddleware: SagaMiddleware;
 };
 
-const getMiddlewares = (diFiles: DiFiles[]): GetMiddlewaresReturnType => {
+const getMiddlewares = (diFiles: any[]): GetMiddlewaresReturnType => {
   const sagaMiddleware = createSagaMiddleware({
     context: diFiles.reduce(
       (acc, { module, name }) => ({
@@ -21,7 +20,7 @@ const getMiddlewares = (diFiles: DiFiles[]): GetMiddlewaresReturnType => {
 
   const middlewares: Middleware[] = [sagaMiddleware];
 
-  if (process.env.NODE_ENV === 'development') middlewares.push(logger);
+  // if (process.env.NODE_ENV === 'development') middlewares.push(logger);
 
   return {
     middlewares,
