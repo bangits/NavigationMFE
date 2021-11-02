@@ -72,6 +72,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@atom/common": "1.4.0",
     "atom-shared": "1.4.0",
     "formik": "^2.2.9",
     "immer": "^9.0.6",

@@ -1,8 +1,8 @@
-import { Header, Sidebar } from '@atom/design-system';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
 import './index';
+import { Header, Sidebar } from './view';
 
 export const sidebarApplication = singleSpaReact({
   React,
@@ -12,16 +12,7 @@ export const sidebarApplication = singleSpaReact({
     // Customize the root error boundary for your microfrontend here.
     return null;
   },
-  rootComponent: () => (
-    <Sidebar
-      position='static'
-      menuItems={[
-        {
-          label: 'Test'
-        }
-      ]}
-    />
-  )
+  rootComponent: Sidebar
 });
 
 export const headerApplication = singleSpaReact({
@@ -32,17 +23,5 @@ export const headerApplication = singleSpaReact({
     // Customize the root error boundary for your microfrontend here.
     return null;
   },
-  rootComponent: () => (
-    <Header
-      avatarProps={{
-        dropdownLinks: [
-          {
-            label: 'Test'
-          }
-        ],
-        avatarLabel: ''
-      }}
-      notificationProps={{}}
-    />
-  )
+  rootComponent: Header
 });
