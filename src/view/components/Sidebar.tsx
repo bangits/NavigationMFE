@@ -1,5 +1,5 @@
 import { redirectToURL, useLocation } from '@atom/common';
-import { Sidebar as DesignSystemSidebar } from '@atom/design-system';
+import { Icons, Sidebar as DesignSystemSidebar } from '@atom/design-system';
 import { useCallback } from 'react';
 
 export const Sidebar = () => {
@@ -21,7 +21,14 @@ export const Sidebar = () => {
         {
           label: 'Providers',
           onClick: createRedirectHandler('/game/providers'),
+          icon: <Icons.HomeIcon />,
           isActive: checkIfLocationIncludes('/providers')
+        },
+        {
+          label: 'Players',
+          onClick: createRedirectHandler('/player/'),
+          icon: <Icons.HomeIcon />,
+          isActive: checkIfLocationIncludes('/player')
         }
       ]}
       collapsedWidth={7.2}
