@@ -26,9 +26,9 @@ export const Sidebar = () => {
         },
         {
           label: 'Players',
-          onClick: createRedirectHandler('/player/'),
+          onClick: createRedirectHandler('/players/'),
           icon: <Icons.HomeIcon />,
-          isActive: checkIfLocationIncludes('/player')
+          isActive: checkIfLocationIncludes('/players')
         }
       ]}
       collapsedWidth={7.2}
