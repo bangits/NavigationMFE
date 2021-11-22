@@ -1,12 +1,12 @@
-import { redirectToURL } from '@atom/common';
 import { Header as DesignSystemHeader } from '@atom/design-system';
-import { useCallback } from 'react';
+import { FC } from 'react';
 
-export const Header = () => {
-  const onLogOut = useCallback(() => {
-    redirectToURL('/login');
-  }, []);
+export interface HeaderProps {
+  onLogOut: () => void;
+  username?: string;
+}
 
+export const Header: FC<HeaderProps> = ({ onLogOut, username }) => {
   return (
     <DesignSystemHeader
       avatarProps={{
@@ -19,7 +19,7 @@ export const Header = () => {
         bottomButtonLabel: 'Log Out',
         onBottomButtonClick: onLogOut,
 
-        avatarLabel: 'User',
+        avatarLabel: username,
         dropdownTitle: 'dropdownTitle',
         onTopButtonClick: () => console.log('onTopButtonClick'),
         topButtonLabel: 'topButtonLabel',

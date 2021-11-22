@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
 import './index';
-import { Header, Sidebar } from './view';
+import { HeaderContainer, Sidebar } from './view';
 
 export const sidebarApplication = singleSpaReact({
   React,
@@ -23,5 +23,5 @@ export const headerApplication = singleSpaReact({
     // Customize the root error boundary for your microfrontend here.
     return null;
   },
-  rootComponent: Header
+  rootComponent: HeaderContainer
 });
