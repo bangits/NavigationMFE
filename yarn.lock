@@ -2,36 +2,50 @@
 # yarn lockfile v1
 
 
-"@atom/authorization@^1.2.1":
-  version "1.2.1"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@atom/authorization/-/authorization-1.2.1.tgz#40c3c98d28c3bdec1f9f00440d24a62eb6197290"
-  integrity sha1-QMPJjSjDvewfnwBEDSSmLrYZcpA=
+"@atom/authorization@^1.2.3":
+  version "1.2.3"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@atom/authorization/-/authorization-1.2.3.tgz#b1afd5d26b2df88192cb4d9dc916d52a6ef28450"
+  integrity sha1-sa/V0mst+IGSy02dyRbVKm7yhFA=
   dependencies:
-    "@reduxjs/toolkit" "^1.6.2"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.1"
     formik "^2.2.9"
-    immer "^9.0.6"
     inversify "^5.1.1"
     oidc-client "^1.11.5"
-    query-string "^7.0.1"
     react "^17.0.2"
     react-dom "^17.0.2"
     react-redux "^7.2.5"
-    react-router-dom "5"
+    react-router-dom "5.3.0"
     reflect-metadata "^0.1.13"
-    reselect "^4.0.0"
     single-spa "^5.9.3"
     single-spa-react "^4.4.0"
     yup "^0.32.10"
 
-"@atom/common@1.4.0":
-  version "1.4.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@atom/common/-/common-1.4.0.tgz#25e19e5dee536846a0e64a14aab52697efc827c1"
-  integrity sha1-JeGeXe5TaEag5koUqrUml+/IJ8E=
+"@atom/common@1.9.3":
+  version "1.9.3"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@atom/common/-/common-1.9.3.tgz#0ed6cd96b607d330519a8dfc8649eafd98c1b5ec"
+  integrity sha1-DtbNlrYH0zBRmo38hknq/ZjBtew=
   dependencies:
     axios "^0.23.0"
     react "^17.0.2"
     rxjs "^7.4.0"
     single-spa "^5.9.3"
+
+"@atom/common@^2.2.1":
+  version "2.2.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@atom/common/-/common-2.2.1.tgz#29232eeba4610cb9e993da1de11e204d5631ab40"
+  integrity sha1-KSMu66RhDLnpk9od4R4gTVYxq0A=
+  dependencies:
+    "@atom/common" "1.9.3"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    axios "^0.23.0"
+    formik "^2.2.9"
+    query-string "^7.0.1"
+    react "^17.0.2"
+    single-spa "^5.9.3"
+    single-spa-react "^4.6.0"
 
 "@atom/design-system@^1.7.0":
   version "1.7.0"
@@ -42,6 +56,16 @@
     classnames "^2.3.1"
     react "^17.0.2"
     react-dom "^17.0.2"
+
+"@automapper/classes@^7.0.2":
+  version "7.0.2"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@automapper/classes/-/classes-7.0.2.tgz#f50ce041938a23259f743d9e78c73c570a6deecd"
+  integrity sha1-9QzgQZOKIyWfdD2eeMc8Vwpt7s0=
+
+"@automapper/core@^7.0.2":
+  version "7.0.2"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@automapper/core/-/core-7.0.2.tgz#6da0b7fe35a06ec9cc5755fe1dcd5b95326eb223"
+  integrity sha1-baC3/jWgbsnMV1X+Hc1blTJusiM=
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"
@@ -1454,7 +1478,7 @@
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@popperjs/core/-/core-2.10.2.tgz#0798c03351f0dea1a5a4cabddf26a55a7cbee590"
   integrity sha1-B5jAM1Hw3qGlpMq93yalWny+5ZA=
 
-"@reduxjs/toolkit@^1.6.2":
+"@reduxjs/toolkit@^1.6.1":
   version "1.6.2"
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@reduxjs/toolkit/-/toolkit-1.6.2.tgz#2f2b5365df77dd6697da28fdf44f33501ed9ba37"
   integrity sha1-LytTZd933WaX2ij99E8zUB7Zujc=
@@ -6796,7 +6820,7 @@ react-redux@^7.2.5:
     prop-types "^15.7.2"
     react-is "^16.13.1"
 
-react-router-dom@5:
+react-router-dom@5.3.0:
   version "5.3.0"
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/react-router-dom/-/react-router-dom-5.3.0.tgz#da1bfb535a0e89a712a93b97dd76f47ad1f32363"
   integrity sha1-2hv7U1oOiacSqTuX3Xb0etHzI2M=
@@ -7386,7 +7410,7 @@ single-spa-react@^4.2.0:
   resolved "https://registry.yarnpkg.com/single-spa-react/-/single-spa-react-4.4.0.tgz#c28ccc0531d752745270bc1bb69126ba3d5686c1"
   integrity sha512-tyvVayCqCWKL7dtv52f2Uzh7Iilu7+GB6upO/F1UMZcqa1+fUziIgkcofwwRE+HMZWCEl1KJW48VgrlK2HvMnQ==
 
-single-spa-react@^4.4.0:
+single-spa-react@^4.4.0, single-spa-react@^4.6.0:
   version "4.6.0"
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/single-spa-react/-/single-spa-react-4.6.0.tgz#6cb170b685e5339abe0765d702ddc7b5367d49b4"
   integrity sha1-bLFwtoXlM5q+B2XXAt3HtTZ9SbQ=

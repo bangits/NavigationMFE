@@ -1,3 +1,4 @@
+import { AuthenticatedProvider } from '@atom/authorization';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
@@ -23,5 +24,11 @@ export const headerApplication = singleSpaReact({
     // Customize the root error boundary for your microfrontend here.
     return null;
   },
-  rootComponent: HeaderContainer
+  rootComponent: () => {
+    return (
+      <AuthenticatedProvider>
+        <HeaderContainer />
+      </AuthenticatedProvider>
+    );
+  }
 });

@@ -1,16 +1,12 @@
-import { oidcService, OidcUser } from '@atom/authorization';
-import { useCallback, useEffect, useState } from 'react';
+import { AuthenticatedContext, oidcService } from '@atom/authorization';
+import { useCallback, useContext } from 'react';
 import { Header } from './Header';
 
 export const HeaderContainer = () => {
-  const [user, setUser] = useState<OidcUser>(null);
+  const { user } = useContext(AuthenticatedContext);
 
   const onLogOut = useCallback(() => {
     oidcService.logOut();
-  }, []);
-
-  useEffect(() => {
-    oidcService.getUser().then(setUser);
   }, []);
 
   if (!user) return null;
