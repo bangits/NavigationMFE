@@ -13,22 +13,33 @@ export const Sidebar = () => {
   );
 
   const checkIfLocationIncludes = useCallback((url: string) => location.pathname.includes(url), [location]);
+  const checkIfLocation = useCallback((url: string) => location.pathname === url, [location]);
 
   return (
     <DesignSystemSidebar
       position='static'
       menuItems={[
         {
-          label: 'Providers',
-          onClick: createRedirectHandler('/game/providers'),
+          label: 'Game Management',
+          // onClick: createRedirectHandler('/game/'),
           icon: <Icons.HomeIcon />,
-          isActive: checkIfLocationIncludes('/providers')
+          isActive: checkIfLocationIncludes('/game/') || checkIfLocation('/'),
+          subItems: [
+            {
+              label: 'Game',
+              onClick: createRedirectHandler('/game/')
+            },
+            {
+              label: 'Providers',
+              onClick: createRedirectHandler('/game/providers')
+            }
+          ]
         },
         {
-          label: 'Players',
-          onClick: createRedirectHandler('/players/'),
+          label: 'Partners',
+          onClick: createRedirectHandler('/partners/'),
           icon: <Icons.HomeIcon />,
-          isActive: checkIfLocationIncludes('/players')
+          isActive: checkIfLocationIncludes('/partners')
         }
       ]}
       collapsedWidth={7.2}
