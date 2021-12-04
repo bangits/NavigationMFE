@@ -43,7 +43,7 @@ export const Sidebar = () => {
         }
       ]}
       collapsedWidth={7.2}
-      width={21.5}
+      width={24}
     />
   );
 };
