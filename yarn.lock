@@ -47,15 +47,16 @@
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
-"@atom/design-system@^1.7.0":
-  version "1.7.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@atom/design-system/-/design-system-1.7.0.tgz#e697b6cb65b332b13dec8581ecd06c3e174b98fb"
-  integrity sha1-5pe2y2WzMrE97IWB7NBsPhdLmPs=
+"@atom/design-system@^1.11.13":
+  version "1.11.13"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-1.11.13.tgz#0321966975e87908983dc94adbae3c874028f965"
+  integrity sha1-AyGWaXXoeQiYPclK2648h0Ao+WU=
   dependencies:
-    "@my-ui/core" "^2.13.3"
+    "@my-ui/core" "^2.22.7"
     classnames "^2.3.1"
     react "^17.0.2"
     react-dom "^17.0.2"
+    react-jss "^10.8.2"
 
 "@automapper/classes@^7.0.2":
   version "7.0.2"
@@ -1395,10 +1396,10 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@my-ui/core@^2.13.3":
-  version "2.13.3"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@my-ui/core/-/core-2.13.3.tgz#94c175fb2dc86da59636d156b3975e5c8093550d"
-  integrity sha1-lMF1+y3IbaWWNtFWs5deXICTVQ0=
+"@my-ui/core@^2.22.7":
+  version "2.22.9"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.22.9.tgz#f442a6061a9f5e37b59a97c03c726aa588fdcedf"
+  integrity sha1-9EKmBhqfXje1mpfAPHJqpYj9zt8=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
@@ -1407,6 +1408,8 @@
     classnames "^2.3.1"
     react-jss "^10.8.0"
     react-paginate "^7.1.5"
+    react-transition-group "^4.4.2"
+    throttle-debounce "^3.0.1"
 
 "@my-ui/react-datepicker@^1.5.0":
   version "1.5.0"
@@ -2988,6 +2991,15 @@ css-jss@10.8.0:
     "@babel/runtime" "^7.3.1"
     jss "10.8.0"
     jss-preset-default "10.8.0"
+
+css-jss@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/css-jss/-/css-jss-10.8.2.tgz#a7c7c9d5ae0c5f8f1731769298fde1af957e7cba"
+  integrity sha1-p8fJ1a4MX48XMXaSmP3hr5V+fLo=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.8.2"
+    jss-preset-default "10.8.2"
 
 css-loader@^5.2.6:
   version "5.2.7"
@@ -5499,6 +5511,15 @@ jss-plugin-camel-case@10.8.0:
     hyphenate-style-name "^1.0.3"
     jss "10.8.0"
 
+jss-plugin-camel-case@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/jss-plugin-camel-case/-/jss-plugin-camel-case-10.8.2.tgz#8d7f915c8115afaff8cbde08faf610ec9892fba6"
+  integrity sha1-jX+RXIEVr6/4y94I+vYQ7JiS+6Y=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    hyphenate-style-name "^1.0.3"
+    jss "10.8.2"
+
 jss-plugin-compose@10.8.0:
   version "10.8.0"
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-compose/-/jss-plugin-compose-10.8.0.tgz#bbc455c700090a69f421f7f921f58f76ca0c41b6"
@@ -5506,6 +5527,15 @@ jss-plugin-compose@10.8.0:
   dependencies:
     "@babel/runtime" "^7.3.1"
     jss "10.8.0"
+    tiny-warning "^1.0.2"
+
+jss-plugin-compose@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/jss-plugin-compose/-/jss-plugin-compose-10.8.2.tgz#1faf7687d96d8c329e01a138e4cdb30e440fb01b"
+  integrity sha1-H692h9ltjDKeAaE45M2zDkQPsBs=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.8.2"
     tiny-warning "^1.0.2"
 
 jss-plugin-default-unit@10.8.0:
@@ -5516,6 +5546,14 @@ jss-plugin-default-unit@10.8.0:
     "@babel/runtime" "^7.3.1"
     jss "10.8.0"
 
+jss-plugin-default-unit@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/jss-plugin-default-unit/-/jss-plugin-default-unit-10.8.2.tgz#c66f12e02e0815d911b85c02c2a979ee7b4ce69a"
+  integrity sha1-xm8S4C4IFdkRuFwCwql57ntM5po=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.8.2"
+
 jss-plugin-expand@10.8.0:
   version "10.8.0"
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-expand/-/jss-plugin-expand-10.8.0.tgz#c412161c4ee0ade00e616e406f2a719b91346053"
@@ -5523,6 +5561,14 @@ jss-plugin-expand@10.8.0:
   dependencies:
     "@babel/runtime" "^7.3.1"
     jss "10.8.0"
+
+jss-plugin-expand@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/jss-plugin-expand/-/jss-plugin-expand-10.8.2.tgz#3f730d7b59107b3d6da421c6cfed071e1ee64afd"
+  integrity sha1-P3MNe1kQez1tpCHGz+0HHh7mSv0=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.8.2"
 
 jss-plugin-extend@10.8.0:
   version "10.8.0"
@@ -5533,6 +5579,15 @@ jss-plugin-extend@10.8.0:
     jss "10.8.0"
     tiny-warning "^1.0.2"
 
+jss-plugin-extend@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/jss-plugin-extend/-/jss-plugin-extend-10.8.2.tgz#90e9e9cc798a21d3df0368de26d2881fd5c4b841"
+  integrity sha1-kOnpzHmKIdPfA2jeJtKIH9XEuEE=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.8.2"
+    tiny-warning "^1.0.2"
+
 jss-plugin-global@10.8.0:
   version "10.8.0"
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-global/-/jss-plugin-global-10.8.0.tgz#0c2b0c056087f5846d600f3332eeb7a1a8b9c9f2"
@@ -5540,6 +5595,14 @@ jss-plugin-global@10.8.0:
   dependencies:
     "@babel/runtime" "^7.3.1"
     jss "10.8.0"
+
+jss-plugin-global@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/jss-plugin-global/-/jss-plugin-global-10.8.2.tgz#1a35632a693cf50113bcc5ffe6b51969df79c4ec"
+  integrity sha1-GjVjKmk89QETvMX/5rUZad95xOw=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.8.2"
 
 jss-plugin-nested@10.8.0:
   version "10.8.0"
@@ -5550,6 +5613,15 @@ jss-plugin-nested@10.8.0:
     jss "10.8.0"
     tiny-warning "^1.0.2"
 
+jss-plugin-nested@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/jss-plugin-nested/-/jss-plugin-nested-10.8.2.tgz#79f3c7f75ea6a36ae72fe52e777035bb24d230c7"
+  integrity sha1-efPH916mo2rnL+Uud3A1uyTSMMc=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.8.2"
+    tiny-warning "^1.0.2"
+
 jss-plugin-props-sort@10.8.0:
   version "10.8.0"
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-props-sort/-/jss-plugin-props-sort-10.8.0.tgz#2a83e8ca80d72828495bad57b485f7d55a33543b"
@@ -5558,6 +5630,14 @@ jss-plugin-props-sort@10.8.0:
     "@babel/runtime" "^7.3.1"
     jss "10.8.0"
 
+jss-plugin-props-sort@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/jss-plugin-props-sort/-/jss-plugin-props-sort-10.8.2.tgz#e25a7471868652c394562b6dc5433dcaea7dff6f"
+  integrity sha1-4lp0cYaGUsOUVittxUM9yup9/28=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.8.2"
+
 jss-plugin-rule-value-function@10.8.0:
   version "10.8.0"
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-rule-value-function/-/jss-plugin-rule-value-function-10.8.0.tgz#e011ed180789229e7ea8f75c222d34810bcab520"
@@ -5565,6 +5645,15 @@ jss-plugin-rule-value-function@10.8.0:
   dependencies:
     "@babel/runtime" "^7.3.1"
     jss "10.8.0"
+    tiny-warning "^1.0.2"
+
+jss-plugin-rule-value-function@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/jss-plugin-rule-value-function/-/jss-plugin-rule-value-function-10.8.2.tgz#55354b55f1b2968a15976729968f767f02d64049"
+  integrity sha1-VTVLVfGylooVl2cplo92fwLWQEk=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.8.2"
     tiny-warning "^1.0.2"
 
 jss-plugin-rule-value-observable@10.8.0:
@@ -5576,6 +5665,15 @@ jss-plugin-rule-value-observable@10.8.0:
     jss "10.8.0"
     symbol-observable "^1.2.0"
 
+jss-plugin-rule-value-observable@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/jss-plugin-rule-value-observable/-/jss-plugin-rule-value-observable-10.8.2.tgz#59c0516c3e6176566512eafeb698d45676046ba8"
+  integrity sha1-WcBRbD5hdlZlEur+tpjUVnYEa6g=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.8.2"
+    symbol-observable "^1.2.0"
+
 jss-plugin-template@10.8.0:
   version "10.8.0"
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-template/-/jss-plugin-template-10.8.0.tgz#fb6873a98c2618a84e95e51444a74d6494f39f55"
@@ -5583,6 +5681,15 @@ jss-plugin-template@10.8.0:
   dependencies:
     "@babel/runtime" "^7.3.1"
     jss "10.8.0"
+    tiny-warning "^1.0.2"
+
+jss-plugin-template@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/jss-plugin-template/-/jss-plugin-template-10.8.2.tgz#e3951a9fc8a6fb54dd0601483e237e6769789a37"
+  integrity sha1-45Uan8im+1TdBgFIPiN+Z2l4mjc=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.8.2"
     tiny-warning "^1.0.2"
 
 jss-plugin-vendor-prefixer@10.8.0:
@@ -5593,6 +5700,15 @@ jss-plugin-vendor-prefixer@10.8.0:
     "@babel/runtime" "^7.3.1"
     css-vendor "^2.0.8"
     jss "10.8.0"
+
+jss-plugin-vendor-prefixer@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/jss-plugin-vendor-prefixer/-/jss-plugin-vendor-prefixer-10.8.2.tgz#ebb4a482642f34091e454901e21176441dd5f475"
+  integrity sha1-67SkgmQvNAkeRUkB4hF2RB3V9HU=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    css-vendor "^2.0.8"
+    jss "10.8.2"
 
 jss-preset-default@10.8.0:
   version "10.8.0"
@@ -5614,10 +5730,40 @@ jss-preset-default@10.8.0:
     jss-plugin-template "10.8.0"
     jss-plugin-vendor-prefixer "10.8.0"
 
+jss-preset-default@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/jss-preset-default/-/jss-preset-default-10.8.2.tgz#d2d275ac8469554f930f72fb3169dab88015721b"
+  integrity sha1-0tJ1rIRpVU+TD3L7MWnauIAVchs=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.8.2"
+    jss-plugin-camel-case "10.8.2"
+    jss-plugin-compose "10.8.2"
+    jss-plugin-default-unit "10.8.2"
+    jss-plugin-expand "10.8.2"
+    jss-plugin-extend "10.8.2"
+    jss-plugin-global "10.8.2"
+    jss-plugin-nested "10.8.2"
+    jss-plugin-props-sort "10.8.2"
+    jss-plugin-rule-value-function "10.8.2"
+    jss-plugin-rule-value-observable "10.8.2"
+    jss-plugin-template "10.8.2"
+    jss-plugin-vendor-prefixer "10.8.2"
+
 jss@10.8.0:
   version "10.8.0"
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss/-/jss-10.8.0.tgz#5063ee73aabd9f228ea3849df7962f0d2e213a42"
   integrity sha1-UGPuc6q9nyKOo4Sd95YvDS4hOkI=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    csstype "^3.0.2"
+    is-in-browser "^1.1.3"
+    tiny-warning "^1.0.2"
+
+jss@10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/jss/-/jss-10.8.2.tgz#4b2a30b094b924629a64928236017a52c7c97505"
+  integrity sha1-SyowsJS5JGKaZJKCNgF6UsfJdQU=
   dependencies:
     "@babel/runtime" "^7.3.1"
     csstype "^3.0.2"
@@ -6788,6 +6934,23 @@ react-jss@^10.8.0:
     theming "^3.3.0"
     tiny-warning "^1.0.2"
 
+react-jss@^10.8.2:
+  version "10.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/react-jss/-/react-jss-10.8.2.tgz#b1bf1496daa47083b6073d1ef794f0645bec02c1"
+  integrity sha1-sb8UltqkcIO2Bz0e95TwZFvsAsE=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    "@emotion/is-prop-valid" "^0.7.3"
+    css-jss "10.8.2"
+    hoist-non-react-statics "^3.2.0"
+    is-in-browser "^1.1.3"
+    jss "10.8.2"
+    jss-preset-default "10.8.2"
+    prop-types "^15.6.0"
+    shallow-equal "^1.2.0"
+    theming "^3.3.0"
+    tiny-warning "^1.0.2"
+
 react-onclickoutside@^6.10.0:
   version "6.12.0"
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/react-onclickoutside/-/react-onclickoutside-6.12.0.tgz#c63db2e3c2c852b288160cdb6cff443604e28db4"
@@ -6849,7 +7012,7 @@ react-router@5.2.1:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-transition-group@^4.3.0:
+react-transition-group@^4.3.0, react-transition-group@^4.4.2:
   version "4.4.2"
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/react-transition-group/-/react-transition-group-4.4.2.tgz#8b59a56f09ced7b55cbd53c36768b922890d5470"
   integrity sha1-i1mlbwnO17VcvVPDZ2i5IokNVHA=
@@ -7897,6 +8060,11 @@ throat@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/throat/-/throat-6.0.1.tgz#d514fedad95740c12c2d7fc70ea863eb51ade375"
   integrity sha512-8hmiGIJMDlwjg7dlJ4yKGLK8EsYqKgPWbG3b4wjJddKNwc7N7Dpn08Df4szr/sZdMVeOstrdYSsqzX6BYbcB+w==
+
+throttle-debounce@^3.0.1:
+  version "3.0.1"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/throttle-debounce/-/throttle-debounce-3.0.1.tgz#32f94d84dfa894f786c9a1f290e7a645b6a19abb"
+  integrity sha1-MvlNhN+olPeGyaHykOemRbahmrs=
 
 thunky@^1.0.2:
   version "1.1.0"

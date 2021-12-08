@@ -17,6 +17,7 @@ export const Sidebar = () => {
 
   return (
     <DesignSystemSidebar
+      defaultClosed={true}
       position='static'
       menuItems={[
         {
