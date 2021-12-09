@@ -21,9 +21,9 @@ export const Sidebar = () => {
       position='static'
       menuItems={[
         {
-          label: 'Game Management',
+          label: 'Game Manager',
           // onClick: createRedirectHandler('/game/'),
-          icon: <Icons.HomeIcon />,
+          icon: <Icons.GamesIcon />,
           isActive: checkIfLocationIncludes('/game/') || checkIfLocation('/'),
           subItems: [
             {
@@ -37,14 +37,27 @@ export const Sidebar = () => {
           ]
         },
         {
-          label: 'Partners',
-          onClick: createRedirectHandler('/partners/'),
+          label: 'Partners Manager',
+          // onClick: createRedirectHandler('/game/'),
+          icon: <Icons.PartnersIcon />,
+          isActive: checkIfLocationIncludes('/partners/'),
+          subItems: [
+            {
+              label: 'Partners',
+              onClick: createRedirectHandler('/partners/')
+            }
+          ]
+        },
+        {
+          label: 'User Manager',
+          onClick: createRedirectHandler('/users/'),
           icon: <Icons.HomeIcon />,
-          isActive: checkIfLocationIncludes('/partners')
+          isActive: checkIfLocationIncludes('/users')
         }
       ]}
       collapsedWidth={7.2}
       width={24}
+      logoSrc='https://www.tattooforaweek.com/files/modules/products/5135/photos/full_the-atom-tattoonie-temporary-tattoo-s.jpg?v=0'
     />
   );
 };

@@ -9,7 +9,5 @@ export const HeaderContainer = () => {
     oidcService.logOut();
   }, []);
 
-  if (!user) return null;
-
-  return <Header username={user.profile.name} onLogOut={onLogOut} />;
+  return <Header username={'Armen Mesropyan'} onLogOut={onLogOut} />;
 };
