@@ -53,7 +53,6 @@ export const Sidebar = () => {
           onClick: createRedirectHandler('/users/'),
           icon: <Icons.UsersIcon />,
           isActive: checkIfLocationIncludes('/users')
-          
         }
       ]}
       collapsedWidth={7.2}
