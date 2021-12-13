@@ -21,24 +21,7 @@ export const Sidebar = () => {
       position='static'
       menuItems={[
         {
-          label: 'Game Manager',
-          // onClick: createRedirectHandler('/game/'),
-          icon: <Icons.GamesIcon />,
-          isActive: checkIfLocationIncludes('/game/') || checkIfLocation('/'),
-          subItems: [
-            {
-              label: 'Game',
-              onClick: createRedirectHandler('/game/')
-            },
-            {
-              label: 'Providers',
-              onClick: createRedirectHandler('/game/providers')
-            }
-          ]
-        },
-        {
-          label: 'Partners Manager',
-          // onClick: createRedirectHandler('/game/'),
+          label: 'Partner Management',
           icon: <Icons.PartnersIcon />,
           isActive: checkIfLocationIncludes('/partners/'),
           subItems: [
@@ -49,10 +32,31 @@ export const Sidebar = () => {
           ]
         },
         {
-          label: 'User Manager',
-          onClick: createRedirectHandler('/users/'),
+          label: 'User Management',
           icon: <Icons.UsersIcon />,
-          isActive: checkIfLocationIncludes('/users')
+          isActive: checkIfLocationIncludes('/users/'),
+          subItems: [
+            {
+              label: 'Users',
+              onClick: createRedirectHandler('/users/')
+            }
+          ]
+        },
+        {
+          label: 'Game Management',
+          // onClick: createRedirectHandler('/game/'),
+          icon: <Icons.GamesIcon />,
+          isActive: checkIfLocationIncludes('/game/') || checkIfLocation('/'),
+          subItems: [
+            {
+              label: 'Games',
+              onClick: createRedirectHandler('/game/')
+            },
+            {
+              label: 'Providers',
+              onClick: createRedirectHandler('/game/providers')
+            }
+          ]
         }
       ]}
       collapsedWidth={7.2}
