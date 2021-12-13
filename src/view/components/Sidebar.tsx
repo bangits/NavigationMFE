@@ -51,8 +51,9 @@ export const Sidebar = () => {
         {
           label: 'User Manager',
           onClick: createRedirectHandler('/users/'),
-          icon: <Icons.HomeIcon />,
+          icon: <Icons.UsersIcon />,
           isActive: checkIfLocationIncludes('/users')
+          
         }
       ]}
       collapsedWidth={7.2}
