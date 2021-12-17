@@ -22,7 +22,7 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username }) => {
         imageSource: 'https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png'
       }}
       notificationProps={{
-        quantity: 10
+        quantity: 0
       }}
     />
   );

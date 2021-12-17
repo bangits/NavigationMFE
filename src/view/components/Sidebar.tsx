@@ -23,7 +23,7 @@ export const Sidebar = () => {
         {
           label: 'Partner Management',
           icon: <Icons.PartnersIcon />,
-          isActive: checkIfLocationIncludes('/partners/'),
+          isActive: checkIfLocationIncludes('/partners/') || checkIfLocation('/'),
           subItems: [
             {
               label: 'Partners',
@@ -46,7 +46,7 @@ export const Sidebar = () => {
           label: 'Game Management',
           // onClick: createRedirectHandler('/game/'),
           icon: <Icons.GamesIcon />,
-          isActive: checkIfLocationIncludes('/game/') || checkIfLocation('/'),
+          isActive: checkIfLocationIncludes('/game/'),
           subItems: [
             {
               label: 'Games',
