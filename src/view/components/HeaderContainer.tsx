@@ -9,5 +9,5 @@ export const HeaderContainer = () => {
     oidcService.logOut();
   }, []);
 
-  return <Header username={'User'} onLogOut={onLogOut} />;
+  return <Header username={user.email} onLogOut={onLogOut} />;
 };

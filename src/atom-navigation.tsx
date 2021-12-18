@@ -13,7 +13,13 @@ export const sidebarApplication = singleSpaReact({
     // Customize the root error boundary for your microfrontend here.
     return null;
   },
-  rootComponent: Sidebar
+  rootComponent: () => {
+    return (
+      <AuthenticatedProvider>
+        <Sidebar />
+      </AuthenticatedProvider>
+    );
+  }
 });
 
 export const headerApplication = singleSpaReact({
