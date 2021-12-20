@@ -21,9 +21,16 @@ export const Sidebar = () => {
       position='static'
       menuItems={[
         {
+          label: 'Dashboard',
+          onClick: createRedirectHandler('/'),
+          icon: <Icons.HomeIcon width='1.8rem' height='2.4rem' />,
+          isActive: checkIfLocation('/'),
+          subItems: []
+        },
+        {
           label: 'Partner Management',
           icon: <Icons.PartnersIcon />,
-          isActive: checkIfLocationIncludes('/partners/') || checkIfLocation('/'),
+          isActive: checkIfLocationIncludes('/partners/'),
           subItems: [
             {
               label: 'Partners',
@@ -60,7 +67,7 @@ export const Sidebar = () => {
         }
       ]}
       collapsedWidth={7.2}
-      width={24}
+      width={25}
       logoSrc='https://www.tattooforaweek.com/files/modules/products/5135/photos/full_the-atom-tattoonie-temporary-tattoo-s.jpg?v=0'
     />
   );

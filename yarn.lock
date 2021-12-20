@@ -59,7 +59,7 @@
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
-"@atom/design-system@^2.0.0", "@atom/design-system@^2.2.6":
+"@atom/design-system@^2.2.6":
   version "2.2.6"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.2.6.tgz#576519c87c1cd8c3372aea7e9cfcbbbb2a1d9bd1"
   integrity sha1-V2UZyHwc2MM3Kup+nPy7uyodm9E=
@@ -68,6 +68,20 @@
     "@my-ui/core" "^2.26.13"
     classnames "^2.3.1"
     react "^17.0.2"
+    react-dom "^17.0.2"
+    react-jss "^10.8.2"
+    react-sortable-hoc "^2.0.0"
+
+"@atom/design-system@^2.3.2":
+  version "2.3.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.3.2.tgz#4c6638fee5b42c8f6ab7e3803583e92000f5d7cf"
+  integrity sha1-TGY4/uW0LI9qt+OANYPpIAD1188=
+  dependencies:
+    "@atom/common" "^2.3.4"
+    "@my-ui/core" "^2.26.22"
+    classnames "^2.3.1"
+    react "^17.0.2"
+    react-cropper "^2.1.8"
     react-dom "^17.0.2"
     react-jss "^10.8.2"
     react-sortable-hoc "^2.0.0"
@@ -1466,6 +1480,21 @@
   version "2.26.13"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.26.13.tgz#4d1c9f2a1092b91ff1c37cfcb980fbc9afcb0ecd"
   integrity sha1-TRyfKhCSuR/xw3z8uYD7ya/LDs0=
+  dependencies:
+    "@my-ui/react-datepicker" "^1.5.0"
+    "@my-ui/react-select" "1.1.6"
+    "@my-ui/react-table" "1.3.0"
+    "@my-ui/scrollbar" "^1.0.2"
+    classnames "^2.3.1"
+    react-jss "^10.8.0"
+    react-paginate "^7.1.5"
+    react-transition-group "^4.4.2"
+    throttle-debounce "^3.0.1"
+
+"@my-ui/core@^2.26.22":
+  version "2.26.22"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.26.22.tgz#5c4e0d9b104a4493b784d624a38b405a1c67bca0"
+  integrity sha1-XE4NmxBKRJO3hNYko4tAWhxnvKA=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
@@ -3036,6 +3065,11 @@ cosmiconfig@^6.0.0:
     parse-json "^5.0.0"
     path-type "^4.0.0"
     yaml "^1.7.2"
+
+cropperjs@^1.5.12:
+  version "1.5.12"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/cropperjs/-/cropperjs-1.5.12.tgz#d9c0db2bfb8c0d769d51739e8f916bbc44e10f50"
+  integrity sha1-2cDbK/uMDXadUXOej5FrvEThD1A=
 
 cross-env@^7.0.3:
   version "7.0.3"
@@ -6760,6 +6794,13 @@ raw-body@2.4.2:
     http-errors "1.8.1"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
+
+react-cropper@^2.1.8:
+  version "2.1.8"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/react-cropper/-/react-cropper-2.1.8.tgz#bf35a7de65769f8ad357e8ae884e791fe3fe9212"
+  integrity sha1-vzWn3mV2n4rTV+iuiE55H+P+khI=
+  dependencies:
+    cropperjs "^1.5.12"
 
 react-display-name@^0.2.4:
   version "0.2.5"
