@@ -72,13 +72,13 @@
     react-jss "^10.8.2"
     react-sortable-hoc "^2.0.0"
 
-"@atom/design-system@^2.3.2":
-  version "2.3.2"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.3.2.tgz#4c6638fee5b42c8f6ab7e3803583e92000f5d7cf"
-  integrity sha1-TGY4/uW0LI9qt+OANYPpIAD1188=
+"@atom/design-system@^2.3.5":
+  version "2.3.5"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.3.5.tgz#c344b2a1dbaad78084cb0ed8f33f6902e34ffedf"
+  integrity sha1-w0Syoduq14CEyw7Y8z9pAuNP/t8=
   dependencies:
     "@atom/common" "^2.3.4"
-    "@my-ui/core" "^2.26.22"
+    "@my-ui/core" "^2.26.25"
     classnames "^2.3.1"
     react "^17.0.2"
     react-cropper "^2.1.8"
@@ -1491,10 +1491,10 @@
     react-transition-group "^4.4.2"
     throttle-debounce "^3.0.1"
 
-"@my-ui/core@^2.26.22":
-  version "2.26.22"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.26.22.tgz#5c4e0d9b104a4493b784d624a38b405a1c67bca0"
-  integrity sha1-XE4NmxBKRJO3hNYko4tAWhxnvKA=
+"@my-ui/core@^2.26.25":
+  version "2.26.25"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.26.25.tgz#65bb023c791b5a5a17c04c0a3e836a5727b258ea"
+  integrity sha1-ZbsCPHkbWloXwEwKPoNqVyeyWOo=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"

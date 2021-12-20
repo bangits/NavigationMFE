@@ -1,6 +1,7 @@
 import { redirectToURL, useLocation } from '@atom/common';
 import { Icons, Sidebar as DesignSystemSidebar } from '@atom/design-system';
 import { useCallback } from 'react';
+import { Logo } from '../images';
 
 export const Sidebar = () => {
   const location = useLocation();
@@ -13,7 +14,10 @@ export const Sidebar = () => {
   );
 
   const checkIfLocationIncludes = useCallback((url: string) => location.pathname.includes(url), [location]);
-  const checkIfLocation = useCallback((url: string) => location.pathname === url, [location]);
+  const checkIfLocation = useCallback(
+    (url: string) => location.pathname === url || location.pathname === url + '/' || location.pathname + '/' === url,
+    [location]
+  );
 
   return (
     <DesignSystemSidebar
@@ -34,7 +38,8 @@ export const Sidebar = () => {
           subItems: [
             {
               label: 'Partners',
-              onClick: createRedirectHandler('/partners/')
+              onClick: createRedirectHandler('/partners/'),
+              isActive: checkIfLocationIncludes('/partners/')
             }
           ]
         },
@@ -45,7 +50,8 @@ export const Sidebar = () => {
           subItems: [
             {
               label: 'Users',
-              onClick: createRedirectHandler('/users/')
+              onClick: createRedirectHandler('/users/'),
+              isActive: checkIfLocationIncludes('/users/')
             }
           ]
         },
@@ -57,18 +63,20 @@ export const Sidebar = () => {
           subItems: [
             {
               label: 'Games',
-              onClick: createRedirectHandler('/game/')
+              onClick: createRedirectHandler('/game/'),
+              isActive: checkIfLocation('/game')
             },
             {
               label: 'Providers',
-              onClick: createRedirectHandler('/game/providers')
+              onClick: createRedirectHandler('/game/providers'),
+              isActive: checkIfLocation('/game/providers')
             }
           ]
         }
       ]}
       collapsedWidth={7.2}
       width={25}
-      logoSrc='https://www.tattooforaweek.com/files/modules/products/5135/photos/full_the-atom-tattoonie-temporary-tattoo-s.jpg?v=0'
+      logoSrc={Logo}
     />
   );
 };
