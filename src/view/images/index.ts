@@ -1,2 +1,1 @@
-// @ts-ignore
-export { default as Logo } from './logo.png';
+export const Logo = 'https://storageaccountatom.blob.core.windows.net/mfe/logo.png';

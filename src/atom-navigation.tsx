@@ -2,6 +2,7 @@ import { AuthenticatedProvider } from '@atom/authorization';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
+import { AtomNavigationProvider } from './adapter/react-context';
 import './index';
 import { DashboardContainer, HeaderContainer, Sidebar } from './view';
 
@@ -33,7 +34,9 @@ export const headerApplication = singleSpaReact({
   rootComponent: () => {
     return (
       <AuthenticatedProvider>
-        <HeaderContainer />
+        <AtomNavigationProvider>
+          <HeaderContainer />
+        </AtomNavigationProvider>
       </AuthenticatedProvider>
     );
   }

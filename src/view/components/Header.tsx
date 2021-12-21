@@ -3,10 +3,12 @@ import { FC } from 'react';
 
 export interface HeaderProps {
   onLogOut: () => void;
-  username?: string;
+  username: string;
+  currency: string;
+  money: number;
 }
 
-export const Header: FC<HeaderProps> = ({ onLogOut, username }) => {
+export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency }) => {
   return (
     <DesignSystemHeader
       avatarProps={{
@@ -24,6 +26,8 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username }) => {
       notificationProps={{
         quantity: 0
       }}
+      money={money}
+      currency={currency}
     />
   );
 };
