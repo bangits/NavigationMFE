@@ -62,14 +62,14 @@ export const Sidebar = () => {
           isActive: checkIfLocationIncludes('/game/'),
           subItems: [
             {
-              label: 'Games',
-              onClick: createRedirectHandler('/game/'),
-              isActive: checkIfLocation('/game')
-            },
-            {
               label: 'Providers',
               onClick: createRedirectHandler('/game/providers'),
               isActive: checkIfLocation('/game/providers')
+            },
+            {
+              label: 'Games',
+              onClick: createRedirectHandler('/game/'),
+              isActive: checkIfLocation('/game')
             }
           ]
         }
