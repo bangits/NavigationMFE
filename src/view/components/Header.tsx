@@ -1,5 +1,7 @@
+import { convertDate } from '@atom/common';
 import { Header as DesignSystemHeader } from '@atom/design-system';
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
+import { calculateWifiSpeed } from '../helpers';
 
 export interface HeaderProps {
   onLogOut: () => void;
@@ -9,6 +11,16 @@ export interface HeaderProps {
 }
 
 export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency }) => {
+  const [wifiSpeed, setWifiSpeed] = useState<1 | 2 | 3>(calculateWifiSpeed());
+  const [isOnline, setOnline] = useState<boolean>(true);
+
+  useEffect(() => {
+    if (navigator?.connection) navigator.connection.addEventListener('change', () => setWifiSpeed(calculateWifiSpeed));
+
+    window.addEventListener('online', () => setOnline(true));
+    window.addEventListener('offline', () => setOnline(false));
+  }, []);
+
   return (
     <DesignSystemHeader
       avatarProps={{
@@ -18,9 +30,6 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
         onBottomButtonClick: onLogOut,
 
         avatarLabel: username,
-        // dropdownTitle: 'dropdownTitle',
-        // onTopButtonClick: () => console.log('onTopButtonClick'),
-        // topButtonLabel: 'topButtonLabel',
         imageSource: 'https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png'
       }}
       notificationProps={{
@@ -28,6 +37,11 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
       }}
       money={money}
       currency={currency}
+      dateConverter={(date) => convertDate(date, 'MM/DD/YYYY HH:mm:ss', false)}
+      localTime='Local Time'
+      speed={wifiSpeed}
+      // @ts-ignore
+      isOffline={!isOnline}
     />
   );
 };
