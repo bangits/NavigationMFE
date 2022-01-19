@@ -40,7 +40,6 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
       dateConverter={(date) => convertDate(date, 'MM/DD/YYYY HH:mm:ss', false)}
       localTime='Local Time'
       speed={wifiSpeed}
-      // @ts-ignore
       isOffline={!isOnline}
     />
   );
