@@ -71,6 +71,15 @@
     react-jss "^10.8.2"
     react-sortable-hoc "^2.0.0"
 
+<<<<<<< HEAD
+"@atom/design-system@^2.4.4":
+  version "2.4.4"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.4.4.tgz#c9c2cad6fcdc8aac0b68dca1f732ea249574feed"
+  integrity sha1-ycLK1vzciqwLaNyh9zLqJJV0/u0=
+  dependencies:
+    "@my-ui/core" "^3.0.6"
+    classnames "^2.3.1"
+=======
 "@atom/game-management@^1.0.3":
   version "1.0.3"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/game-management/-/game-management-1.0.3.tgz#8cfc108384ab95862e2e21849ca78239b2f4237f"
@@ -84,6 +93,7 @@
     formik "^2.2.9"
     immer "^9.0.7"
     inversify "^5.1.1"
+>>>>>>> 2542a2cb44381c23e357128081dce50158935992
     react "^17.0.2"
     react-dom "^17.0.2"
     react-redux "^7.2.5"
