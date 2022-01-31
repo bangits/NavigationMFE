@@ -1,4 +1,5 @@
 import { AuthenticatedProvider } from '@atom/authorization';
+import { AtomCommonProvider } from '@atom/common';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
@@ -16,9 +17,11 @@ export const sidebarApplication = singleSpaReact({
   },
   rootComponent: () => {
     return (
-      <AuthenticatedProvider>
-        <Sidebar />
-      </AuthenticatedProvider>
+      <AtomCommonProvider>
+        <AuthenticatedProvider>
+          <Sidebar />
+        </AuthenticatedProvider>
+      </AtomCommonProvider>
     );
   }
 });

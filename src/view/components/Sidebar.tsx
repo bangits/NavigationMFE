@@ -1,4 +1,4 @@
-import { redirectToURL, useLocation, useTranslation } from '@atom/common';
+import { historyService, useLocation, useTranslation } from '@atom/common';
 import { Icons, Sidebar as DesignSystemSidebar } from '@atom/design-system';
 import { useCallback } from 'react';
 import { Logo } from '../images';
@@ -9,7 +9,7 @@ export const Sidebar = () => {
 
   const createRedirectHandler = useCallback(
     (url: string) => () => {
-      redirectToURL(url);
+      historyService.redirectToURL(url);
     },
     []
   );
