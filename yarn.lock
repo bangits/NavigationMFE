@@ -71,15 +71,6 @@
     react-jss "^10.8.2"
     react-sortable-hoc "^2.0.0"
 
-<<<<<<< HEAD
-"@atom/design-system@^2.4.4":
-  version "2.4.4"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.4.4.tgz#c9c2cad6fcdc8aac0b68dca1f732ea249574feed"
-  integrity sha1-ycLK1vzciqwLaNyh9zLqJJV0/u0=
-  dependencies:
-    "@my-ui/core" "^3.0.6"
-    classnames "^2.3.1"
-=======
 "@atom/game-management@^1.0.3":
   version "1.0.3"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/game-management/-/game-management-1.0.3.tgz#8cfc108384ab95862e2e21849ca78239b2f4237f"
@@ -93,7 +84,6 @@
     formik "^2.2.9"
     immer "^9.0.7"
     inversify "^5.1.1"
->>>>>>> 2542a2cb44381c23e357128081dce50158935992
     react "^17.0.2"
     react-dom "^17.0.2"
     react-redux "^7.2.5"
@@ -885,9 +875,6 @@
   version "7.16.7"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@babel/plugin-transform-object-super/-/plugin-transform-object-super-7.16.7.tgz#ac359cf8d32cf4354d27a46867999490b6c32a94"
   integrity sha1-rDWc+NMs9DVNJ6RoZ5mUkLbDKpQ=
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.16.7"
-    "@babel/helper-replace-supers" "^7.16.7"
 
 "@babel/plugin-transform-parameters@^7.16.7":
   version "7.16.7"
@@ -940,8 +927,6 @@
   version "7.16.7"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@babel/plugin-transform-regenerator/-/plugin-transform-regenerator-7.16.7.tgz#9e7576dc476cb89ccc5096fff7af659243b4adeb"
   integrity sha1-nnV23EdsuJzMUJb/969lkkO0res=
-  dependencies:
-    regenerator-transform "^0.14.2"
 
 "@babel/plugin-transform-reserved-words@^7.16.7":
   version "7.16.7"
