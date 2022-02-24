@@ -17,7 +17,7 @@ export const sidebarApplication = singleSpaReact({
   },
   rootComponent: () => {
     return (
-      <AtomCommonProvider>
+      <AtomCommonProvider initializeLanguage>
         <AuthenticatedProvider>
           <Sidebar />
         </AuthenticatedProvider>
