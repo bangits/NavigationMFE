@@ -73,6 +73,30 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/game')
             }
           ]
+        },
+        {
+          label: t.get('reportManagement'),
+          // onClick: createRedirectHandler('/game/'),
+          //@ts-ignore
+          icon: <Icons.ReportsIcon />,
+          isActive: checkIfLocationIncludes('/reports/'),
+          subItems: [
+            {
+              label: t.get('providers'),
+              onClick: createRedirectHandler('/reports/providers'),
+              isActive: checkIfLocation('/reports/providers')
+            },
+            {
+              label: t.get('players'),
+              onClick: createRedirectHandler('/reports/players'),
+              isActive: checkIfLocation('/reports/players')
+            },
+            {
+              label: t.get('games'),
+              onClick: createRedirectHandler('/reports/games'),
+              isActive: checkIfLocation('/reports/games')
+            }
+          ]
         }
       ]}
       collapsedWidth={7.2}

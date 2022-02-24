@@ -58,7 +58,7 @@
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
-"@atom/design-system@^2.2.6", "@atom/design-system@^2.4.7":
+"@atom/design-system@^2.2.6":
   version "2.4.7"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.4.7.tgz#4491f5b54defbb388f781b6beb35bca3e9213db5"
   integrity sha1-RJH1tU3vuziPeBtr6zW8o+khPbU=
@@ -70,6 +70,20 @@
     react-dom "^17.0.2"
     react-jss "^10.8.2"
     react-sortable-hoc "^2.0.0"
+
+"@atom/design-system@^2.7.3":
+  version "2.7.3"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.7.3.tgz#ea606c52752271808ca13b84fdf6148b19770ba6"
+  integrity sha1-6mBsUnUicYCMoTuE/fYUixl3C6Y=
+  dependencies:
+    "@my-ui/core" "^3.1.0"
+    classnames "^2.3.1"
+    react "^17.0.2"
+    react-cropper "^2.1.8"
+    react-dom "^17.0.2"
+    react-jss "^10.8.2"
+    react-sortable-hoc "^2.0.0"
+    react-transition-group "^4.4.2"
 
 "@atom/game-management@^1.0.3":
   version "1.0.3"
@@ -1127,7 +1141,7 @@
     core-js-pure "^3.20.2"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.14.6", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.3", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.14.6", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.3", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.16.7"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@babel/runtime/-/runtime-7.16.7.tgz#03ff99f64106588c9c403c6ecb8c3bafbbdff1fa"
   integrity sha1-A/+Z9kEGWIycQDxuy4w7r7vf8fo=
@@ -1535,6 +1549,34 @@
     react-transition-group "^4.4.2"
     throttle-debounce "^3.0.1"
 
+"@my-ui/core@^3.1.0":
+  version "0.2.1"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.2.1.tgz#6a53d66dac2268e53364b079f036638fbb0f0d4c"
+  integrity sha1-alPWbawiaOUzZLB58DZjj7sPDUw=
+  dependencies:
+    "@my-ui/react-datepicker" "^0.1.0"
+    "@my-ui/react-select" "0.1.0"
+    "@my-ui/react-table" "0.1.0"
+    "@my-ui/scrollbar" "^0.1.0"
+    classnames "^2.3.1"
+    react-flip-move "^3.0.4"
+    react-jss "^10.8.0"
+    react-paginate "^7.1.5"
+    react-transition-group "^4.4.2"
+    throttle-debounce "^3.0.1"
+
+"@my-ui/react-datepicker@^0.1.0":
+  version "0.1.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/react-datepicker/-/react-datepicker-0.1.0.tgz#37620758055e36e426e4732cf8035fef87157cca"
+  integrity sha1-N2IHWAVeNuQm5HMs+ANf74cVfMo=
+  dependencies:
+    "@popperjs/core" "^2.9.2"
+    classnames "^2.2.6"
+    date-fns "^2.0.1"
+    prop-types "^15.7.2"
+    react-onclickoutside "^6.10.0"
+    react-popper "^2.2.5"
+
 "@my-ui/react-datepicker@^1.5.0":
   version "1.5.0"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/react-datepicker/-/react-datepicker-1.5.0.tgz#1b8def5bd5e04013f976ce03e4f8af14ad1568bc"
@@ -1546,6 +1588,19 @@
     prop-types "^15.7.2"
     react-onclickoutside "^6.10.0"
     react-popper "^2.2.5"
+
+"@my-ui/react-select@0.1.0":
+  version "0.1.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/react-select/-/react-select-0.1.0.tgz#03da220c23d143e8d26df1984cd8fadab5f66452"
+  integrity sha1-A9oiDCPRQ+jSbfGYTNj62rX2ZFI=
+  dependencies:
+    "@babel/runtime" "^7.12.0"
+    "@emotion/cache" "^11.4.0"
+    "@emotion/react" "^11.1.1"
+    "@types/react-transition-group" "^4.4.0"
+    memoize-one "^5.0.0"
+    prop-types "^15.6.0"
+    react-transition-group "^4.3.0"
 
 "@my-ui/react-select@1.1.6":
   version "1.1.6"
@@ -1560,10 +1615,24 @@
     prop-types "^15.6.0"
     react-transition-group "^4.3.0"
 
+"@my-ui/react-table@0.1.0":
+  version "0.1.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/react-table/-/react-table-0.1.0.tgz#bdfdfc84623485909d5501d1e7bec4657acf16a1"
+  integrity sha1-vf38hGI0hZCdVQHR577EZXrPFqE=
+
 "@my-ui/react-table@1.3.0":
   version "1.3.0"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/react-table/-/react-table-1.3.0.tgz#b1746c61b797781e45fb7bcc446949fbe71bcd41"
   integrity sha1-sXRsYbeXeB5F+3vMRGlJ++cbzUE=
+
+"@my-ui/scrollbar@^0.1.0":
+  version "0.1.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/scrollbar/-/scrollbar-0.1.0.tgz#a08d8d9e1407566562ddfd82ec68740a2464fe8b"
+  integrity sha1-oI2NnhQHVmVi3f2C7Gh0CiRk/os=
+  dependencies:
+    dom-css "^2.0.0"
+    prop-types "^15.5.10"
+    raf "^3.1.0"
 
 "@my-ui/scrollbar@^1.0.2":
   version "1.0.2"
@@ -7201,13 +7270,6 @@ regenerator-runtime@^0.13.4:
   version "0.13.9"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
   integrity sha1-iSV0Kpj/2QgUmI11Zq0wyjsmO1I=
-
-regenerator-transform@^0.14.2:
-  version "0.14.5"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/regenerator-transform/-/regenerator-transform-0.14.5.tgz#c98da154683671c9c4dcb16ece736517e1b7feb4"
-  integrity sha1-yY2hVGg2ccnE3LFuznNlF+G3/rQ=
-  dependencies:
-    "@babel/runtime" "^7.8.4"
 
 regexp.prototype.flags@^1.2.0:
   version "1.4.1"
