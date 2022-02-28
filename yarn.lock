@@ -25,7 +25,7 @@
     reflect-metadata "^0.1.13"
     single-spa-react "^4.2.0"
 
-"@atom/authorization@^0.1.0", "@atom/authorization@^1.2.3", "@atom/authorization@^1.2.8", "@atom/authorization@^1.2.9":
+"@atom/authorization@^0.1.0", "@atom/authorization@^1.2.3", "@atom/authorization@^1.2.9":
   version "0.1.0"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/authorization/-/authorization-0.1.0.tgz#53821524dc41fae2d8657298429cdcb2be4d9d34"
   integrity sha1-U4IVJNxB+uLYZXKYQpzcsr5NnTQ=
@@ -48,9 +48,9 @@
     yup "^0.32.10"
 
 "@atom/common@^0.1.5":
-  version "0.1.5"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-0.1.5.tgz#821b7238347d90d3b7f283f5bd3971cc9e03e0d0"
-  integrity sha1-ghtyODR9kNO38oP1vTlxzJ4D4NA=
+  version "0.1.8"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-0.1.8.tgz#c46c1a53d8dbb0a10c3575349c91296b6284e1a2"
+  integrity sha1-xGwaU9jbsKEMNXU0nJEpa2KE4aI=
   dependencies:
     "@automapper/classes" "^7.0.2"
     "@automapper/core" "^7.0.2"
@@ -65,17 +65,10 @@
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
-<<<<<<< HEAD
 "@atom/design-system@^0.1.0":
   version "0.1.0"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-0.1.0.tgz#cca9e14ab333a76b8d638ba905aa4e3a3676d6fb"
   integrity sha1-zKnhSrMzp2uNY4upBapOOjZ21vs=
-=======
-"@atom/design-system@^2.2.6":
-  version "2.4.7"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.4.7.tgz#4491f5b54defbb388f781b6beb35bca3e9213db5"
-  integrity sha1-RJH1tU3vuziPeBtr6zW8o+khPbU=
->>>>>>> 9cd8ded8c169d75910668a9375f555cbb76da9ca
   dependencies:
     "@my-ui/core" "^3.1.0"
     classnames "^2.3.1"
@@ -86,16 +79,12 @@
     react-sortable-hoc "^2.0.0"
     react-transition-group "^4.4.2"
 
-<<<<<<< HEAD
-"@atom/design-system@^2.2.6", "@atom/design-system@^2.4.9":
-=======
-"@atom/design-system@^2.7.3":
->>>>>>> 9cd8ded8c169d75910668a9375f555cbb76da9ca
-  version "2.7.3"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.7.3.tgz#ea606c52752271808ca13b84fdf6148b19770ba6"
-  integrity sha1-6mBsUnUicYCMoTuE/fYUixl3C6Y=
+"@atom/design-system@^2.2.6", "@atom/design-system@^2.8.8":
+  version "2.8.8"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.8.8.tgz#05ffabc2fed739aacf9abf63441fe34c22ebb96c"
+  integrity sha1-Bf+rwv7XOarPmr9jRB/jTCLruWw=
   dependencies:
-    "@my-ui/core" "^3.1.0"
+    "@my-ui/core" "^0.3.1"
     classnames "^2.3.1"
     react "^17.0.2"
     react-cropper "^2.1.8"
@@ -105,12 +94,12 @@
     react-transition-group "^4.4.2"
 
 "@atom/game-management@^1.0.3":
-  version "0.1.0"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/game-management/-/game-management-0.1.0.tgz#c2c22ea59309f0397484f03bcecb3a761c7085ab"
-  integrity sha1-wsIupZMJ8Dl0hPA7zss6dhxwhas=
+  version "0.1.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/game-management/-/game-management-0.1.2.tgz#6ccaa96184f1b0e595b9dce644b4f68e2d0b4380"
+  integrity sha1-bMqpYYTxsOWVudzmRLT2ji0LQ4A=
   dependencies:
-    "@atom/authorization" "^1.2.8"
-    "@atom/design-system" "^2.4.9"
+    "@atom/authorization" "^0.1.0"
+    "@atom/design-system" "^0.1.0"
     "@automapper/classes" "^7.0.2"
     "@automapper/core" "^7.0.2"
     "@reduxjs/toolkit" "^1.6.2"
@@ -127,9 +116,9 @@
     yup "^0.32.10"
 
 "@atom/partner-management@^1.0.6":
-  version "0.1.0"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/partner-management/-/partner-management-0.1.0.tgz#83d8c42b7aa7bedfe9faf6c9d587e8265b1cc7b8"
-  integrity sha1-g9jEK3qnvt/p+vbJ1YfoJlscx7g=
+  version "1.1.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/partner-management/-/partner-management-1.1.0.tgz#fa89a08a8472b0a741e66783a30bcf919a210491"
+  integrity sha1-+omgioRysKdB5meDowvPkZohBJE=
   dependencies:
     "@atom/authorization" "^1.2.9"
     "@automapper/classes" "^7.0.2"
@@ -168,14 +157,14 @@
     yup "^0.32.10"
 
 "@automapper/classes@^7.0.2":
-  version "7.2.1"
-  resolved "https://registry.npmjs.org/@automapper/classes/-/classes-7.2.1.tgz#2833f704879da74a04cb4b1e0d24cb3e84d4c41f"
-  integrity sha512-brK3xqKTyPlUNYm/gcbiSP/uN2c74CTAfjySpyYXYhEHG+FQRq1K7GIO8n2g4L30Mj9vpcl2oVfAy4N/NK+7og==
+  version "7.3.10"
+  resolved "https://registry.npmjs.org/@automapper/classes/-/classes-7.3.10.tgz#975e77490469ac79dd4625348a6006bb7e8b6b84"
+  integrity sha512-gLLPcZK+Oh+zBOmOuB9E+8nLAOqAP9BxV9QxVQ/nhlYuxwFgZXkuL+54vjUdZKq5FSbRxy9TXgQPcIbVzlRzvQ==
 
 "@automapper/core@^7.0.2":
-  version "7.2.1"
-  resolved "https://registry.npmjs.org/@automapper/core/-/core-7.2.1.tgz#2a1b67e25f9ca79b433e39700e5681ccfff49cdf"
-  integrity sha512-G3RSPjQ/V8nWyxTDjnp68GkGmttbJHaAMJ4t6y7MQuoVTNnt7RCjvuo204ypPvbtyQ8nVVfgcQC0OQtX/YOGdw==
+  version "7.3.10"
+  resolved "https://registry.npmjs.org/@automapper/core/-/core-7.3.10.tgz#6f63151168a40fda849fb35bced293dae2ddefbf"
+  integrity sha512-hX0VWs2/BRfVEZtOmKwCozuTqOFMInkPkFLjXqKfllfBSSTOyZGypTmPvdfTguqYOT2xbvWOFWUS3elKra1eZA==
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"
@@ -909,16 +898,11 @@
 
 "@babel/plugin-transform-object-super@^7.16.7":
   version "7.16.7"
-<<<<<<< HEAD
   resolved "https://registry.npmjs.org/@babel/plugin-transform-object-super/-/plugin-transform-object-super-7.16.7.tgz#ac359cf8d32cf4354d27a46867999490b6c32a94"
   integrity sha512-14J1feiQVWaGvRxj2WjyMuXS2jsBkgB3MdSN5HuC2G5nRspa5RK9COcs82Pwy5BuGcjb+fYaUj94mYcOj7rCvw==
   dependencies:
     "@babel/helper-plugin-utils" "^7.16.7"
     "@babel/helper-replace-supers" "^7.16.7"
-=======
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@babel/plugin-transform-object-super/-/plugin-transform-object-super-7.16.7.tgz#ac359cf8d32cf4354d27a46867999490b6c32a94"
-  integrity sha1-rDWc+NMs9DVNJ6RoZ5mUkLbDKpQ=
->>>>>>> 9cd8ded8c169d75910668a9375f555cbb76da9ca
 
 "@babel/plugin-transform-parameters@^7.16.7":
   version "7.16.7"
@@ -969,15 +953,10 @@
 
 "@babel/plugin-transform-regenerator@^7.16.7":
   version "7.16.7"
-<<<<<<< HEAD
   resolved "https://registry.npmjs.org/@babel/plugin-transform-regenerator/-/plugin-transform-regenerator-7.16.7.tgz#9e7576dc476cb89ccc5096fff7af659243b4adeb"
   integrity sha512-mF7jOgGYCkSJagJ6XCujSQg+6xC1M77/03K2oBmVJWoFGNUtnVJO4WHKJk3dnPC8HCcj4xBQP1Egm8DWh3Pb3Q==
   dependencies:
     regenerator-transform "^0.14.2"
-=======
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@babel/plugin-transform-regenerator/-/plugin-transform-regenerator-7.16.7.tgz#9e7576dc476cb89ccc5096fff7af659243b4adeb"
-  integrity sha1-nnV23EdsuJzMUJb/969lkkO0res=
->>>>>>> 9cd8ded8c169d75910668a9375f555cbb76da9ca
 
 "@babel/plugin-transform-reserved-words@^7.16.7":
   version "7.16.7"
@@ -1178,17 +1157,10 @@
     core-js-pure "^3.20.2"
     regenerator-runtime "^0.13.4"
 
-<<<<<<< HEAD
 "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.14.6", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.3", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.17.2"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.17.2.tgz#66f68591605e59da47523c631416b18508779941"
   integrity sha512-hzeyJyMA1YGdJTuWU0e/j4wKXrU4OMFvY2MSlaI9B7VQb0r5cxTE3EAIS2Q7Tn2RIcDkRvTA/v2JsAEhxe99uw==
-=======
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.14.6", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.3", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
-  version "7.16.7"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@babel/runtime/-/runtime-7.16.7.tgz#03ff99f64106588c9c403c6ecb8c3bafbbdff1fa"
-  integrity sha1-A/+Z9kEGWIycQDxuy4w7r7vf8fo=
->>>>>>> 9cd8ded8c169d75910668a9375f555cbb76da9ca
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1598,15 +1570,15 @@
   resolved "https://registry.npmjs.org/@msgpack/msgpack/-/msgpack-2.7.2.tgz#f34b8aa0c49f0dd55eb7eba577081299cbf3f90b"
   integrity sha512-rYEi46+gIzufyYUAoHDnRzkWGxajpD9vVXFQ3g1vbjrBm6P7MBmm+s/fqPa46sxa+8FOUdEuRQKaugo5a4JWpw==
 
-"@my-ui/core@^2.28.18", "@my-ui/core@^3.1.0":
-  version "0.2.1"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.2.1.tgz#6a53d66dac2268e53364b079f036638fbb0f0d4c"
-  integrity sha1-alPWbawiaOUzZLB58DZjj7sPDUw=
+"@my-ui/core@^0.3.1", "@my-ui/core@^2.28.18", "@my-ui/core@^3.1.0":
+  version "0.3.7"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.3.7.tgz#cab5ea007bc3c948f3c100df3db26841236687d9"
+  integrity sha1-yrXqAHvDyUjzwQDfPbJoQSNmh9k=
   dependencies:
-    "@my-ui/react-datepicker" "^0.1.0"
-    "@my-ui/react-select" "0.1.0"
-    "@my-ui/react-table" "0.1.0"
-    "@my-ui/scrollbar" "^0.1.0"
+    "@my-ui/react-datepicker" "^1.5.0"
+    "@my-ui/react-select" "1.1.6"
+    "@my-ui/react-table" "1.3.0"
+    "@my-ui/scrollbar" "^1.0.2"
     classnames "^2.3.1"
     react-flip-move "^3.0.4"
     react-jss "^10.8.0"
@@ -1614,31 +1586,10 @@
     react-transition-group "^4.4.2"
     throttle-debounce "^3.0.1"
 
-<<<<<<< HEAD
-=======
-"@my-ui/core@^3.1.0":
-  version "0.2.1"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.2.1.tgz#6a53d66dac2268e53364b079f036638fbb0f0d4c"
-  integrity sha1-alPWbawiaOUzZLB58DZjj7sPDUw=
-  dependencies:
-    "@my-ui/react-datepicker" "^0.1.0"
-    "@my-ui/react-select" "0.1.0"
-    "@my-ui/react-table" "0.1.0"
-    "@my-ui/scrollbar" "^0.1.0"
-    classnames "^2.3.1"
-    react-flip-move "^3.0.4"
-    react-jss "^10.8.0"
-    react-paginate "^7.1.5"
-    react-transition-group "^4.4.2"
-    throttle-debounce "^3.0.1"
-
->>>>>>> 9cd8ded8c169d75910668a9375f555cbb76da9ca
-"@my-ui/react-datepicker@^0.1.0":
+"@my-ui/react-datepicker@^1.5.0":
   version "0.1.0"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/react-datepicker/-/react-datepicker-0.1.0.tgz#37620758055e36e426e4732cf8035fef87157cca"
   integrity sha1-N2IHWAVeNuQm5HMs+ANf74cVfMo=
-<<<<<<< HEAD
-=======
   dependencies:
     "@popperjs/core" "^2.9.2"
     classnames "^2.2.6"
@@ -1647,25 +1598,10 @@
     react-onclickoutside "^6.10.0"
     react-popper "^2.2.5"
 
-"@my-ui/react-datepicker@^1.5.0":
-  version "1.5.0"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/react-datepicker/-/react-datepicker-1.5.0.tgz#1b8def5bd5e04013f976ce03e4f8af14ad1568bc"
-  integrity sha1-G43vW9XgQBP5ds4D5PivFK0VaLw=
->>>>>>> 9cd8ded8c169d75910668a9375f555cbb76da9ca
-  dependencies:
-    "@popperjs/core" "^2.9.2"
-    classnames "^2.2.6"
-    date-fns "^2.0.1"
-    prop-types "^15.7.2"
-    react-onclickoutside "^6.10.0"
-    react-popper "^2.2.5"
-
-"@my-ui/react-select@0.1.0":
+"@my-ui/react-select@1.1.6":
   version "0.1.0"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/react-select/-/react-select-0.1.0.tgz#03da220c23d143e8d26df1984cd8fadab5f66452"
   integrity sha1-A9oiDCPRQ+jSbfGYTNj62rX2ZFI=
-<<<<<<< HEAD
-=======
   dependencies:
     "@babel/runtime" "^7.12.0"
     "@emotion/cache" "^11.4.0"
@@ -1675,49 +1611,15 @@
     prop-types "^15.6.0"
     react-transition-group "^4.3.0"
 
-"@my-ui/react-select@1.1.6":
-  version "1.1.6"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/react-select/-/react-select-1.1.6.tgz#cb2caf2ade8e96deaf45198ba73d0387a43d1f42"
-  integrity sha1-yyyvKt6Olt6vRRmLpz0Dh6Q9H0I=
->>>>>>> 9cd8ded8c169d75910668a9375f555cbb76da9ca
-  dependencies:
-    "@babel/runtime" "^7.12.0"
-    "@emotion/cache" "^11.4.0"
-    "@emotion/react" "^11.1.1"
-    "@types/react-transition-group" "^4.4.0"
-    memoize-one "^5.0.0"
-    prop-types "^15.6.0"
-    react-transition-group "^4.3.0"
-
-"@my-ui/react-table@0.1.0":
+"@my-ui/react-table@1.3.0":
   version "0.1.0"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/react-table/-/react-table-0.1.0.tgz#bdfdfc84623485909d5501d1e7bec4657acf16a1"
   integrity sha1-vf38hGI0hZCdVQHR577EZXrPFqE=
-<<<<<<< HEAD
-=======
 
-"@my-ui/react-table@1.3.0":
-  version "1.3.0"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/react-table/-/react-table-1.3.0.tgz#b1746c61b797781e45fb7bcc446949fbe71bcd41"
-  integrity sha1-sXRsYbeXeB5F+3vMRGlJ++cbzUE=
->>>>>>> 9cd8ded8c169d75910668a9375f555cbb76da9ca
-
-"@my-ui/scrollbar@^0.1.0":
+"@my-ui/scrollbar@^1.0.2":
   version "0.1.0"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/scrollbar/-/scrollbar-0.1.0.tgz#a08d8d9e1407566562ddfd82ec68740a2464fe8b"
   integrity sha1-oI2NnhQHVmVi3f2C7Gh0CiRk/os=
-<<<<<<< HEAD
-=======
-  dependencies:
-    dom-css "^2.0.0"
-    prop-types "^15.5.10"
-    raf "^3.1.0"
-
-"@my-ui/scrollbar@^1.0.2":
-  version "1.0.2"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/scrollbar/-/scrollbar-1.0.2.tgz#2cb2250f15131474142cf40d5991e2d8fda3a4cf"
-  integrity sha1-LLIlDxUTFHQULPQNWZHi2P2jpM8=
->>>>>>> 9cd8ded8c169d75910668a9375f555cbb76da9ca
   dependencies:
     dom-css "^2.0.0"
     prop-types "^15.5.10"
@@ -1755,9 +1657,9 @@
   integrity sha512-92FRmppjjqz29VMJ2dn+xdyXZBrMlE42AV6Kq6BwjWV7CNUW1hs2FtxSNLQE+gJhaZ6AAmYuO9y8dshhcBl7vA==
 
 "@reduxjs/toolkit@^1.6.1", "@reduxjs/toolkit@^1.6.2", "@reduxjs/toolkit@^1.7.1":
-  version "1.7.2"
-  resolved "https://registry.npmjs.org/@reduxjs/toolkit/-/toolkit-1.7.2.tgz#b428aaef92582379464f9de698dbb71957eafb02"
-  integrity sha512-wwr3//Ar8ZhM9bS58O+HCIaMlR4Y6SNHfuszz9hKnQuFIKvwaL3Kmjo6fpDKUOjo4Lv54Yi299ed8rofCJ/Vjw==
+  version "1.8.0"
+  resolved "https://registry.npmjs.org/@reduxjs/toolkit/-/toolkit-1.8.0.tgz#8ae875e481ed97e4a691aafa034f876bfd0413c4"
+  integrity sha512-cdfHWfcvLyhBUDicoFwG1u32JqvwKDxLxDd7zSmSoFw/RhYLOygIRtmaMjPRUUHmVmmAGAvquLLsKKU/677kSQ==
   dependencies:
     immer "^9.0.7"
     redux "^4.1.2"
@@ -1997,9 +1899,9 @@
   integrity sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==
 
 "@types/lodash@^4.14.175":
-  version "4.14.178"
-  resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.178.tgz#341f6d2247db528d4a13ddbb374bcdc80406f4f8"
-  integrity sha512-0d5Wd09ItQWH1qFbEyQ7oTQ3GZrMfth5JkbN3EvTKLXcHLRDSXeLnlvlOn0wvxVIwK5o2M8JzP/OWz7T3NRsbw==
+  version "4.14.179"
+  resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.179.tgz#490ec3288088c91295780237d2497a3aa9dfb5c5"
+  integrity sha512-uwc1x90yCKqGcIOAT6DwOSuxnrAbpkdPsUOZtwrXb4D/6wZs+6qG7QnIawDuZWg0sWpxl+ltIKCaLoMlna678w==
 
 "@types/mime@^1":
   version "1.3.2"
@@ -2017,9 +1919,9 @@
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
 "@types/node@*":
-  version "17.0.20"
-  resolved "https://registry.npmjs.org/@types/node/-/node-17.0.20.tgz#29626bd9c9119df5b8194353d34044c895fe56e3"
-  integrity sha512-Q15Clj3lZSLnhVA6yKw1G7SQz46DeL9gO1TEgfK1OQGvMdQ6TUWmCeWf1QBUNkw2BDfV52i2YuYd9OF3ZwGhjw==
+  version "17.0.21"
+  resolved "https://registry.npmjs.org/@types/node/-/node-17.0.21.tgz#864b987c0c68d07b4345845c3e63b75edd143644"
+  integrity sha512-DBZCJbhII3r90XbQxI8Y9IjjiiOGlZ0Hr32omXIZvwwZ7p4DMMXGrKXVyPfuoBOri9XNtL0UK69jYIBIsRX3QQ==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -2146,9 +2048,9 @@
   integrity sha512-9gtOPPkfyNoEqCQgx4qJKkuNm/x0R2hKR7fdl7zvTJyHnIisuE/LfvXOsYWL0o3qq6uiBnKZNNNzi3l0y/X+xw==
 
 "@types/ws@^8.2.2":
-  version "8.2.3"
-  resolved "https://registry.npmjs.org/@types/ws/-/ws-8.2.3.tgz#0bca6b03ba2f41e0fab782d4a573fe284aa907ae"
-  integrity sha512-ahRJZquUYCdOZf/rCsWg88S0/+cb9wazUBHv6HZEe3XdYaBe2zr/slM8J28X07Hn88Pnm4ezo7N8/ofnOgrPVQ==
+  version "8.5.1"
+  resolved "https://registry.npmjs.org/@types/ws/-/ws-8.5.1.tgz#79136958b48bc73d5165f286707ceb9f04471599"
+  integrity sha512-UxlLOfkuQnT2YSBCNq0x86SGOUxas6gAySFeDe2DcnEnA8655UIPoCDorWZCugcvKIL8IUI4oueUfJ1hhZSE2A==
   dependencies:
     "@types/node" "*"
 
@@ -3526,9 +3428,9 @@ date-fns@^2.0.1, date-fns@^2.16.1:
   integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
 
 dayjs@^1.10.7:
-  version "1.10.7"
-  resolved "https://registry.npmjs.org/dayjs/-/dayjs-1.10.7.tgz#2cf5f91add28116748440866a0a1d26f3a6ce468"
-  integrity sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==
+  version "1.10.8"
+  resolved "https://registry.npmjs.org/dayjs/-/dayjs-1.10.8.tgz#267df4bc6276fcb33c04a6735287e3f429abec41"
+  integrity sha512-wbNwDfBHHur9UOzNUjeKUOJ0fCb0a52Wx0xInmQ7Y8FstyajiV1NmK1e00cxsr9YrE9r7yAChE0VvpuY5Rnlow==
 
 debug@2.6.9:
   version "2.6.9"
@@ -3811,9 +3713,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.4.71:
-  version "1.4.71"
-  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.71.tgz#17056914465da0890ce00351a3b946fd4cd51ff6"
-  integrity sha512-Hk61vXXKRb2cd3znPE9F+2pLWdIOmP7GjiTj45y6L3W/lO+hSnUSUhq+6lEaERWBdZOHbk2s3YV5c9xVl3boVw==
+  version "1.4.73"
+  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.73.tgz#422f6f514315bcace9615903e4a9b6b9fa283137"
+  integrity sha512-RlCffXkE/LliqfA5m29+dVDPB2r72y2D2egMMfIy3Le8ODrxjuZNVo4NIC2yPL01N4xb4nZQLwzi6Z5tGIGLnA==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -3853,9 +3755,9 @@ end-of-stream@^1.1.0:
     once "^1.4.0"
 
 enhanced-resolve@^5.8.3:
-  version "5.9.0"
-  resolved "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.9.0.tgz#49ac24953ac8452ed8fed2ef1340fc8e043667ee"
-  integrity sha512-weDYmzbBygL7HzGGS26M3hGQx68vehdEg6VUmqSOaFzXExFqlnKuSvsEJCVGQHScS8CQMbrAqftT+AzzHNt/YA==
+  version "5.9.1"
+  resolved "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.9.1.tgz#e898cea44d9199fd92137496cff5691b910fb43e"
+  integrity sha512-jdyZMwCQ5Oj4c5+BTnkxPgDZO/BJzh/ADDmKebayyzNwjVX1AFCeGkOfxNx0mHi2+8BKC5VxUYiw3TIvoT7vhw==
   dependencies:
     graceful-fs "^4.2.4"
     tapable "^2.2.0"
@@ -6437,7 +6339,7 @@ nanoclone@^0.2.1:
   resolved "https://registry.npmjs.org/nanoclone/-/nanoclone-0.2.1.tgz#dd4090f8f1a110d26bb32c49ed2f5b9235209ed4"
   integrity sha512-wynEP02LmIbLpcYw8uBKpcfF6dmg2vcpKqxeH5UcoKEYdExslsdUA4ugFauuaeYdTB76ez6gJW8XAZ6CgkXYxA==
 
-nanoid@^3.2.0:
+nanoid@^3.3.1:
   version "3.3.1"
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.1.tgz#6347a18cac88af88f58af0b3594b723d5e99bb35"
   integrity sha512-n6Vs/3KGyxPQd6uO0eH4Bv0ojGSUvuLlIHtC3Y0kEO23YRge8H9x1GCzLn28YX0H66pMkxuaeESFq4tKISKwdw==
@@ -6928,11 +6830,11 @@ postcss-value-parser@^4.1.0, postcss-value-parser@^4.2.0:
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
 postcss@^8.2.15, postcss@^8.4.5:
-  version "8.4.6"
-  resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.6.tgz#c5ff3c3c457a23864f32cb45ac9b741498a09ae1"
-  integrity sha512-OovjwIzs9Te46vlEx7+uXB0PLijpwjXGKXjVGGPIGubGpq7uh5Xgf6D6FiJ/SzJMBosHDp6a2hiXOS97iBXcaA==
+  version "8.4.7"
+  resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.7.tgz#f99862069ec4541de386bf57f5660a6c7a0875a8"
+  integrity sha512-L9Ye3r6hkkCeOETQX6iOaWZgjp3LL6Lpqm6EtgbKrgqGGteRMNb9vzBfRL96YOSu8o7x3MfIH9Mo5cPJFGrW6A==
   dependencies:
-    nanoid "^3.2.0"
+    nanoid "^3.3.1"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
@@ -7384,7 +7286,6 @@ regenerator-runtime@^0.13.4:
   resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
   integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
 
-<<<<<<< HEAD
 regenerator-transform@^0.14.2:
   version "0.14.5"
   resolved "https://registry.npmjs.org/regenerator-transform/-/regenerator-transform-0.14.5.tgz#c98da154683671c9c4dcb16ece736517e1b7feb4"
@@ -7392,8 +7293,6 @@ regenerator-transform@^0.14.2:
   dependencies:
     "@babel/runtime" "^7.8.4"
 
-=======
->>>>>>> 9cd8ded8c169d75910668a9375f555cbb76da9ca
 regexp.prototype.flags@^1.2.0:
   version "1.4.1"
   resolved "https://registry.npmjs.org/regexp.prototype.flags/-/regexp.prototype.flags-1.4.1.tgz#b3f4c0059af9e47eca9f3f660e51d81307e72307"
@@ -7609,9 +7508,9 @@ sass-resources-loader@^2.2.3:
     loader-utils "^2.0.0"
 
 sass@^1.37.2:
-  version "1.49.8"
-  resolved "https://registry.npmjs.org/sass/-/sass-1.49.8.tgz#9bbbc5d43d14862db07f1c04b786c9da9b641828"
-  integrity sha512-NoGOjvDDOU9og9oAxhRnap71QaTjjlzrvLnKecUJ3GxhaQBrV6e7gPuSPF28u1OcVAArVojPAe4ZhOXwwC4tGw==
+  version "1.49.9"
+  resolved "https://registry.npmjs.org/sass/-/sass-1.49.9.tgz#b15a189ecb0ca9e24634bae5d1ebc191809712f9"
+  integrity sha512-YlYWkkHP9fbwaFRZQRXgDi3mXZShslVmmo+FVK3kHLUELHHEYrCmL1x6IUjC7wLS6VuJSAFXRQS/DxdsC4xL1A==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
