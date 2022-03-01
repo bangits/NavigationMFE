@@ -12,7 +12,7 @@ export interface HeaderProps {
 
 export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency }) => {
   const [wifiSpeed, setWifiSpeed] = useState<1 | 2 | 3>(calculateWifiSpeed());
-  const [isOnline, setOnline] = useState<boolean>(true);
+  const [isOnline, setOnline] = useState(true);
 
   useEffect(() => {
     if (navigator?.connection) navigator.connection.addEventListener('change', () => setWifiSpeed(calculateWifiSpeed));
