@@ -77,7 +77,6 @@ export const Sidebar = () => {
         {
           label: t.get('reportManagement'),
           // onClick: createRedirectHandler('/game/'),
-          //@ts-ignore
           icon: <Icons.ReportsIcon />,
           isActive: checkIfLocationIncludes('/reports/'),
           subItems: [
