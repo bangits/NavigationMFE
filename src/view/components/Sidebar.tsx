@@ -59,7 +59,6 @@ export const Sidebar = () => {
         },
         {
           label: t.get('gameManagement'),
-          // onClick: createRedirectHandler('/game/'),
           icon: <Icons.GamesIcon />,
           isActive: checkIfLocationIncludes('/game/'),
           subItems: [
@@ -77,7 +76,6 @@ export const Sidebar = () => {
         },
         {
           label: t.get('betReports'),
-          // onClick: createRedirectHandler('/game/'),
           icon: <Icons.ReportsIcon />,
           isActive: checkIfLocationIncludes('/reports/'),
           subItems: [

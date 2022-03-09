@@ -30,7 +30,7 @@ export const HeaderContainer = () => {
     [updateUserInfo]
   );
 
-  useEffect(() => {
+  const getUserBalance = useCallback(() => {
     balanceSocketUseCase.getBalance(user.userId).then((balance) => {
       if (Array.isArray(balance)) return;
 
@@ -40,6 +40,16 @@ export const HeaderContainer = () => {
         updateBalanceInfo(balance);
       });
     });
+  }, [updateBalanceInfo, balanceSocketUseCase]);
+
+  useEffect(() => {
+    if (user.currencyName && user.currencyName !== userBalance.currency) {
+      getUserBalance();
+    }
+  }, [user]);
+
+  useEffect(() => {
+    getUserBalance();
   }, []);
 
   return <Header username={user.email} currency={userBalance.currency} money={userBalance.money} onLogOut={onLogOut} />;
