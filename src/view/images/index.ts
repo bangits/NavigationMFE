@@ -1,1 +1,1 @@
-export const Logo = 'https://storageaccountatom.blob.core.windows.net/mfe/logo.png';
+export const Logo = 'https://storageaccountatom.blob.core.windows.net/mfe/logo.svg';
