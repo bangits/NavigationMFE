@@ -75,6 +75,18 @@ export const Sidebar = () => {
           ]
         },
         {
+          label: t.get('playerManagement'),
+          icon: <Icons.UserIcon />,
+          isActive: checkIfLocationIncludes('/players/'),
+          subItems: [
+            {
+              label: t.get('players'),
+              onClick: createRedirectHandler('/players'),
+              isActive: checkIfLocationIncludes('/players')
+            }
+          ]
+        },
+        {
           label: t.get('reportManagement'),
           // onClick: createRedirectHandler('/game/'),
           icon: <Icons.ReportsIcon />,
@@ -94,6 +106,18 @@ export const Sidebar = () => {
               label: t.get('games'),
               onClick: createRedirectHandler('/reports/games'),
               isActive: checkIfLocation('/reports/games')
+            }
+          ]
+        },
+        {
+          label: t.get('cms'),
+          icon: <Icons.CMSIcon />,
+          isActive: checkIfLocationIncludes('/cms/'),
+          subItems: [
+            {
+              label: t.get('providersAndGames'),
+              onClick: createRedirectHandler('/cms/providers-games'),
+              isActive: checkIfLocationIncludes('/cms/providers-games')
             }
           ]
         }
