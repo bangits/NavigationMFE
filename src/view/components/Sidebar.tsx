@@ -8,6 +8,7 @@ export const Sidebar = () => {
   const { user } = useContext(AuthenticatedContext);
 
   const isProvider = [8285, 8286, 8287].includes(user.userId);
+  const isTestUser = [8324].includes(user.userId);
 
   const location = useLocation();
   const t = useTranslation();
@@ -38,7 +39,7 @@ export const Sidebar = () => {
           isActive: checkIfLocation('/'),
           subItems: []
         },
-        ...(isProvider
+        ...(isProvider || isTestUser
           ? []
           : [
               {
@@ -108,7 +109,40 @@ export const Sidebar = () => {
                   }
                 ]
               }
-            ])
+            ]),
+        {
+          label: t.get('playerManagement'),
+          // onClick: createRedirectHandler('/players'),
+          icon: <Icons.UserIcon width='1.8rem' height='2.4rem' />,
+          isActive: checkIfLocation('/players/'),
+          subItems: [
+            {
+              label: t.get('players'),
+              onClick: createRedirectHandler('/players'),
+              isActive: checkIfLocationIncludes('/players')
+            }
+          ]
+        },
+        {
+          label: t.get('cmsManagement'),
+          onClick: createRedirectHandler('/cms'),
+          icon: <Icons.CMSIcon width='1.8rem' height='2.4rem' />,
+          isActive: checkIfLocationIncludes('/cms/'),
+          subItems: [
+            {
+              label: t.get('providersAndGames'),
+              onClick: createRedirectHandler('/cms/providers-games'),
+              isActive: checkIfLocation('/cms/providers-games')
+            }
+          ]
+        },
+        {
+          label: t.get('translation'),
+          onClick: createRedirectHandler('/translations'),
+          icon: <Icons.TranslationIcon width='1.8rem' height='2.4rem' />,
+          isActive: checkIfLocation('/translations'),
+          subItems: []
+        }
       ]}
       collapsedWidth={7.2}
       width={25}

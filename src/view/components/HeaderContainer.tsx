@@ -1,6 +1,7 @@
 import { AtomNavigationContext } from '@/adapter/react-context';
 import { Balance } from '@atom/account-management';
-import { AuthenticatedContext, oidcService } from '@atom/authorization';
+import { AuthenticatedContext } from '@atom/authorization';
+import { HttpService } from '@atom/common';
 import { useCallback, useContext, useEffect, useState } from 'react';
 import { Header } from './Header';
 
@@ -12,7 +13,8 @@ export const HeaderContainer = () => {
   const [userBalance, setUserBalance] = useState({ money: 0, currency: '' });
 
   const onLogOut = useCallback(() => {
-    oidcService.logOut();
+    // oidcService.logOut();
+    HttpService.logoutCb();
   }, []);
 
   const updateBalanceInfo = useCallback(
