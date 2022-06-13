@@ -2,7 +2,7 @@ import { AuthenticatedContext, isAdminUser } from '@atom/authorization';
 import { redirectToURL, useLocation, useTranslation } from '@atom/common';
 import { Icons, Sidebar as DesignSystemSidebar } from '@atom/design-system';
 import { useCallback, useContext } from 'react';
-import { Logo } from '../images';
+import { BangitsLogo, Logo, PartnerLogo } from '../images';
 
 export const Sidebar = () => {
   const { user } = useContext(AuthenticatedContext);
@@ -156,6 +156,8 @@ export const Sidebar = () => {
       collapsedWidth={7.2}
       width={25}
       logoSrc={Logo}
+      bottomLogoSrc={adminUser ? BangitsLogo : PartnerLogo}
+      bottomTitle={adminUser ? 'Bangits' : 'Quanto Apuestas'}
     />
   );
 };
