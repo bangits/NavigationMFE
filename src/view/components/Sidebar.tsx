@@ -1,4 +1,4 @@
-import { AuthenticatedContext } from '@atom/authorization';
+import { AuthenticatedContext, isAdminUser } from '@atom/authorization';
 import { redirectToURL, useLocation, useTranslation } from '@atom/common';
 import { Icons, Sidebar as DesignSystemSidebar } from '@atom/design-system';
 import { useCallback, useContext } from 'react';
@@ -9,6 +9,7 @@ export const Sidebar = () => {
 
   const isProvider = [8285, 8286, 8287].includes(user.userId);
   const isTestUser = [8324].includes(user.userId);
+  const adminUser = isAdminUser(user);
 
   const location = useLocation();
   const t = useTranslation();
@@ -39,7 +40,7 @@ export const Sidebar = () => {
           isActive: checkIfLocation('/'),
           subItems: []
         },
-        ...(isProvider || isTestUser
+        ...(isProvider || isTestUser || !adminUser
           ? []
           : [
               {
@@ -67,23 +68,27 @@ export const Sidebar = () => {
                 ]
               }
             ]),
-        {
-          label: t.get('gameManagement'),
-          icon: <Icons.GamesIcon />,
-          isActive: checkIfLocationIncludes('/game/'),
-          subItems: [
-            {
-              label: t.get('providers'),
-              onClick: createRedirectHandler('/game/providers'),
-              isActive: checkIfLocation('/game/providers')
-            },
-            {
-              label: t.get('games'),
-              onClick: createRedirectHandler('/game/'),
-              isActive: checkIfLocation('/game')
-            }
-          ]
-        },
+        ...(adminUser
+          ? [
+              {
+                label: t.get('gameManagement'),
+                icon: <Icons.GamesIcon />,
+                isActive: checkIfLocationIncludes('/game/'),
+                subItems: [
+                  {
+                    label: t.get('providers'),
+                    onClick: createRedirectHandler('/game/providers'),
+                    isActive: checkIfLocation('/game/providers')
+                  },
+                  {
+                    label: t.get('games'),
+                    onClick: createRedirectHandler('/game/'),
+                    isActive: checkIfLocation('/game')
+                  }
+                ]
+              }
+            ]
+          : []),
         ...(isProvider
           ? []
           : [
@@ -124,8 +129,8 @@ export const Sidebar = () => {
           ]
         },
         {
-          label: t.get('cmsManagement'),
-          onClick: createRedirectHandler('/cms'),
+          label: t.get('cms'),
+          // onClick: createRedirectHandler('/cms'),
           icon: <Icons.CMSIcon width='1.8rem' height='2.4rem' />,
           isActive: checkIfLocationIncludes('/cms/'),
           subItems: [
@@ -136,13 +141,17 @@ export const Sidebar = () => {
             }
           ]
         },
-        {
-          label: t.get('translation'),
-          onClick: createRedirectHandler('/translations'),
-          icon: <Icons.TranslationIcon width='1.8rem' height='2.4rem' />,
-          isActive: checkIfLocation('/translations'),
-          subItems: []
-        }
+        ...(adminUser
+          ? [
+              {
+                label: t.get('translation'),
+                onClick: createRedirectHandler('/translations'),
+                icon: <Icons.TranslationIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocation('/translations'),
+                subItems: []
+              }
+            ]
+          : [])
       ]}
       collapsedWidth={7.2}
       width={25}

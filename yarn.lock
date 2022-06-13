@@ -25,23 +25,7 @@
     reflect-metadata "^0.1.13"
     single-spa-react "^4.2.0"
 
-"@atom/account-management@^1.1.7":
-  version "0.2.0"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/account-management/-/account-management-0.2.0.tgz#09f9961af1c1fd35395a49fb0fc394298492d2f1"
-  integrity sha1-CfmWGvHB/TU5Wkn7D8OUKYSS0vE=
-  dependencies:
-    "@automapper/classes" "^7.0.2"
-    "@automapper/core" "^7.0.2"
-    "@reduxjs/toolkit" "^1.7.1"
-    inversify "^5.1.1"
-    react "^17.0.2"
-    react-dom "^17.0.2"
-    react-redux "^7.2.5"
-    react-router-dom "^5.3.0"
-    reflect-metadata "^0.1.13"
-    single-spa-react "^4.2.0"
-
-"@atom/authorization@^0.1.0", "@atom/authorization@^1.2.3", "@atom/authorization@^1.2.9":
+"@atom/authorization@^0.1.0":
   version "0.1.0"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/authorization/-/authorization-0.1.0.tgz#53821524dc41fae2d8657298429cdcb2be4d9d34"
   integrity sha1-U4IVJNxB+uLYZXKYQpzcsr5NnTQ=
@@ -62,6 +46,47 @@
     single-spa "^5.9.3"
     single-spa-react "^4.4.0"
     yup "^0.32.10"
+
+"@atom/authorization@^0.1.3", "@atom/authorization@^1.2.9":
+  version "0.1.3"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/authorization/-/authorization-0.1.3.tgz#a1821c4d580c839a5d877140caa8c237fac57b36"
+  integrity sha1-oYIcTVgMg5pdh3FAyqjCN/rFezY=
+  dependencies:
+    "@atom/common" "^0.1.12"
+    "@atom/design-system" "^3.1.0"
+    "@atom/user-management" "^0.2.0"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.1"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    oidc-client "^1.11.5"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa "^5.9.3"
+    single-spa-react "^4.4.0"
+    yup "^0.32.10"
+
+"@atom/common@^0.1.12":
+  version "0.1.24"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-0.1.24.tgz#6c0d8c33068f8f76ba73c03ea50e22e6fc01dd5e"
+  integrity sha1-bA2MMwaPj3a6c8A+pQ4i5vwB3V4=
+  dependencies:
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@microsoft/signalr" "^6.0.1"
+    "@microsoft/signalr-protocol-msgpack" "^6.0.1"
+    "@my-ui/core" "^2.28.18"
+    axios "^0.23.0"
+    dayjs "^1.10.7"
+    formik "^2.2.9"
+    query-string "^7.0.1"
+    react "^17.0.2"
+    single-spa "^5.9.3"
+    single-spa-react "^4.6.0"
 
 "@atom/common@^0.1.20":
   version "0.1.20"
@@ -109,6 +134,21 @@
     react-sortable-hoc "^2.0.0"
     react-transition-group "^4.4.2"
 
+"@atom/design-system@^3.1.0":
+  version "3.5.5"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.5.5.tgz#6e0045c4fd51d304679e5bb1fb9e291974b091f1"
+  integrity sha1-bgBFxP1R0wRnnlux+54pGXSwkfE=
+  dependencies:
+    "@my-ui/core" "^0.7.1"
+    classnames "^2.3.1"
+    latest "^0.2.0"
+    react "^17.0.2"
+    react-cropper "^2.1.8"
+    react-dom "^17.0.2"
+    react-jss "^10.8.2"
+    react-sortable-hoc "^2.0.0"
+    react-transition-group "^4.4.2"
+
 "@atom/design-system@^3.3.5":
   version "3.3.5"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.3.5.tgz#0b24b2de25da8443c297cb3bd110d6ea451f5452"
@@ -124,7 +164,7 @@
     react-sortable-hoc "^2.0.0"
     react-transition-group "^4.4.2"
 
-"@atom/game-management@^1.0.3":
+"@atom/game-management@^0.1.0":
   version "0.1.6"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/game-management/-/game-management-0.1.6.tgz#f3e3eb07d089e97d428fc9170dd54f27a35fb609"
   integrity sha1-8+PrB9CJ6X1Cj8kXDdVPJ6Nftgk=
@@ -147,7 +187,26 @@
     single-spa-react "^4.2.0"
     yup "^0.32.10"
 
-"@atom/partner-management@^1.0.6", "@atom/partner-management@^1.1.0":
+"@atom/partner-management@^0.1.0":
+  version "0.1.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/partner-management/-/partner-management-0.1.0.tgz#83d8c42b7aa7bedfe9faf6c9d587e8265b1cc7b8"
+  integrity sha1-g9jEK3qnvt/p+vbJ1YfoJlscx7g=
+  dependencies:
+    "@atom/authorization" "^1.2.9"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.2"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+    yup "^0.32.10"
+
+"@atom/partner-management@^1.1.0":
   version "1.1.0"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/partner-management/-/partner-management-1.1.0.tgz#fa89a08a8472b0a741e66783a30bcf919a210491"
   integrity sha1-+omgioRysKdB5meDowvPkZohBJE=
@@ -166,15 +225,15 @@
     single-spa-react "^4.2.0"
     yup "^0.32.10"
 
-"@atom/user-management@^1.0.4":
-  version "0.1.0"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/user-management/-/user-management-0.1.0.tgz#8368730c09c01e3509f5ecea58a80fbd0ff90c5d"
-  integrity sha1-g2hzDAnAHjUJ9ezqWKgPvQ/5DF0=
+"@atom/user-management@^0.2.0", "@atom/user-management@^1.0.4":
+  version "0.2.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/user-management/-/user-management-0.2.0.tgz#45c88336b37fbb63fe5f02d650fb5073c3173c7b"
+  integrity sha1-RciDNrN/u2P+XwLWUPtQc8MXPHs=
   dependencies:
-    "@atom/account-management" "^1.1.7"
-    "@atom/authorization" "^1.2.3"
-    "@atom/game-management" "^1.0.3"
-    "@atom/partner-management" "^1.0.6"
+    "@atom/account-management" "^0.1.0"
+    "@atom/authorization" "^0.1.0"
+    "@atom/game-management" "^0.1.0"
+    "@atom/partner-management" "^0.1.0"
     "@automapper/classes" "^7.0.2"
     "@automapper/core" "^7.0.2"
     "@reduxjs/toolkit" "^1.6.2"
