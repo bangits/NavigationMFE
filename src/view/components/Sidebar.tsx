@@ -7,8 +7,8 @@ import { BangitsLogo, Logo, PartnerLogo } from '../images';
 export const Sidebar = () => {
   const { user } = useContext(AuthenticatedContext);
 
-  const isProvider = [8285, 8286, 8287].includes(user.userId);
-  const isTestUser = [8324].includes(user.userId);
+  const isProvider = [8285, 8286, 8287].includes(+user.userId);
+  const isTestUser = [8324].includes(+user.userId);
   const adminUser = isAdminUser(user);
 
   const location = useLocation();
@@ -157,7 +157,7 @@ export const Sidebar = () => {
       width={25}
       logoSrc={Logo}
       bottomLogoSrc={adminUser ? BangitsLogo : PartnerLogo}
-      bottomTitle={adminUser ? 'Bangits' : 'Quanto Apuestas'}
+      bottomTitle={adminUser ? 'Bangits' : 'Qanto Apuestas'}
     />
   );
 };
