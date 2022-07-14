@@ -1,8 +1,8 @@
 import { AuthenticatedContext, isAdminUser } from '@atom/authorization';
 import { redirectToURL, useLocation, useTranslation } from '@atom/common';
 import { Icons, Sidebar as DesignSystemSidebar } from '@atom/design-system';
-import { useCallback, useContext } from 'react';
-import { BangitsLogo, Logo, PartnerLogo } from '../images';
+import { useCallback, useContext, useMemo } from 'react';
+import { BangitsLogo, Logo, QantoApuestasLogo } from '../images';
 
 export const Sidebar = () => {
   const { user } = useContext(AuthenticatedContext);
@@ -26,6 +26,28 @@ export const Sidebar = () => {
   const checkIfLocation = useCallback(
     (url: string) => location.pathname === url || location.pathname === url + '/' || location.pathname + '/' === url,
     [location]
+  );
+
+  const projectsInformation = useMemo<
+    Record<
+      string,
+      {
+        name: string;
+        logo: string;
+      }
+    >
+  >(
+    () => ({
+      1: {
+        logo: QantoApuestasLogo,
+        name: 'Qanto Apuestas'
+      },
+      2: {
+        logo: BangitsLogo,
+        name: 'Bangits'
+      }
+    }),
+    []
   );
 
   return (
@@ -68,7 +90,7 @@ export const Sidebar = () => {
                 ]
               }
             ]),
-        ...(adminUser
+        ...(adminUser || isProvider
           ? [
               {
                 label: t.get('gameManagement'),
@@ -89,59 +111,59 @@ export const Sidebar = () => {
               }
             ]
           : []),
-        ...(isProvider
-          ? []
-          : [
+        {
+          label: t.get('betReports'),
+          icon: <Icons.ReportsIcon />,
+          isActive: checkIfLocationIncludes('/reports/'),
+          subItems: [
+            {
+              label: t.get('reportByProviders'),
+              onClick: createRedirectHandler('/reports/providers'),
+              isActive: checkIfLocation('/reports/providers')
+            },
+            {
+              label: t.get('reportByPlayers'),
+              onClick: createRedirectHandler('/reports/players'),
+              isActive: checkIfLocation('/reports/players')
+            },
+            {
+              label: t.get('reportByGames'),
+              onClick: createRedirectHandler('/reports/games'),
+              isActive: checkIfLocation('/reports/games')
+            }
+          ]
+        },
+        ...(!isProvider
+          ? [
               {
-                label: t.get('betReports'),
-                icon: <Icons.ReportsIcon />,
-                isActive: checkIfLocationIncludes('/reports/'),
+                label: t.get('playerManagement'),
+                // onClick: createRedirectHandler('/players'),
+                icon: <Icons.UserIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocation('/players/'),
                 subItems: [
                   {
-                    label: t.get('reportByProviders'),
-                    onClick: createRedirectHandler('/reports/providers'),
-                    isActive: checkIfLocation('/reports/providers')
-                  },
+                    label: t.get('players'),
+                    onClick: createRedirectHandler('/players'),
+                    isActive: checkIfLocationIncludes('/players')
+                  }
+                ]
+              },
+              {
+                label: t.get('cms'),
+                // onClick: createRedirectHandler('/cms'),
+                icon: <Icons.CMSIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocationIncludes('/cms/'),
+                subItems: [
                   {
-                    label: t.get('reportByPlayers'),
-                    onClick: createRedirectHandler('/reports/players'),
-                    isActive: checkIfLocation('/reports/players')
-                  },
-                  {
-                    label: t.get('reportByGames'),
-                    onClick: createRedirectHandler('/reports/games'),
-                    isActive: checkIfLocation('/reports/games')
+                    label: t.get('providersAndGames'),
+                    onClick: createRedirectHandler('/cms/providers-games'),
+                    isActive: checkIfLocation('/cms/providers-games')
                   }
                 ]
               }
-            ]),
-        {
-          label: t.get('playerManagement'),
-          // onClick: createRedirectHandler('/players'),
-          icon: <Icons.UserIcon width='1.8rem' height='2.4rem' />,
-          isActive: checkIfLocation('/players/'),
-          subItems: [
-            {
-              label: t.get('players'),
-              onClick: createRedirectHandler('/players'),
-              isActive: checkIfLocationIncludes('/players')
-            }
-          ]
-        },
-        {
-          label: t.get('cms'),
-          // onClick: createRedirectHandler('/cms'),
-          icon: <Icons.CMSIcon width='1.8rem' height='2.4rem' />,
-          isActive: checkIfLocationIncludes('/cms/'),
-          subItems: [
-            {
-              label: t.get('providersAndGames'),
-              onClick: createRedirectHandler('/cms/providers-games'),
-              isActive: checkIfLocation('/cms/providers-games')
-            }
-          ]
-        },
-        ...(adminUser
+            ]
+          : []),
+        ...(adminUser && !isProvider
           ? [
               {
                 label: t.get('translation'),
@@ -156,8 +178,8 @@ export const Sidebar = () => {
       collapsedWidth={7.2}
       width={25}
       logoSrc={Logo}
-      bottomLogoSrc={adminUser ? BangitsLogo : PartnerLogo}
-      bottomTitle={adminUser ? 'Bangits' : 'Qanto Apuestas'}
+      bottomLogoSrc={projectsInformation[user.projectId].logo}
+      bottomTitle={projectsInformation[user.projectId].name}
     />
   );
 };
