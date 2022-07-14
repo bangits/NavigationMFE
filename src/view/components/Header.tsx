@@ -1,6 +1,6 @@
 import { convertDate } from '@atom/common';
 import { Header as DesignSystemHeader } from '@atom/design-system';
-import { BalanceCorrection } from '@atom/player-management';
+import { AtomPlayerProvider, BalanceCorrection } from '@atom/player-management';
 import { FC, useEffect, useState } from 'react';
 import { calculateWifiSpeed } from '../helpers';
 
@@ -47,7 +47,9 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
         onCorrectBalanceClick={() => setShowCorrectionDialog(true)}
       />
 
-      <BalanceCorrection open={showCorrectionDialog} onClose={() => setShowCorrectionDialog(false)} />
+      <AtomPlayerProvider>
+        <BalanceCorrection open={showCorrectionDialog} onClose={() => setShowCorrectionDialog(false)} />
+      </AtomPlayerProvider>
     </>
   );
 };
