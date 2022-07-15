@@ -1,6 +1,5 @@
 import { convertDate } from '@atom/common';
 import { Header as DesignSystemHeader } from '@atom/design-system';
-import { AtomPlayerProvider, BalanceCorrection } from '@atom/player-management';
 import { FC, useEffect, useState } from 'react';
 import { calculateWifiSpeed } from '../helpers';
 
@@ -14,7 +13,6 @@ export interface HeaderProps {
 export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency }) => {
   const [wifiSpeed, setWifiSpeed] = useState<1 | 2 | 3>(calculateWifiSpeed());
   const [isOnline, setOnline] = useState(true);
-  const [showCorrectionDialog, setShowCorrectionDialog] = useState(false);
 
   useEffect(() => {
     if (navigator?.connection) navigator.connection.addEventListener('change', () => setWifiSpeed(calculateWifiSpeed));
@@ -44,12 +42,7 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
         localTime='Local Time'
         speed={wifiSpeed}
         isOffline={!isOnline}
-        onCorrectBalanceClick={() => setShowCorrectionDialog(true)}
       />
-
-      <AtomPlayerProvider>
-        <BalanceCorrection open={showCorrectionDialog} onClose={() => setShowCorrectionDialog(false)} />
-      </AtomPlayerProvider>
     </>
   );
 };

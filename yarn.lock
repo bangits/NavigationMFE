@@ -166,17 +166,10 @@
     react-sortable-hoc "^2.0.0"
     react-transition-group "^4.4.2"
 
-<<<<<<< HEAD
-"@atom/design-system@^3.3.5":
-  version "3.3.5"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.3.5.tgz"
-  integrity sha1-CySy3iXahEPCl8s70RDW6kUfVFI=
-=======
-"@atom/design-system@^3.7.0":
-  version "3.7.0"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.7.0.tgz#3885c1463f4d6524bcca9984813ac231eb9f9b03"
-  integrity sha1-OIXBRj9NZSS8ypmEgTrCMeufmwM=
->>>>>>> 93c3cbb2c58dbf2a825ac0ca038aa18d8ea0f22f
+"@atom/design-system@^3.7.1":
+  version "3.7.1"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.7.1.tgz#85b52e54bbe9eee4814e99855307bc9889a3496b"
+  integrity sha1-hbUuVLvp7uSBTpmFUwe8mImjSWs=
   dependencies:
     "@my-ui/core" "^0.7.6"
     classnames "^2.3.1"
@@ -188,10 +181,10 @@
     react-sortable-hoc "^2.0.0"
     react-transition-group "^4.4.2"
 
-"@atom/design-system@^3.7.1":
-  version "3.7.1"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.7.1.tgz#85b52e54bbe9eee4814e99855307bc9889a3496b"
-  integrity sha1-hbUuVLvp7uSBTpmFUwe8mImjSWs=
+"@atom/design-system@^3.8.5":
+  version "3.8.5"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.8.5.tgz#ac324c825f514ee7a90e54e07d011a460ae45cf4"
+  integrity sha1-rDJMgl9RTuepDlTgfQEaRgrkXPQ=
   dependencies:
     "@my-ui/core" "^0.7.6"
     classnames "^2.3.1"
@@ -1318,11 +1311,7 @@
 
 "@babel/runtime@^7.8.4":
   version "7.18.6"
-<<<<<<< HEAD
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.6.tgz#6a1ef59f838debd670421f8c7f2cbb8da9751580"
-=======
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.18.6.tgz#6a1ef59f838debd670421f8c7f2cbb8da9751580"
->>>>>>> 93c3cbb2c58dbf2a825ac0ca038aa18d8ea0f22f
   integrity sha512-t9wi7/AW6XtKahAe20Yw0/mMljKq0B1r2fPdvaAdV/KPDZewFXdaaa6K7lxmZBZ8FBNpCiAT6iHPmd6QO9bKfQ==
   dependencies:
     regenerator-runtime "^0.13.4"
@@ -1781,17 +1770,26 @@
     react-transition-group "^4.4.2"
     throttle-debounce "^3.0.1"
 
-<<<<<<< HEAD
-"@my-ui/core@^2.28.18":
-  version "0.7.6"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.7.6.tgz#074f76848e5885ae0853b7fcc2cae1811cb846e4"
-  integrity sha1-B092hI5Yha4IU7f8wsrhgRy4RuQ=
-=======
-"@my-ui/core@^0.7.6", "@my-ui/core@^2.28.18":
+"@my-ui/core@^0.7.6":
   version "0.7.7"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.7.7.tgz#08e5a8296f22bb71664f613c34b67ee53e2648b7"
   integrity sha1-COWoKW8iu3FmT2E8NLZ+5T4mSLc=
->>>>>>> 93c3cbb2c58dbf2a825ac0ca038aa18d8ea0f22f
+  dependencies:
+    "@my-ui/react-datepicker" "^1.5.0"
+    "@my-ui/react-select" "1.1.6"
+    "@my-ui/react-table" "1.3.0"
+    "@my-ui/scrollbar" "^1.0.2"
+    classnames "^2.3.1"
+    react-flip-move "^3.0.4"
+    react-jss "^10.8.0"
+    react-paginate "^7.1.5"
+    react-transition-group "^4.4.2"
+    throttle-debounce "^3.0.1"
+
+"@my-ui/core@^2.28.18":
+  version "0.8.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.8.0.tgz#09a2486dddbbef677a8ff87c0a4b855a03ea38c9"
+  integrity sha1-CaJIbd2772d6j/h8CkuFWgPqOMk=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
