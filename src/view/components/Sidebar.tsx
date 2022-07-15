@@ -135,9 +135,34 @@ export const Sidebar = () => {
           isActive: checkIfLocationIncludes('/cms/'),
           subItems: [
             {
+              label: t.get('website'),
+              onClick: createRedirectHandler('/cms/website'),
+              isActive: checkIfLocationIncludes('/cms/website')
+            },
+            {
               label: t.get('providersAndGames'),
               onClick: createRedirectHandler('/cms/providers-games'),
               isActive: checkIfLocation('/cms/providers-games')
+            },
+            {
+              label: t.get('slidersAndBanners'),
+              onClick: createRedirectHandler('/cms/slider-and-banners'),
+              isActive: checkIfLocationIncludes('/cms/slider-and-banners')
+            },
+            {
+              label: t.get('gameCategories'),
+              onClick: createRedirectHandler('/cms/game-categories'),
+              isActive: checkIfLocationIncludes('/cms/game-categories')
+            },
+            {
+              label: t.get('pages'),
+              onClick: createRedirectHandler('/cms/pages'),
+              isActive: checkIfLocationIncludes('/cms/pages')
+            },
+            {
+              label: t.get('labels'),
+              onClick: createRedirectHandler('/cms/labels'),
+              isActive: checkIfLocationIncludes('/cms/labels')
             }
           ]
         },
