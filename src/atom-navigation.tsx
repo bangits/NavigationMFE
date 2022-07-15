@@ -38,7 +38,9 @@ export const headerApplication = singleSpaReact({
     return (
       <AuthenticatedProvider>
         <AtomNavigationProvider>
-          <HeaderContainer />
+          <AtomCommonProvider initializeLanguage>
+            <HeaderContainer />
+          </AtomCommonProvider>
         </AtomNavigationProvider>
       </AuthenticatedProvider>
     );

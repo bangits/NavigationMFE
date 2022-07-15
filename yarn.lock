@@ -25,6 +25,23 @@
     reflect-metadata "^0.1.13"
     single-spa-react "^4.2.0"
 
+"@atom/account-management@^0.1.2":
+  version "0.1.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/account-management/-/account-management-0.1.2.tgz#1425473b0eb19e9e450a38a331ade65726c3c756"
+  integrity sha1-FCVHOw6xnp5FCjijMa3mVybDx1Y=
+  dependencies:
+    "@atom/authorization" "^0.1.0"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.7.1"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+
 "@atom/authorization@^0.1.0":
   version "0.1.0"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/authorization/-/authorization-0.1.0.tgz"
@@ -149,12 +166,34 @@
     react-sortable-hoc "^2.0.0"
     react-transition-group "^4.4.2"
 
+<<<<<<< HEAD
 "@atom/design-system@^3.3.5":
   version "3.3.5"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.3.5.tgz"
   integrity sha1-CySy3iXahEPCl8s70RDW6kUfVFI=
+=======
+"@atom/design-system@^3.7.0":
+  version "3.7.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.7.0.tgz#3885c1463f4d6524bcca9984813ac231eb9f9b03"
+  integrity sha1-OIXBRj9NZSS8ypmEgTrCMeufmwM=
+>>>>>>> 93c3cbb2c58dbf2a825ac0ca038aa18d8ea0f22f
   dependencies:
-    "@my-ui/core" "^0.7.1"
+    "@my-ui/core" "^0.7.6"
+    classnames "^2.3.1"
+    latest "^0.2.0"
+    react "^17.0.2"
+    react-cropper "^2.1.8"
+    react-dom "^17.0.2"
+    react-jss "^10.8.2"
+    react-sortable-hoc "^2.0.0"
+    react-transition-group "^4.4.2"
+
+"@atom/design-system@^3.7.1":
+  version "3.7.1"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.7.1.tgz#85b52e54bbe9eee4814e99855307bc9889a3496b"
+  integrity sha1-hbUuVLvp7uSBTpmFUwe8mImjSWs=
+  dependencies:
+    "@my-ui/core" "^0.7.6"
     classnames "^2.3.1"
     latest "^0.2.0"
     react "^17.0.2"
@@ -212,6 +251,28 @@
   integrity sha1-+omgioRysKdB5meDowvPkZohBJE=
   dependencies:
     "@atom/authorization" "^1.2.9"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.2"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+    yup "^0.32.10"
+
+"@atom/player-management@^0.1.4":
+  version "0.1.4"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/player-management/-/player-management-0.1.4.tgz#d76c4d883711d62c2fa169bb8ee14f2219253253"
+  integrity sha1-12xNiDcR1iwvoWm7juFPIhklMlM=
+  dependencies:
+    "@atom/account-management" "^0.1.2"
+    "@atom/authorization" "^0.1.0"
+    "@atom/common" "^2.1.6"
+    "@atom/design-system" "^3.7.1"
     "@automapper/classes" "^7.0.2"
     "@automapper/core" "^7.0.2"
     "@reduxjs/toolkit" "^1.6.2"
@@ -1257,7 +1318,11 @@
 
 "@babel/runtime@^7.8.4":
   version "7.18.6"
+<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.6.tgz#6a1ef59f838debd670421f8c7f2cbb8da9751580"
+=======
+  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.18.6.tgz#6a1ef59f838debd670421f8c7f2cbb8da9751580"
+>>>>>>> 93c3cbb2c58dbf2a825ac0ca038aa18d8ea0f22f
   integrity sha512-t9wi7/AW6XtKahAe20Yw0/mMljKq0B1r2fPdvaAdV/KPDZewFXdaaa6K7lxmZBZ8FBNpCiAT6iHPmd6QO9bKfQ==
   dependencies:
     regenerator-runtime "^0.13.4"
@@ -1716,10 +1781,17 @@
     react-transition-group "^4.4.2"
     throttle-debounce "^3.0.1"
 
+<<<<<<< HEAD
 "@my-ui/core@^2.28.18":
   version "0.7.6"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.7.6.tgz#074f76848e5885ae0853b7fcc2cae1811cb846e4"
   integrity sha1-B092hI5Yha4IU7f8wsrhgRy4RuQ=
+=======
+"@my-ui/core@^0.7.6", "@my-ui/core@^2.28.18":
+  version "0.7.7"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.7.7.tgz#08e5a8296f22bb71664f613c34b67ee53e2648b7"
+  integrity sha1-COWoKW8iu3FmT2E8NLZ+5T4mSLc=
+>>>>>>> 93c3cbb2c58dbf2a825ac0ca038aa18d8ea0f22f
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
@@ -2965,6 +3037,14 @@ babel-preset-jest@^27.5.1:
   dependencies:
     babel-plugin-jest-hoist "^27.5.1"
     babel-preset-current-node-syntax "^1.0.0"
+
+babel-runtime@^6.26.0:
+  version "6.26.0"
+  resolved "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
+  integrity sha512-ITKNuq2wKlW1fJg9sSW52eepoYgZBggvOAHC0u/CYu/qxQ9EVzThCgR69BnSXLHjy2f7SY5zaQ4yt7H9ZVxY2g==
+  dependencies:
+    core-js "^2.4.0"
+    regenerator-runtime "^0.11.0"
 
 babel-runtime@^7.0.0-beta.3:
   version "7.0.0-beta.3"
