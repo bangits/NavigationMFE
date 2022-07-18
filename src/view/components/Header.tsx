@@ -1,7 +1,8 @@
-import { convertDate } from '@atom/common';
+import { AuthenticatedContext, isBetShopUser } from '@atom/authorization';
+import { convertDate, useTranslation } from '@atom/common';
 import { Header as DesignSystemHeader } from '@atom/design-system';
 import { AtomPlayerProvider, BalanceCorrection } from '@atom/player-management';
-import { FC, useEffect, useState } from 'react';
+import { FC, useContext, useEffect, useState } from 'react';
 import { calculateWifiSpeed } from '../helpers';
 
 export interface HeaderProps {
@@ -12,9 +13,14 @@ export interface HeaderProps {
 }
 
 export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency }) => {
+  const { user } = useContext(AuthenticatedContext);
+
   const [wifiSpeed, setWifiSpeed] = useState<1 | 2 | 3>(calculateWifiSpeed());
   const [isOnline, setOnline] = useState(true);
   const [showCorrectionDialog, setShowCorrectionDialog] = useState(false);
+  const t = useTranslation();
+
+  const correctBalanceLabel = isBetShopUser(user) ? t.get('cashInOut') : t.get('correctBalance');
 
   useEffect(() => {
     if (navigator?.connection) navigator.connection.addEventListener('change', () => setWifiSpeed(calculateWifiSpeed));
@@ -45,6 +51,7 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
         speed={wifiSpeed}
         isOffline={!isOnline}
         onCorrectBalanceClick={() => setShowCorrectionDialog(true)}
+        correctBalanceLabel={correctBalanceLabel}
       />
 
       <AtomPlayerProvider>
