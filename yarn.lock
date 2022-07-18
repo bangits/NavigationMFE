@@ -187,10 +187,10 @@
     react-sortable-hoc "^2.0.0"
     react-transition-group "^4.4.2"
 
-"@atom/design-system@^3.8.8":
-  version "3.8.8"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.8.8.tgz#428ab304250335517f977d770f4dd1035205f4e0"
-  integrity sha1-QoqzBCUDNVF/l313D03RA1IF9OA=
+"@atom/design-system@^4.0.1":
+  version "4.0.1"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.0.1.tgz#79797cfb9f03e7d6a77c571e087b730e7ecbcef3"
+  integrity sha1-eXl8+58D59anfFceCHtzDn7LzvM=
   dependencies:
     "@my-ui/core" "^0.7.9"
     classnames "^2.3.1"
@@ -1829,9 +1829,9 @@
     throttle-debounce "^3.0.1"
 
 "@my-ui/core@^2.28.18":
-  version "0.8.1"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.8.1.tgz#eafc1b5d0892e0d526187c91ee030d0a2c247fcf"
-  integrity sha1-6vwbXQiS4NUmGHyR7gMNCiwkf88=
+  version "0.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.8.2.tgz#57e79607a0efe37970fabdd6b114dadd5a9a13c5"
+  integrity sha1-V+eWB6Dv43lw+r3WsRTa3VqaE8U=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
@@ -9141,6 +9141,11 @@ standalone-single-spa-webpack-plugin@^2.0.2:
   resolved "https://registry.yarnpkg.com/standalone-single-spa-webpack-plugin/-/standalone-single-spa-webpack-plugin-2.1.0.tgz#72e3de510eef43c0e8102f43e50de5f71e2b1bcb"
   integrity sha512-NV4CcyX8pDnAFdtr2gcHYbQCcb8ur+mgWVPjQmI9zCKfL70tdlka2AEKoOdtE27cDDgInD70PI87hdUU48hcdg==
 
+start@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.npmjs.org/start/-/start-5.1.0.tgz#1c171f0ef9487f56d0ab9a755ace860169208763"
+  integrity sha512-lirwWQmvBC65bnxU3HzKx5m7vfZJZTx/FrKyPWbtobcvujGbinQQRrNodtcgkp4mTZ00umzDeg7lraN351l0aA==
+
 statuses@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-2.0.1.tgz#55cb000ccf1d48728bd23c685a063998cf1a1b63"
@@ -10351,6 +10356,11 @@ yargs@^16.2.0:
     string-width "^4.2.0"
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
+
+yarn@^1.22.19:
+  version "1.22.19"
+  resolved "https://registry.npmjs.org/yarn/-/yarn-1.22.19.tgz#4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
+  integrity sha512-/0V5q0WbslqnwP91tirOvldvYISzaqhClxzyUKXYxs07yUILIs5jx/k6CFe8bvKSkds5w+eiOqta39Wk3WxdcQ==
 
 yup@^0.32.10:
   version "0.32.11"
