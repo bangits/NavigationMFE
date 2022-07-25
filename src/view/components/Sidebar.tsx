@@ -165,11 +165,6 @@ export const Sidebar = () => {
                     isActive: checkIfLocationIncludes('/cms/website')
                   },
                   {
-                    label: t.get('providersAndGames'),
-                    onClick: createRedirectHandler('/cms/providers-games'),
-                    isActive: checkIfLocation('/cms/providers-games')
-                  },
-                  {
                     label: t.get('slidersAndBanners'),
                     onClick: createRedirectHandler('/cms/slider-and-banners'),
                     isActive: checkIfLocationIncludes('/cms/slider-and-banners')
