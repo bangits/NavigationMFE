@@ -2,13 +2,14 @@ import { AuthenticatedContext, isAdminUser } from '@atom/authorization';
 import { redirectToURL, useLocation, useTranslation } from '@atom/common';
 import { Icons, Sidebar as DesignSystemSidebar } from '@atom/design-system';
 import { useCallback, useContext, useMemo } from 'react';
-import { BangitsLogo, Logo, QantoApuestasLogo } from '../images';
+import { BangitsLogo, KingBetLogo, Logo, QantoApuestasLogo } from '../images';
 
 export const Sidebar = () => {
   const { user } = useContext(AuthenticatedContext);
 
   const isProvider = [8285, 8286, 8287].includes(+user.userId);
   const isTestUser = [8324].includes(+user.userId);
+  const isCommertionUser = [8365].includes(+user.userId);
   const adminUser = isAdminUser(user);
 
   const location = useLocation();
@@ -45,6 +46,10 @@ export const Sidebar = () => {
       2: {
         logo: BangitsLogo,
         name: 'Bangits'
+      },
+      3: {
+        logo: KingBetLogo,
+        name: 'King Bet'
       }
     }),
     []
@@ -58,25 +63,13 @@ export const Sidebar = () => {
         {
           label: t.get('dashboard'),
           onClick: createRedirectHandler('/'),
-          icon: <Icons.HomeIcon width='1.8rem' height='2.4rem' />,
+          icon: <Icons.DashboardIcon width='1.8rem' height='2.4rem' />,
           isActive: checkIfLocation('/'),
           subItems: []
         },
-        ...(isProvider || isTestUser || !adminUser
+        ...(!isCommertionUser && (isProvider || isTestUser || !adminUser)
           ? []
           : [
-              {
-                label: t.get('partnerManagement'),
-                icon: <Icons.PartnersIcon />,
-                isActive: checkIfLocationIncludes('/partners/'),
-                subItems: [
-                  {
-                    label: t.get('partners'),
-                    onClick: createRedirectHandler('/partners/'),
-                    isActive: checkIfLocationIncludes('/partners/')
-                  }
-                ]
-              },
               {
                 label: t.get('userManagement'),
                 icon: <Icons.UsersIcon />,
@@ -86,11 +79,41 @@ export const Sidebar = () => {
                     label: t.get('users'),
                     onClick: createRedirectHandler('/users/'),
                     isActive: checkIfLocationIncludes('/users/')
-                  }
+                  },
+                  ...(isCommertionUser
+                    ? [
+                        {
+                          label: 'Roles',
+                          onClick: createRedirectHandler('/users/roles'),
+                          isActive: checkIfLocationIncludes('/users/roles')
+                        },
+                        {
+                          label: 'Permissions',
+                          onClick: createRedirectHandler('/users/permissions'),
+                          isActive: checkIfLocationIncludes('/users/permissions')
+                        }
+                      ]
+                    : [])
                 ]
-              }
+              },
+              ...(!isCommertionUser
+                ? [
+                    {
+                      label: t.get('partnerManagement'),
+                      icon: <Icons.PartnersIcon />,
+                      isActive: checkIfLocationIncludes('/partners/'),
+                      subItems: [
+                        {
+                          label: t.get('partners'),
+                          onClick: createRedirectHandler('/partners/'),
+                          isActive: checkIfLocationIncludes('/partners/')
+                        }
+                      ]
+                    }
+                  ]
+                : [])
             ]),
-        ...(adminUser || isProvider
+        ...(!isCommertionUser && (adminUser || isProvider)
           ? [
               {
                 label: t.get('gameManagement'),
@@ -111,29 +134,7 @@ export const Sidebar = () => {
               }
             ]
           : []),
-        {
-          label: t.get('betReports'),
-          icon: <Icons.ReportsIcon />,
-          isActive: checkIfLocationIncludes('/reports/'),
-          subItems: [
-            {
-              label: t.get('reportByProviders'),
-              onClick: createRedirectHandler('/reports/providers'),
-              isActive: checkIfLocation('/reports/providers')
-            },
-            {
-              label: t.get('reportByPlayers'),
-              onClick: createRedirectHandler('/reports/players'),
-              isActive: checkIfLocation('/reports/players')
-            },
-            {
-              label: t.get('reportByGames'),
-              onClick: createRedirectHandler('/reports/games'),
-              isActive: checkIfLocation('/reports/games')
-            }
-          ]
-        },
-        ...(!isProvider
+        ...(!isProvider || isCommertionUser
           ? [
               {
                 label: t.get('playerManagement'),
@@ -159,41 +160,45 @@ export const Sidebar = () => {
                     onClick: createRedirectHandler('/cms/providers-games'),
                     isActive: checkIfLocation('/cms/providers-games')
                   },
-                  {
-                    label: t.get('website'),
-                    onClick: createRedirectHandler('/cms/website'),
-                    isActive: checkIfLocationIncludes('/cms/website')
-                  },
-                  {
-                    label: t.get('providersAndGames'),
-                    onClick: createRedirectHandler('/cms/providers-games'),
-                    isActive: checkIfLocation('/cms/providers-games')
-                  },
-                  {
-                    label: t.get('slidersAndBanners'),
-                    onClick: createRedirectHandler('/cms/slider-and-banners'),
-                    isActive: checkIfLocationIncludes('/cms/slider-and-banners')
-                  },
-                  {
-                    label: t.get('gameCategories'),
-                    onClick: createRedirectHandler('/cms/game-categories'),
-                    isActive: checkIfLocationIncludes('/cms/game-categories')
-                  },
-                  {
-                    label: t.get('pages'),
-                    onClick: createRedirectHandler('/cms/pages'),
-                    isActive: checkIfLocationIncludes('/cms/pages')
-                  },
-                  {
-                    label: t.get('labels'),
-                    onClick: createRedirectHandler('/cms/labels'),
-                    isActive: checkIfLocationIncludes('/cms/labels')
-                  }
+                  ...(isCommertionUser
+                    ? [
+                        {
+                          label: 'Website',
+                          onClick: createRedirectHandler('/cms/website'),
+                          isActive: checkIfLocationIncludes('/cms/website')
+                        },
+                        {
+                          label: 'Payments',
+                          onClick: createRedirectHandler('/cms/payments'),
+                          isActive: checkIfLocationIncludes('/cms/payments')
+                        },
+                        {
+                          label: 'Sliders and Banners',
+                          onClick: createRedirectHandler('/cms/sliders/banners'),
+                          isActive: checkIfLocationIncludes('/cms/sliders/banners')
+                        },
+                        {
+                          label: 'Game Categories',
+                          onClick: createRedirectHandler('/cms/game-categories'),
+                          isActive: checkIfLocationIncludes('/cms/game-categories')
+                        },
+                        {
+                          label: 'Pages',
+                          onClick: createRedirectHandler('/cms/pages'),
+                          isActive: checkIfLocationIncludes('/cms/pages')
+                        },
+                        {
+                          label: 'Labels',
+                          onClick: createRedirectHandler('/cms/labels'),
+                          isActive: checkIfLocationIncludes('/cms/labels')
+                        }
+                      ]
+                    : [])
                 ]
               }
             ]
           : []),
-        ...(adminUser && !isProvider
+        ...(isCommertionUser || (adminUser && !isProvider)
           ? [
               {
                 label: t.get('translation'),
@@ -201,6 +206,101 @@ export const Sidebar = () => {
                 icon: <Icons.TranslationIcon width='1.8rem' height='2.4rem' />,
                 isActive: checkIfLocation('/translations'),
                 subItems: []
+              }
+            ]
+          : []),
+        ...(isCommertionUser
+          ? [
+              {
+                label: 'Risk Management',
+                onClick: createRedirectHandler('/risks'),
+                icon: <Icons.RiskIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocation('/risks'),
+                subItems: []
+              }
+            ]
+          : []),
+        {
+          label: t.get('betReports'),
+          icon: <Icons.ReportsIcon />,
+          isActive: checkIfLocationIncludes('/reports/'),
+          subItems: [
+            {
+              label: t.get('reportByProviders'),
+              onClick: createRedirectHandler('/reports/providers'),
+              isActive: checkIfLocation('/reports/providers')
+            },
+            {
+              label: t.get('reportByPlayers'),
+              onClick: createRedirectHandler('/reports/players'),
+              isActive: checkIfLocation('/reports/players')
+            },
+            {
+              label: t.get('reportByGames'),
+              onClick: createRedirectHandler('/reports/games'),
+              isActive: checkIfLocation('/reports/games')
+            }
+          ]
+        },
+        ...(isCommertionUser
+          ? [
+              {
+                label: 'Affiliates Management',
+                onClick: createRedirectHandler('/affiliates'),
+                icon: <Icons.AffilateIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocation('/affiliates'),
+                subItems: []
+              },
+              {
+                label: 'Promotional Tools',
+                onClick: createRedirectHandler('/promotions'),
+                icon: <Icons.PromotionalIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocation('/promotions'),
+                subItems: [
+                  {
+                    label: 'Free bet and Wagering',
+                    onClick: createRedirectHandler('/bonuses/wagering'),
+                    isActive: checkIfLocationIncludes('/bonuses/wagering')
+                  },
+                  {
+                    label: 'Cashback Bonuses',
+                    onClick: createRedirectHandler('/bonuses/cashback'),
+                    isActive: checkIfLocationIncludes('/bonuses/cashback')
+                  }
+                ]
+              },
+              {
+                label: 'CRM',
+                onClick: createRedirectHandler('/crm'),
+                icon: <Icons.CRMIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocation('/crm'),
+                subItems: [
+                  {
+                    label: 'Partners',
+                    onClick: createRedirectHandler('/crm/partners'),
+                    isActive: checkIfLocationIncludes('/crm/partners')
+                  },
+                  {
+                    label: 'Templates',
+                    onClick: createRedirectHandler('/crm/templates'),
+                    isActive: checkIfLocationIncludes('/crm/templates')
+                  },
+                  {
+                    label: 'Triggers',
+                    onClick: createRedirectHandler('/crm/triggers'),
+                    isActive: checkIfLocationIncludes('/crm/triggers')
+                  },
+                  {
+                    label: 'Campaigns',
+                    onClick: createRedirectHandler('/crm/campaigns'),
+                    isActive: checkIfLocationIncludes('/crm/campaigns')
+                  },
+                  {
+                    label: 'Messages',
+                    onClick: createRedirectHandler('/crm/messages'),
+                    isActive: checkIfLocationIncludes('/crm/messages')
+                  }
+                ]
               }
             ]
           : [])
