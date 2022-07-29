@@ -160,40 +160,31 @@ export const Sidebar = () => {
                     onClick: createRedirectHandler('/cms/providers-games'),
                     isActive: checkIfLocation('/cms/providers-games')
                   },
-                  ...(isCommertionUser
-                    ? [
-                        {
-                          label: 'Website',
-                          onClick: createRedirectHandler('/cms/website'),
-                          isActive: checkIfLocationIncludes('/cms/website')
-                        },
-                        {
-                          label: 'Payments',
-                          onClick: createRedirectHandler('/cms/payments'),
-                          isActive: checkIfLocationIncludes('/cms/payments')
-                        },
-                        {
-                          label: 'Sliders and Banners',
-                          onClick: createRedirectHandler('/cms/sliders/banners'),
-                          isActive: checkIfLocationIncludes('/cms/sliders/banners')
-                        },
-                        {
-                          label: 'Game Categories',
-                          onClick: createRedirectHandler('/cms/game-categories'),
-                          isActive: checkIfLocationIncludes('/cms/game-categories')
-                        },
-                        {
-                          label: 'Pages',
-                          onClick: createRedirectHandler('/cms/pages'),
-                          isActive: checkIfLocationIncludes('/cms/pages')
-                        },
-                        {
-                          label: 'Labels',
-                          onClick: createRedirectHandler('/cms/labels'),
-                          isActive: checkIfLocationIncludes('/cms/labels')
-                        }
-                      ]
-                    : [])
+                  {
+                    label: t.get('website'),
+                    onClick: createRedirectHandler('/cms/website'),
+                    isActive: checkIfLocationIncludes('/cms/website')
+                  },
+                  {
+                    label: t.get('slidersAndBanners'),
+                    onClick: createRedirectHandler('/cms/slider-and-banners'),
+                    isActive: checkIfLocationIncludes('/cms/slider-and-banners')
+                  },
+                  {
+                    label: t.get('gameCategories'),
+                    onClick: createRedirectHandler('/cms/game-categories'),
+                    isActive: checkIfLocationIncludes('/cms/game-categories')
+                  },
+                  {
+                    label: t.get('pages'),
+                    onClick: createRedirectHandler('/cms/pages'),
+                    isActive: checkIfLocationIncludes('/cms/pages')
+                  },
+                  {
+                    label: t.get('labels'),
+                    onClick: createRedirectHandler('/cms/labels'),
+                    isActive: checkIfLocationIncludes('/cms/labels')
+                  }
                 ]
               }
             ]
