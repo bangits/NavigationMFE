@@ -14,6 +14,7 @@ export interface HeaderProps {
 
 export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency }) => {
   const { user } = useContext(AuthenticatedContext);
+  const isCommertionUser = [8365].includes(+user.userId);
 
   const [wifiSpeed, setWifiSpeed] = useState<1 | 2 | 3>(calculateWifiSpeed());
   const [isOnline, setOnline] = useState(true);
@@ -50,7 +51,7 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
         localTime='Local Time'
         speed={wifiSpeed}
         isOffline={!isOnline}
-        onCorrectBalanceClick={() => setShowCorrectionDialog(true)}
+        onCorrectBalanceClick={!isCommertionUser ? () => setShowCorrectionDialog(true) : undefined}
         correctBalanceLabel={correctBalanceLabel}
       />
 
