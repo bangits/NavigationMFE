@@ -171,7 +171,7 @@ export const Sidebar = () => {
                     isActive: checkIfLocationIncludes('/cms/slider-and-banners')
                   },
                   {
-                    label: t.get('gameCategories'),
+                    label: t.get('categoriesAndGroups'),
                     onClick: createRedirectHandler('/cms/game-categories'),
                     isActive: checkIfLocationIncludes('/cms/game-categories')
                   },
