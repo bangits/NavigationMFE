@@ -230,6 +230,11 @@ export const Sidebar = () => {
               label: t.get('reportByGames'),
               onClick: createRedirectHandler('/reports/games'),
               isActive: checkIfLocation('/reports/games')
+            },
+            {
+              label: t.get('reportByCashInOut'),
+              onClick: createRedirectHandler('/reports/transfers'),
+              isActive: checkIfLocation('/reports/transfers')
             }
           ]
         },
