@@ -189,7 +189,7 @@ export const Sidebar = () => {
               }
             ]
           : []),
-        ...(isCommertionUser || (adminUser && !isProvider)
+        ...(!isProvider
           ? [
               {
                 label: t.get('translation'),
