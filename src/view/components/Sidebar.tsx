@@ -146,6 +146,11 @@ export const Sidebar = () => {
                     label: t.get('players'),
                     onClick: createRedirectHandler('/players'),
                     isActive: checkIfLocationIncludes('/players')
+                  },
+                  {
+                    label: t.get('segments'),
+                    onClick: createRedirectHandler('/segment'),
+                    isActive: checkIfLocationIncludes('/segment')
                   }
                 ]
               },
