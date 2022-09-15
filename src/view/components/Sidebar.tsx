@@ -140,17 +140,17 @@ export const Sidebar = () => {
                 label: t.get('playerManagement'),
                 // onClick: createRedirectHandler('/players'),
                 icon: <Icons.UserIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocation('/players/'),
+                isActive: checkIfLocationIncludes('/players/'),
                 subItems: [
                   {
                     label: t.get('players'),
                     onClick: createRedirectHandler('/players'),
-                    isActive: checkIfLocationIncludes('/players')
+                    isActive: checkIfLocation('/players')
                   },
                   {
                     label: t.get('segments'),
-                    onClick: createRedirectHandler('/segment'),
-                    isActive: checkIfLocationIncludes('/segment')
+                    onClick: createRedirectHandler('/segment/players'),
+                    isActive: checkIfLocationIncludes('/segment/players')
                   }
                 ]
               },
