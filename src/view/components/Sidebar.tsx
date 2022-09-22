@@ -316,6 +316,13 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/crm/system-notifications')
             }
           ]
+        },
+        {
+          label: t.get('rules'),
+          icon: <Icons.RuleIcon width='1.8rem' height='2.4rem' />,
+          onClick: createRedirectHandler('/rule'),
+          isActive: checkIfLocationIncludes('/rule'),
+          subItems: []
         }
       ]}
       collapsedWidth={7.2}
