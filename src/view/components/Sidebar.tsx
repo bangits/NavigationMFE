@@ -317,6 +317,7 @@ export const Sidebar = () => {
             }
           ]
         },
+
         {
           label: t.get('rules'),
           icon: <Icons.RuleIcon width='1.8rem' height='2.4rem' />,
