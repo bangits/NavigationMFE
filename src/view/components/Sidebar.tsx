@@ -144,12 +144,17 @@ export const Sidebar = () => {
                 label: t.get('playerManagement'),
                 // onClick: createRedirectHandler('/players'),
                 icon: <Icons.UserIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocation('/players/'),
+                isActive: checkIfLocationIncludes('/players/'),
                 subItems: [
                   {
                     label: t.get('players'),
                     onClick: createRedirectHandler('/players'),
-                    isActive: checkIfLocationIncludes('/players')
+                    isActive: checkIfLocation('/players')
+                  },
+                  {
+                    label: t.get('segments'),
+                    onClick: createRedirectHandler('/segment/players'),
+                    isActive: checkIfLocationIncludes('/segment/players')
                   }
                 ]
               },
@@ -303,7 +308,27 @@ export const Sidebar = () => {
                 ]
               }
             ]
-          : [])
+          : []),
+        {
+          label: t.get('crm'),
+          icon: <Icons.CRMIcon width='1.8rem' height='2.4rem' />,
+          isActive: checkIfLocationIncludes('/crm/'),
+          subItems: [
+            {
+              label: t.get('systemNotifications'),
+              onClick: createRedirectHandler('/crm/system-notifications'),
+              isActive: checkIfLocation('/crm/system-notifications')
+            }
+          ]
+        },
+
+        {
+          label: t.get('rules'),
+          icon: <Icons.RuleIcon width='1.8rem' height='2.4rem' />,
+          onClick: createRedirectHandler('/rule'),
+          isActive: checkIfLocationIncludes('/rule'),
+          subItems: []
+        }
       ]}
       collapsedWidth={7.2}
       width={25}
