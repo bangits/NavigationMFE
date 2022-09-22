@@ -2,7 +2,7 @@ import { AuthenticatedContext, isAdminUser } from '@atom/authorization';
 import { redirectToURL, useLocation, useTranslation } from '@atom/common';
 import { Icons, Sidebar as DesignSystemSidebar } from '@atom/design-system';
 import { useCallback, useContext, useMemo } from 'react';
-import { BangitsLogo, KingBetLogo, Logo, QantoApuestasLogo } from '../images';
+import { BangitsLogo, BetRabbitLogo, KingBetLogo, Logo, QantoApuestasLogo } from '../images';
 
 export const Sidebar = () => {
   const { user } = useContext(AuthenticatedContext);
@@ -50,6 +50,10 @@ export const Sidebar = () => {
       3: {
         logo: KingBetLogo,
         name: 'King Bet'
+      },
+      5: {
+        logo: BetRabbitLogo,
+        name: 'Bet Rabbit'
       }
     }),
     []
