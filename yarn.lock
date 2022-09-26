@@ -210,10 +210,10 @@
     react-sortable-hoc "^2.0.0"
     react-transition-group "^4.4.2"
 
-"@atom/design-system@^4.1.14":
-  version "4.1.14"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.1.14.tgz#9f1278d28d24e6b655f9ccb13cd34660507ae1e0"
-  integrity sha1-nxJ40o0k5rZV+cyxPNNGYFB64eA=
+"@atom/design-system@^4.1.15":
+  version "4.1.15"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.1.15.tgz#8b05db9ee0dc7900909c4d35c492dd6b6e07d2b9"
+  integrity sha1-iwXbnuDceQCQnE01xJLda24H0rk=
   dependencies:
     "@my-ui/core" "^0.9.17"
     classnames "^2.3.1"
