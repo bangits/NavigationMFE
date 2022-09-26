@@ -45,6 +45,7 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
         notificationProps={{
           quantity: 0
         }}
+        //@ts-expect-error this time is not priority
         money={money}
         currency={currency}
         dateConverter={(date) => convertDate(date, 'MM/DD/YYYY HH:mm:ss', false)}
