@@ -220,33 +220,38 @@ export const Sidebar = () => {
               }
             ]
           : []),
-        {
-          label: t.get('betReports'),
-          icon: <Icons.ReportsIcon />,
-          isActive: checkIfLocationIncludes('/reports/'),
-          subItems: [
-            {
-              label: t.get('reportByProviders'),
-              onClick: createRedirectHandler('/reports/providers'),
-              isActive: checkIfLocation('/reports/providers')
-            },
-            {
-              label: t.get('reportByPlayers'),
-              onClick: createRedirectHandler('/reports/players'),
-              isActive: checkIfLocation('/reports/players')
-            },
-            {
-              label: t.get('reportByGames'),
-              onClick: createRedirectHandler('/reports/games'),
-              isActive: checkIfLocation('/reports/games')
-            },
-            {
-              label: t.get('reportByCashInOut'),
-              onClick: createRedirectHandler('/reports/transfers'),
-              isActive: checkIfLocation('/reports/transfers')
-            }
-          ]
-        },
+        ...(!isProvider
+          ? [
+              {
+                label: t.get('betReports'),
+                icon: <Icons.ReportsIcon />,
+                isActive: checkIfLocationIncludes('/reports/'),
+                subItems: [
+                  {
+                    label: t.get('reportByProviders'),
+                    onClick: createRedirectHandler('/reports/providers'),
+                    isActive: checkIfLocation('/reports/providers')
+                  },
+                  {
+                    label: t.get('reportByPlayers'),
+                    onClick: createRedirectHandler('/reports/players'),
+                    isActive: checkIfLocation('/reports/players')
+                  },
+                  {
+                    label: t.get('reportByGames'),
+                    onClick: createRedirectHandler('/reports/games'),
+                    isActive: checkIfLocation('/reports/games')
+                  },
+                  {
+                    label: t.get('reportByCashInOut'),
+                    onClick: createRedirectHandler('/reports/transfers'),
+                    isActive: checkIfLocation('/reports/transfers')
+                  }
+                ]
+              }
+            ]
+          : []),
+
         ...(isCommertionUser
           ? [
               {
