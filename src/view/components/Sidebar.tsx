@@ -7,7 +7,7 @@ import { BangitsLogo, BetRabbitLogo, KingBetLogo, Logo, QantoApuestasLogo } from
 export const Sidebar = () => {
   const { user } = useContext(AuthenticatedContext);
 
-  const isProvider = [8285, 8286, 8287, 28435].includes(+user.userId);
+  const isProvider = [8285, 8286, 8287, 28435, 28590].includes(+user.userId);
   const isTestUser = [8324].includes(+user.userId);
   const isCommertionUser = [8365].includes(+user.userId);
   const adminUser = isAdminUser(user);
