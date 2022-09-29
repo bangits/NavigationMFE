@@ -309,39 +309,43 @@ export const Sidebar = () => {
               }
             ]
           : []),
-        {
-          label: t.get('crm'),
-          icon: <Icons.CRMIcon width='1.8rem' height='2.4rem' />,
-          isActive: checkIfLocationIncludes('/crm/'),
-          subItems: [
-            {
-              label: t.get('systemNotifications'),
-              onClick: createRedirectHandler('/crm/system-notifications'),
-              isActive: checkIfLocation('/crm/system-notifications')
-            }
-          ]
-        },
+        ...(!isProvider
+          ? [
+              {
+                label: t.get('crm'),
+                icon: <Icons.CRMIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocationIncludes('/crm/'),
+                subItems: [
+                  {
+                    label: t.get('systemNotifications'),
+                    onClick: createRedirectHandler('/crm/system-notifications'),
+                    isActive: checkIfLocation('/crm/system-notifications')
+                  }
+                ]
+              },
 
-        {
-          label: t.get('rules'),
-          icon: <Icons.RuleIcon width='1.8rem' height='2.4rem' />,
-          onClick: createRedirectHandler('/rule'),
-          isActive: checkIfLocationIncludes('/rule'),
-          subItems: []
-        },
-        {
-          label: t.get('promotionalTools'),
-          icon: <Icons.BonusIcon width='1.8rem' height='2.4rem' />,
-          // onClick: createRedirectHandler('/bonus/'),
-          isActive: checkIfLocationIncludes('/bonus/'),
-          subItems: [
-            {
-              label: t.get('bonuses'),
-              onClick: createRedirectHandler('/bonus/free-bet-and-wagering'),
-              isActive: checkIfLocation('/bonus/free-bet-and-wagering')
-            }
-          ]
-        }
+              {
+                label: t.get('rules'),
+                icon: <Icons.RuleIcon width='1.8rem' height='2.4rem' />,
+                onClick: createRedirectHandler('/rule'),
+                isActive: checkIfLocationIncludes('/rule'),
+                subItems: []
+              },
+              {
+                label: t.get('promotionalTools'),
+                icon: <Icons.BonusIcon width='1.8rem' height='2.4rem' />,
+                // onClick: createRedirectHandler('/bonus/'),
+                isActive: checkIfLocationIncludes('/bonus/'),
+                subItems: [
+                  {
+                    label: t.get('bonuses'),
+                    onClick: createRedirectHandler('/bonus/free-bet-and-wagering'),
+                    isActive: checkIfLocation('/bonus/free-bet-and-wagering')
+                  }
+                ]
+              }
+            ]
+          : [])
       ]}
       collapsedWidth={7.2}
       width={25}
