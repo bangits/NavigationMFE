@@ -328,6 +328,19 @@ export const Sidebar = () => {
           onClick: createRedirectHandler('/rule'),
           isActive: checkIfLocationIncludes('/rule'),
           subItems: []
+        },
+        {
+          label: t.get('promotionalTools'),
+          icon: <Icons.BonusIcon width='1.8rem' height='2.4rem' />,
+          // onClick: createRedirectHandler('/bonus/'),
+          isActive: checkIfLocationIncludes('/bonus/'),
+          subItems: [
+            {
+              label: t.get('bonuses'),
+              onClick: createRedirectHandler('/bonus/free-bet-and-wagering'),
+              isActive: checkIfLocation('/bonus/free-bet-and-wagering')
+            }
+          ]
         }
       ]}
       collapsedWidth={7.2}
