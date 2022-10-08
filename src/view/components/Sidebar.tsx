@@ -175,9 +175,9 @@ export const Sidebar = () => {
                     isActive: checkIfLocationIncludes('/cms/website')
                   },
                   {
-                    label: t.get('slidersAndBanners'),
-                    onClick: createRedirectHandler('/cms/slider-and-banners'),
-                    isActive: checkIfLocationIncludes('/cms/slider-and-banners')
+                    label: t.get('sliders'),
+                    onClick: createRedirectHandler('/cms/sliders'),
+                    isActive: checkIfLocationIncludes('/cms/sliders')
                   },
                   {
                     label: t.get('categoriesAndGroups'),
@@ -193,6 +193,11 @@ export const Sidebar = () => {
                     label: t.get('labels'),
                     onClick: createRedirectHandler('/cms/labels'),
                     isActive: checkIfLocationIncludes('/cms/labels')
+                  },
+                  {
+                    label: t.get('segments'),
+                    onClick: createRedirectHandler('/cms/segments'),
+                    isActive: checkIfLocation('/cms/segments')
                   }
                 ]
               }
