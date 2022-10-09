@@ -180,6 +180,11 @@ export const Sidebar = () => {
                     isActive: checkIfLocationIncludes('/cms/sliders')
                   },
                   {
+                    label: t.get('banners'),
+                    onClick: createRedirectHandler('/cms/banners'),
+                    isActive: checkIfLocationIncludes('/cms/banners')
+                  },
+                  {
                     label: t.get('categoriesAndGroups'),
                     onClick: createRedirectHandler('/cms/game-categories'),
                     isActive: checkIfLocationIncludes('/cms/game-categories')
