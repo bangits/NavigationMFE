@@ -28,6 +28,7 @@ export const Sidebar = () => {
     (url: string) => location.pathname === url || location.pathname === url + '/' || location.pathname + '/' === url,
     [location]
   );
+  const checkIfLocationNot = useCallback((url: string) => !checkIfLocation(url), [checkIfLocation, location]);
 
   const projectsInformation = useMemo<
     Record<
@@ -144,7 +145,7 @@ export const Sidebar = () => {
                 label: t.get('playerManagement'),
                 // onClick: createRedirectHandler('/players'),
                 icon: <Icons.UserIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocationIncludes('/players/'),
+                isActive: checkIfLocationIncludes('/players/') && checkIfLocationNot('/segment/games-and-providers'),
                 subItems: [
                   {
                     label: t.get('players'),
@@ -162,7 +163,7 @@ export const Sidebar = () => {
                 label: t.get('cms'),
                 // onClick: createRedirectHandler('/cms'),
                 icon: <Icons.CMSIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocationIncludes('/cms/'),
+                isActive: checkIfLocationIncludes('/cms/') || checkIfLocation('/segment/games-and-providers'),
                 subItems: [
                   {
                     label: t.get('providersAndGames'),
@@ -201,8 +202,13 @@ export const Sidebar = () => {
                   },
                   {
                     label: t.get('segments'),
-                    onClick: createRedirectHandler('/cms/segments'),
-                    isActive: checkIfLocation('/cms/segments')
+                    onClick: createRedirectHandler('/segment/games-and-providers'),
+                    isActive: checkIfLocation('/segment/games-and-providers')
+                  },
+                  {
+                    label: t.get('imageGalleries'),
+                    onClick: createRedirectHandler('/cms/image-gallery'),
+                    isActive: checkIfLocationIncludes('/cms/image-gallery')
                   }
                 ]
               }
