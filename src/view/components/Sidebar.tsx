@@ -144,7 +144,7 @@ export const Sidebar = () => {
                 label: t.get('playerManagement'),
                 // onClick: createRedirectHandler('/players'),
                 icon: <Icons.UserIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocationIncludes('/players/'),
+                isActive: checkIfLocationIncludes('/players/') && checkIfLocationNot('/segment/games-and-providers'),
                 subItems: [
                   {
                     label: t.get('players'),
@@ -162,7 +162,7 @@ export const Sidebar = () => {
                 label: t.get('cms'),
                 // onClick: createRedirectHandler('/cms'),
                 icon: <Icons.CMSIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocationIncludes('/cms/'),
+                isActive: checkIfLocationIncludes('/cms/') || checkIfLocation('/segment/games-and-providers'),
                 subItems: [
                   {
                     label: t.get('providersAndGames'),
@@ -175,9 +175,9 @@ export const Sidebar = () => {
                     isActive: checkIfLocationIncludes('/cms/website')
                   },
                   {
-                    label: t.get('slidersAndBanners'),
-                    onClick: createRedirectHandler('/cms/slider-and-banners'),
-                    isActive: checkIfLocationIncludes('/cms/slider-and-banners')
+                    label: t.get('sliders'),
+                    onClick: createRedirectHandler('/cms/sliders'),
+                    isActive: checkIfLocationIncludes('/cms/sliders')
                   },
                   {
                     label: t.get('categoriesAndGroups'),
@@ -193,6 +193,11 @@ export const Sidebar = () => {
                     label: t.get('labels'),
                     onClick: createRedirectHandler('/cms/labels'),
                     isActive: checkIfLocationIncludes('/cms/labels')
+                  },
+                  {
+                    label: t.get('segments'),
+                    onClick: createRedirectHandler('/segment/games-and-providers'),
+                    isActive: checkIfLocation('/segment/games-and-providers')
                   },
                   {
                     label: t.get('imageGalleries'),
@@ -330,6 +335,11 @@ export const Sidebar = () => {
                     label: t.get('systemNotifications'),
                     onClick: createRedirectHandler('/crm/system-notifications'),
                     isActive: checkIfLocation('/crm/system-notifications')
+                  },
+                  {
+                    label: t.get('templates'),
+                    onClick: createRedirectHandler('/crm/templates'),
+                    isActive: checkIfLocation('/crm/templates')
                   }
                 ]
               },
