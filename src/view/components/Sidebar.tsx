@@ -28,6 +28,7 @@ export const Sidebar = () => {
     (url: string) => location.pathname === url || location.pathname === url + '/' || location.pathname + '/' === url,
     [location]
   );
+  const checkIfLocationNot = useCallback((url: string) => !checkIfLocation(url), [checkIfLocation, location]);
 
   const projectsInformation = useMemo<
     Record<
