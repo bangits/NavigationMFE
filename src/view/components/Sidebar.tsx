@@ -193,6 +193,11 @@ export const Sidebar = () => {
                     label: t.get('labels'),
                     onClick: createRedirectHandler('/cms/labels'),
                     isActive: checkIfLocationIncludes('/cms/labels')
+                  },
+                  {
+                    label: t.get('imageGalleries'),
+                    onClick: createRedirectHandler('/cms/image-gallery'),
+                    isActive: checkIfLocationIncludes('/cms/image-gallery')
                   }
                 ]
               }
