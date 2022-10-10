@@ -196,9 +196,9 @@ export const Sidebar = () => {
                     isActive: checkIfLocationIncludes('/cms/pages')
                   },
                   {
-                    label: t.get('labels'),
-                    onClick: createRedirectHandler('/cms/labels'),
-                    isActive: checkIfLocationIncludes('/cms/labels')
+                    label: t.get('cards'),
+                    onClick: createRedirectHandler('/cms/cards'),
+                    isActive: checkIfLocationIncludes('/cms/cards')
                   },
                   {
                     label: t.get('segments'),
