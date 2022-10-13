@@ -140,12 +140,17 @@ export const Sidebar = () => {
                 label: t.get('playerManagement'),
                 // onClick: createRedirectHandler('/players'),
                 icon: <Icons.UserIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocationIncludes('/players/'),
+                isActive: checkIfLocationIncludes('/players/') || checkIfLocationIncludes('/segment/players'),
                 subItems: [
                   {
                     label: t.get('players'),
                     onClick: createRedirectHandler('/players'),
                     isActive: checkIfLocation('/players')
+                  },
+                  {
+                    label: t.get('segments'),
+                    onClick: createRedirectHandler('/segment/players'),
+                    isActive: checkIfLocationIncludes('/segment/players')
                   }
                 ]
               },
@@ -153,47 +158,53 @@ export const Sidebar = () => {
                 label: t.get('cms'),
                 // onClick: createRedirectHandler('/cms'),
                 icon: <Icons.CMSIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocationIncludes('/cms/'),
+                isActive: checkIfLocationIncludes('/cms/') || checkIfLocation('/segment/games-and-providers'),
                 subItems: [
                   {
                     label: t.get('providersAndGames'),
                     onClick: createRedirectHandler('/cms/providers-games'),
                     isActive: checkIfLocation('/cms/providers-games')
                   },
-                  ...(isCommertionUser
-                    ? [
-                        {
-                          label: 'Website',
-                          onClick: createRedirectHandler('/cms/website'),
-                          isActive: checkIfLocationIncludes('/cms/website')
-                        },
-                        {
-                          label: 'Payments',
-                          onClick: createRedirectHandler('/cms/payments'),
-                          isActive: checkIfLocationIncludes('/cms/payments')
-                        },
-                        {
-                          label: 'Sliders and Banners',
-                          onClick: createRedirectHandler('/cms/sliders/banners'),
-                          isActive: checkIfLocationIncludes('/cms/sliders/banners')
-                        },
-                        {
-                          label: 'Game Categories',
-                          onClick: createRedirectHandler('/cms/game-categories'),
-                          isActive: checkIfLocationIncludes('/cms/game-categories')
-                        },
-                        {
-                          label: 'Pages',
-                          onClick: createRedirectHandler('/cms/pages'),
-                          isActive: checkIfLocationIncludes('/cms/pages')
-                        },
-                        {
-                          label: 'Labels',
-                          onClick: createRedirectHandler('/cms/labels'),
-                          isActive: checkIfLocationIncludes('/cms/labels')
-                        }
-                      ]
-                    : [])
+                  {
+                    label: t.get('website'),
+                    onClick: createRedirectHandler('/cms/website'),
+                    isActive: checkIfLocationIncludes('/cms/website')
+                  },
+                  {
+                    label: t.get('sliders'),
+                    onClick: createRedirectHandler('/cms/sliders'),
+                    isActive: checkIfLocationIncludes('/cms/sliders')
+                  },
+                  {
+                    label: t.get('banners'),
+                    onClick: createRedirectHandler('/cms/banners'),
+                    isActive: checkIfLocationIncludes('/cms/banners')
+                  },
+                  {
+                    label: t.get('categoriesAndGroups'),
+                    onClick: createRedirectHandler('/cms/game-categories'),
+                    isActive: checkIfLocationIncludes('/cms/game-categories')
+                  },
+                  {
+                    label: t.get('pages'),
+                    onClick: createRedirectHandler('/cms/pages'),
+                    isActive: checkIfLocationIncludes('/cms/pages')
+                  },
+                  {
+                    label: t.get('cards'),
+                    onClick: createRedirectHandler('/cms/cards'),
+                    isActive: checkIfLocationIncludes('/cms/cards')
+                  },
+                  {
+                    label: t.get('segments'),
+                    onClick: createRedirectHandler('/segment/games-and-providers'),
+                    isActive: checkIfLocation('/segment/games-and-providers')
+                  },
+                  {
+                    label: t.get('imageGalleries'),
+                    onClick: createRedirectHandler('/cms/image-gallery'),
+                    isActive: checkIfLocationIncludes('/cms/image-gallery')
+                  }
                 ]
               }
             ]
@@ -308,7 +319,32 @@ export const Sidebar = () => {
                 ]
               }
             ]
-          : [])
+          : [
+              {
+                label: t.get('crm'),
+                icon: <Icons.CRMIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocationIncludes('/crm/'),
+                subItems: [
+                  {
+                    label: t.get('systemNotifications'),
+                    onClick: createRedirectHandler('/crm/system-notifications'),
+                    isActive: checkIfLocation('/crm/system-notifications')
+                  },
+                  {
+                    label: t.get('templates'),
+                    onClick: createRedirectHandler('/crm/templates'),
+                    isActive: checkIfLocation('/crm/templates')
+                  }
+                ]
+              },
+              {
+                label: t.get('rules'),
+                icon: <Icons.RuleIcon width='1.8rem' height='2.4rem' />,
+                onClick: createRedirectHandler('/rule'),
+                isActive: checkIfLocationIncludes('/rule'),
+                subItems: []
+              }
+            ])
       ]}
       collapsedWidth={7.2}
       width={25}
