@@ -145,7 +145,7 @@ export const Sidebar = () => {
                 label: t.get('playerManagement'),
                 // onClick: createRedirectHandler('/players'),
                 icon: <Icons.UserIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocationIncludes('/players/') && checkIfLocationNot('/segment/games-and-providers'),
+                isActive: checkIfLocationIncludes('/players/') || checkIfLocationIncludes('/segment/players'),
                 subItems: [
                   {
                     label: t.get('players'),
