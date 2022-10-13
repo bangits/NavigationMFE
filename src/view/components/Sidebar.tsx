@@ -369,6 +369,42 @@ export const Sidebar = () => {
                     isActive: checkIfLocation('/bonus/free-bet-and-wagering')
                   }
                 ]
+              },
+              {
+                label: t.get('affiliateManagement'),
+                onClick: createRedirectHandler('/affiliate'),
+                icon: <Icons.AffilateIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocation('/affiliate'),
+                subItems: [
+                  {
+                    label: t.get('commissionPlans'),
+                    onClick: createRedirectHandler('/affiliate/commission-plans'),
+                    isActive: checkIfLocation('/affiliate/commission-plans')
+                  },
+                  {
+                    label: t.get('reportByAffiliates'),
+                    onClick: createRedirectHandler('/affiliate/report-by-affiliates'),
+                    isActive: checkIfLocation('/affiliate/report-by-affiliates')
+                  }
+                ]
+              },
+              {
+                label: 'Media',
+                onClick: createRedirectHandler('/media'),
+                icon: <Icons.MediaIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocation('/media'),
+                subItems: [
+                  {
+                    label: t.get('links'),
+                    onClick: createRedirectHandler('/media/links'),
+                    isActive: checkIfLocation('/media/links')
+                  },
+                  {
+                    label: t.get('reportByMedia'),
+                    onClick: createRedirectHandler('/media/report-by-media'),
+                    isActive: checkIfLocation('/media/report-by-media')
+                  }
+                ]
               }
             ]
           : [])
