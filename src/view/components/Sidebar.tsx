@@ -372,9 +372,9 @@ export const Sidebar = () => {
               },
               {
                 label: t.get('affiliateManagement'),
-                onClick: createRedirectHandler('/affiliate'),
+                // onClick: createRedirectHandler('/affiliate/'),
                 icon: <Icons.AffilateIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocation('/affiliate'),
+                isActive: checkIfLocation('/affiliate/'),
                 subItems: [
                   {
                     label: t.get('commissionPlans'),
@@ -390,19 +390,19 @@ export const Sidebar = () => {
               },
               {
                 label: 'Media',
-                onClick: createRedirectHandler('/media'),
+                // onClick: createRedirectHandler('/affiliate'),
                 icon: <Icons.MediaIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocation('/media'),
+                isActive: checkIfLocation('/affiliate/'),
                 subItems: [
                   {
                     label: t.get('links'),
-                    onClick: createRedirectHandler('/media/links'),
-                    isActive: checkIfLocation('/media/links')
+                    onClick: createRedirectHandler('/affiliate/links'),
+                    isActive: checkIfLocation('/affiliate/links')
                   },
                   {
                     label: t.get('reportByMedia'),
-                    onClick: createRedirectHandler('/media/report-by-media'),
-                    isActive: checkIfLocation('/media/report-by-media')
+                    onClick: createRedirectHandler('/affiliate/report-by-media'),
+                    isActive: checkIfLocation('/affiliate/report-by-media')
                   }
                 ]
               }
