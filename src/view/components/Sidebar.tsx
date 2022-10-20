@@ -272,9 +272,9 @@ export const Sidebar = () => {
           ? [
               {
                 label: 'Affiliates Management',
-                onClick: createRedirectHandler('/affiliates'),
+                onClick: createRedirectHandler('/affiliate'),
                 icon: <Icons.AffilateIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocation('/affiliates'),
+                isActive: checkIfLocation('/affiliate'),
                 subItems: []
               },
               {
