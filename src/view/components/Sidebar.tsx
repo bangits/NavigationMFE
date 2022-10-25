@@ -272,9 +272,9 @@ export const Sidebar = () => {
           ? [
               {
                 label: 'Affiliates Management',
-                onClick: createRedirectHandler('/affiliates'),
+                onClick: createRedirectHandler('/affiliate'),
                 icon: <Icons.AffilateIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocation('/affiliates'),
+                isActive: checkIfLocation('/affiliate'),
                 subItems: []
               },
               {
@@ -367,6 +367,42 @@ export const Sidebar = () => {
                     label: t.get('bonuses'),
                     onClick: createRedirectHandler('/bonus/free-bet-and-wagering'),
                     isActive: checkIfLocation('/bonus/free-bet-and-wagering')
+                  }
+                ]
+              },
+              {
+                label: t.get('affiliateManagement'),
+                // onClick: createRedirectHandler('/affiliate/'),
+                icon: <Icons.AffilateIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocation('/affiliate/'),
+                subItems: [
+                  {
+                    label: t.get('commissionPlans'),
+                    onClick: createRedirectHandler('/affiliate/commission-plans'),
+                    isActive: checkIfLocation('/affiliate/commission-plans')
+                  },
+                  {
+                    label: t.get('reportByAffiliates'),
+                    onClick: createRedirectHandler('/affiliate/report-by-affiliates'),
+                    isActive: checkIfLocation('/affiliate/report-by-affiliates')
+                  }
+                ]
+              },
+              {
+                label: 'Media',
+                // onClick: createRedirectHandler('/affiliate'),
+                icon: <Icons.MediaIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocation('/affiliate/'),
+                subItems: [
+                  {
+                    label: t.get('links'),
+                    onClick: createRedirectHandler('/affiliate/links'),
+                    isActive: checkIfLocation('/affiliate/links')
+                  },
+                  {
+                    label: t.get('reportByMedia'),
+                    onClick: createRedirectHandler('/affiliate/report-by-media'),
+                    isActive: checkIfLocation('/affiliate/report-by-media')
                   }
                 ]
               }
