@@ -369,8 +369,8 @@ export const Sidebar = () => {
                 subItems: [
                   {
                     label: t.get('bonuses'),
-                    onClick: createRedirectHandler('/bonus/free-bet-and-wagering'),
-                    isActive: checkIfLocation('/bonus/free-bet-and-wagering')
+                    onClick: createRedirectHandler('/bonus/bonuses'),
+                    isActive: checkIfLocation('/bonus/bonuses')
                   }
                 ]
               },
