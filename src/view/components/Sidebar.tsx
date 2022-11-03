@@ -412,7 +412,6 @@ export const Sidebar = () => {
               },
               {
                 label: t.get('taskManagement'),
-                // onClick: createRedirectHandler('/affiliate'),
                 icon: <Icons.TaskSideBarIcon width='1.8rem' height='2.4rem' />,
                 isActive: checkIfLocation('/task/'),
                 subItems: [
