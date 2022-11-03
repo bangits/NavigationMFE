@@ -210,12 +210,12 @@
     react-sortable-hoc "^2.0.0"
     react-transition-group "^4.4.2"
 
-"@atom/design-system@^4.1.45":
-  version "4.1.45"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.1.45.tgz#c7a13d4c76838c73b495240a49f81da019b08cd0"
-  integrity sha1-x6E9THaDjHO0lSQKSfgdoBmwjNA=
+"@atom/design-system@^4.1.61":
+  version "4.1.61"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.1.61.tgz#738d775b0978fe195f9b7620d32267747bcc7894"
+  integrity sha1-c413Wwl4/hlfm3Yg0yJndHvMeJQ=
   dependencies:
-    "@my-ui/core" "^0.9.18"
+    "@my-ui/core" "^0.9.23"
     classnames "^2.3.1"
     draft-js "^0.11.7"
     draftjs-to-html "^0.9.1"
@@ -1840,10 +1840,10 @@
     react-transition-group "^4.4.2"
     throttle-debounce "^3.0.1"
 
-"@my-ui/core@^0.9.18":
-  version "0.9.18"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.9.18.tgz#72c67bee1c6c21f8e3f45e476434428d1ab36708"
-  integrity sha1-csZ77hxsIfjj9F5HZDRCjRqzZwg=
+"@my-ui/core@^0.9.23":
+  version "0.9.23"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.9.23.tgz#0457638fa183c283da97fb6b05e5da4914b95a82"
+  integrity sha1-BFdjj6GDwoPal/trBeXaSRS5WoI=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"

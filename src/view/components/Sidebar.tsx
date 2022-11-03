@@ -393,7 +393,7 @@ export const Sidebar = () => {
                 ]
               },
               {
-                label: 'Media',
+                label: t.get('media'),
                 // onClick: createRedirectHandler('/affiliate'),
                 icon: <Icons.MediaIcon width='1.8rem' height='2.4rem' />,
                 isActive: checkIfLocation('/affiliate/'),
@@ -407,6 +407,24 @@ export const Sidebar = () => {
                     label: t.get('reportByMedia'),
                     onClick: createRedirectHandler('/affiliate/report-by-media'),
                     isActive: checkIfLocation('/affiliate/report-by-media')
+                  }
+                ]
+              },
+              {
+                label: t.get('taskManagement'),
+                // onClick: createRedirectHandler('/affiliate'),
+                icon: <Icons.TaskSideBarIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocation('/task/'),
+                subItems: [
+                  {
+                    label: t.get('tasks'),
+                    onClick: createRedirectHandler('task'),
+                    isActive: checkIfLocation('task')
+                  },
+                  {
+                    label: t.get('configuration'),
+                    onClick: createRedirectHandler('/task/configuration'),
+                    isActive: checkIfLocation('/task/configuration')
                   }
                 ]
               }
