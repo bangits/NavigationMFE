@@ -7,7 +7,7 @@ import { BangitsLogo, BetRabbitLogo, KingBetLogo, Logo, QantoApuestasLogo, Revol
 export const Sidebar = () => {
   const { user } = useContext(AuthenticatedContext);
 
-  const isProvider = [8285, 8286, 8287, 28435, 28590, 28675].includes(+user.userId);
+  const isProvider = [8285, 8286, 8287, 28435, 28590, 28675, 28788].includes(+user.userId);
   const isTestUser = [8324].includes(+user.userId);
   const isCommertionUser = [8365].includes(+user.userId);
   const adminUser = isAdminUser(user);
@@ -28,7 +28,6 @@ export const Sidebar = () => {
     (url: string) => location.pathname === url || location.pathname === url + '/' || location.pathname + '/' === url,
     [location]
   );
-  const checkIfLocationNot = useCallback((url: string) => !checkIfLocation(url), [checkIfLocation, location]);
 
   const projectsInformation = useMemo<
     Record<
