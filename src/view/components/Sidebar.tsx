@@ -417,8 +417,8 @@ export const Sidebar = () => {
                 subItems: [
                   {
                     label: t.get('tasks'),
-                    onClick: createRedirectHandler('/'),
-                    isActive: checkIfLocation('/')
+                    onClick: createRedirectHandler('/task'),
+                    isActive: checkIfLocation('/task')
                   },
                   {
                     label: t.get('configuration'),
