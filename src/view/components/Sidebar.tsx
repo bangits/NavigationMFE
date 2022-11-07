@@ -209,6 +209,11 @@ export const Sidebar = () => {
                     isActive: checkIfLocation('/segment/games-and-providers')
                   },
                   {
+                    label: t.get('infoSection'),
+                    onClick: createRedirectHandler('/cms/info-section'),
+                    isActive: checkIfLocation('/cms/info-section')
+                  },
+                  {
                     label: t.get('imageGalleries'),
                     onClick: createRedirectHandler('/cms/image-gallery'),
                     isActive: checkIfLocationIncludes('/cms/image-gallery')
