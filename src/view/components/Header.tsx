@@ -47,7 +47,7 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
         }}
         money={money}
         currency={currency}
-        dateConverter={(date) => convertDate(date, 'MM/DD/YYYY HH:mm:ss', false)}
+        dateConverter={(date) => convertDate(date, 'DD/MM/YYYY HH:mm:ss', false)}
         localTime='Local Time'
         speed={wifiSpeed}
         isOffline={!isOnline}
