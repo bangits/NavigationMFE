@@ -380,9 +380,11 @@ export const Sidebar = () => {
               },
               {
                 label: t.get('affiliateManagement'),
-                // onClick: createRedirectHandler('/affiliate/'),
+                // onClick: createRedirectHandler('/affiliate/commission-plans'),
                 icon: <Icons.AffilateIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocation('/affiliate/'),
+                isActive:
+                  checkIfLocationIncludes('/affiliate/commission-plans') ||
+                  checkIfLocationIncludes('/affiliate/report-by-affiliates'),
                 subItems: [
                   {
                     label: t.get('commissionPlans'),
@@ -396,28 +398,31 @@ export const Sidebar = () => {
                   }
                 ]
               },
+
               {
                 label: t.get('media'),
-                // onClick: createRedirectHandler('/affiliate'),
+                // onClick: createRedirectHandler('/media/links'),
                 icon: <Icons.MediaIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocation('/affiliate/'),
+                isActive: checkIfLocationIncludes('/affiliate/media'),
                 subItems: [
                   {
                     label: t.get('links'),
-                    onClick: createRedirectHandler('/affiliate/links'),
-                    isActive: checkIfLocation('/affiliate/links')
+                    onClick: createRedirectHandler('/affiliate/media/links'),
+                    isActive: checkIfLocation('/affiliate/media/links')
                   },
                   {
                     label: t.get('reportByMedia'),
-                    onClick: createRedirectHandler('/affiliate/report-by-media'),
-                    isActive: checkIfLocation('/affiliate/report-by-media')
+                    onClick: createRedirectHandler('/affiliate/media/report-by-media'),
+                    isActive: checkIfLocation('/affiliate/media/report-by-media')
                   }
                 ]
               },
+
               {
-                label: t.get('taskManagement'),
+                label: t.get('tasks'),
+                // onClick: createRedirectHandler('/task'),
                 icon: <Icons.TaskSideBarIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocation('/task'),
+                isActive: checkIfLocation('/task/'),
                 subItems: [
                   {
                     label: t.get('tasks'),
