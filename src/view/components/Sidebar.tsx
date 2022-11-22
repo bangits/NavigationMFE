@@ -398,7 +398,6 @@ export const Sidebar = () => {
                   }
                 ]
               },
-
               {
                 label: t.get('media'),
                 // onClick: createRedirectHandler('/media/links'),
@@ -417,22 +416,20 @@ export const Sidebar = () => {
                   }
                 ]
               },
-
               {
                 label: t.get('tasks'),
-                // onClick: createRedirectHandler('/task'),
                 icon: <Icons.TaskSideBarIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocation('/task/'),
+                isActive: checkIfLocationIncludes('/task-manager'),
                 subItems: [
                   {
                     label: t.get('tasks'),
-                    onClick: createRedirectHandler('/task'),
-                    isActive: checkIfLocation('/task')
+                    onClick: createRedirectHandler('/task-manager/tasks'),
+                    isActive: checkIfLocation('/task-manager/tasks')
                   },
                   {
                     label: t.get('configuration'),
-                    onClick: createRedirectHandler('/task/configuration'),
-                    isActive: checkIfLocation('/task/configuration')
+                    onClick: createRedirectHandler('/task-manager/configuration'),
+                    isActive: checkIfLocation('/task-manager/configuration')
                   }
                 ]
               }
