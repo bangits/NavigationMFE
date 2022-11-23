@@ -419,17 +419,17 @@ export const Sidebar = () => {
               {
                 label: t.get('tasks'),
                 icon: <Icons.TaskSideBarIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocationIncludes('/task-manager'),
+                isActive: checkIfLocationIncludes('/task'),
                 subItems: [
                   {
                     label: t.get('tasks'),
-                    onClick: createRedirectHandler('/task-manager/tasks'),
-                    isActive: checkIfLocation('/task-manager/tasks')
+                    onClick: createRedirectHandler('/task'),
+                    isActive: checkIfLocation('/task')
                   },
                   {
                     label: t.get('configuration'),
-                    onClick: createRedirectHandler('/task-manager/configuration'),
-                    isActive: checkIfLocation('/task-manager/configuration')
+                    onClick: createRedirectHandler('/task/configuration'),
+                    isActive: checkIfLocation('/task/configuration')
                   }
                 ]
               }
