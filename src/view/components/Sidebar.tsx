@@ -11,6 +11,7 @@ export const Sidebar = () => {
   const isTestUser = [8324].includes(+user.userId);
   const isCommertionUser = [8365].includes(+user.userId);
   const adminUser = isAdminUser(user);
+  const isKingbet = user.projectId === 3;
 
   const location = useLocation();
   const t = useTranslation();
@@ -345,26 +346,30 @@ export const Sidebar = () => {
                   }
                 ]
               },
-              {
-                label: t.get('rules'),
-                icon: <Icons.RuleIcon width='1.8rem' height='2.4rem' />,
-                onClick: createRedirectHandler('/rule'),
-                isActive: checkIfLocationIncludes('/rule'),
-                subItems: []
-              },
-              {
-                label: t.get('promotionalTools'),
-                icon: <Icons.BonusIcon width='1.8rem' height='2.4rem' />,
-                // onClick: createRedirectHandler('/bonus/'),
-                isActive: checkIfLocationIncludes('/bonus/'),
-                subItems: [
-                  {
-                    label: t.get('bonuses'),
-                    onClick: createRedirectHandler('/bonus/bonuses'),
-                    isActive: checkIfLocation('/bonus/bonuses')
-                  }
-                ]
-              }
+              ...(!isKingbet
+                ? [
+                    {
+                      label: t.get('rules'),
+                      icon: <Icons.RuleIcon width='1.8rem' height='2.4rem' />,
+                      onClick: createRedirectHandler('/rule'),
+                      isActive: checkIfLocationIncludes('/rule'),
+                      subItems: []
+                    },
+                    {
+                      label: t.get('promotionalTools'),
+                      icon: <Icons.BonusIcon width='1.8rem' height='2.4rem' />,
+                      // onClick: createRedirectHandler('/bonus/'),
+                      isActive: checkIfLocationIncludes('/bonus/'),
+                      subItems: [
+                        {
+                          label: t.get('bonuses'),
+                          onClick: createRedirectHandler('/bonus/bonuses'),
+                          isActive: checkIfLocation('/bonus/bonuses')
+                        }
+                      ]
+                    }
+                  ]
+                : [])
             ])
       ]}
       collapsedWidth={7.2}
