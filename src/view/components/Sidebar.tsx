@@ -434,10 +434,10 @@ export const Sidebar = () => {
                 ]
               },
               {
-                label: t.get('payment'),
-                onClick: createRedirectHandler('/payments'),
+                label: t.get('paymentRequests'),
+                onClick: createRedirectHandler('/payment'),
                 icon: <Icons.PaymentSideBarIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocation('/payments'),
+                isActive: checkIfLocation('/payment'),
                 subItems: []
               }
             ]
