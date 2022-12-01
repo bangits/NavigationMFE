@@ -166,6 +166,26 @@
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
+"@atom/design-system@4.4.0":
+  version "4.4.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.4.0.tgz#0b3da7c1d449209ceffdbbd2cae364aba16ed159"
+  integrity sha1-Cz2nwdRJIJzv/bvSyuNkq6Fu0Vk=
+  dependencies:
+    "@my-ui/core" "0.9.45"
+    classnames "^2.3.1"
+    draft-js "^0.11.7"
+    draftjs-to-html "^0.9.1"
+    react "17.0.0"
+    react-cropper "^2.1.8"
+    react-dnd "15.1.2"
+    react-dnd-html5-backend "^16.0.1"
+    react-dom "17.0.0"
+    react-draft-wysiwyg "^1.15.0"
+    react-jss "^10.8.2"
+    react-sortable-hoc "^2.0.0"
+    react-transition-group "^4.4.2"
+    regenerator-transform "^0.14.5"
+
 "@atom/design-system@^2.9.3":
   version "2.9.9"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.9.9.tgz"
@@ -209,26 +229,6 @@
     react-jss "^10.8.2"
     react-sortable-hoc "^2.0.0"
     react-transition-group "^4.4.2"
-
-"@atom/design-system@^4.1.61":
-  version "4.1.61"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.1.61.tgz#738d775b0978fe195f9b7620d32267747bcc7894"
-  integrity sha1-c413Wwl4/hlfm3Yg0yJndHvMeJQ=
-  dependencies:
-    "@my-ui/core" "^0.9.23"
-    classnames "^2.3.1"
-    draft-js "^0.11.7"
-    draftjs-to-html "^0.9.1"
-    react "17.0.0"
-    react-cropper "^2.1.8"
-    react-dnd "15.1.2"
-    react-dnd-html5-backend "^16.0.1"
-    react-dom "17.0.0"
-    react-draft-wysiwyg "^1.15.0"
-    react-jss "^10.8.2"
-    react-sortable-hoc "^2.0.0"
-    react-transition-group "^4.4.2"
-    regenerator-transform "^0.14.5"
 
 "@atom/game-management@^0.1.0":
   version "0.1.6"
@@ -1792,6 +1792,22 @@
   resolved "https://registry.yarnpkg.com/@msgpack/msgpack/-/msgpack-2.7.2.tgz#f34b8aa0c49f0dd55eb7eba577081299cbf3f90b"
   integrity sha512-rYEi46+gIzufyYUAoHDnRzkWGxajpD9vVXFQ3g1vbjrBm6P7MBmm+s/fqPa46sxa+8FOUdEuRQKaugo5a4JWpw==
 
+"@my-ui/core@0.9.45":
+  version "0.9.45"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.9.45.tgz#b21e1db45552fc3392dfbf331fc9a2b74e4bf548"
+  integrity sha1-sh4dtFVS/DOS378zH8mit05L9Ug=
+  dependencies:
+    "@my-ui/react-datepicker" "^1.5.0"
+    "@my-ui/react-select" "1.1.6"
+    "@my-ui/react-table" "1.3.0"
+    "@my-ui/scrollbar" "^1.0.2"
+    classnames "^2.3.1"
+    react-flip-move "^3.0.4"
+    react-jss "^10.8.0"
+    react-paginate "^7.1.5"
+    react-transition-group "^4.4.2"
+    throttle-debounce "^3.0.1"
+
 "@my-ui/core@^0.5.0":
   version "0.5.21"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.5.21.tgz"
@@ -1828,22 +1844,6 @@
   version "0.7.7"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.7.7.tgz#08e5a8296f22bb71664f613c34b67ee53e2648b7"
   integrity sha1-COWoKW8iu3FmT2E8NLZ+5T4mSLc=
-  dependencies:
-    "@my-ui/react-datepicker" "^1.5.0"
-    "@my-ui/react-select" "1.1.6"
-    "@my-ui/react-table" "1.3.0"
-    "@my-ui/scrollbar" "^1.0.2"
-    classnames "^2.3.1"
-    react-flip-move "^3.0.4"
-    react-jss "^10.8.0"
-    react-paginate "^7.1.5"
-    react-transition-group "^4.4.2"
-    throttle-debounce "^3.0.1"
-
-"@my-ui/core@^0.9.23":
-  version "0.9.23"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.9.23.tgz#0457638fa183c283da97fb6b05e5da4914b95a82"
-  integrity sha1-BFdjj6GDwoPal/trBeXaSRS5WoI=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"

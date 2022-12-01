@@ -432,6 +432,13 @@ export const Sidebar = () => {
                     isActive: checkIfLocation('/task/configuration')
                   }
                 ]
+              },
+              {
+                label: t.get('payment'),
+                onClick: createRedirectHandler('/payments'),
+                icon: <Icons.PaymentSideBarIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocation('/payments'),
+                subItems: []
               }
             ]
           : [])
