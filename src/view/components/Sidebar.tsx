@@ -435,10 +435,29 @@ export const Sidebar = () => {
               },
               {
                 label: t.get('paymentRequests'),
-                onClick: createRedirectHandler('/payment'),
+                onClick: createRedirectHandler('/payment/payments'),
                 icon: <Icons.PaymentSideBarIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocation('/payment'),
+                isActive: checkIfLocation('/payment/payments'),
                 subItems: []
+              },
+              {
+                label: t.get('financicalReports'),
+                icon: <Icons.FinacicalReportSideBarIcon width='1.8rem' height='2.4rem' />,
+                isActive:
+                  checkIfLocationIncludes('/payment/report-balances') ||
+                  checkIfLocationIncludes('/payment/report-payments'),
+                subItems: [
+                  {
+                    label: t.get('reportByPayments'),
+                    onClick: createRedirectHandler('/payment/report-payments'),
+                    isActive: checkIfLocation('/payment/report-payments')
+                  },
+                  {
+                    label: t.get('reportByBalances'),
+                    onClick: createRedirectHandler('/payment/report-balances'),
+                    isActive: checkIfLocation('/payment/report-balances')
+                  }
+                ]
               }
             ]
           : [])

@@ -166,26 +166,6 @@
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
-"@atom/design-system@4.4.0":
-  version "4.4.0"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.4.0.tgz#0b3da7c1d449209ceffdbbd2cae364aba16ed159"
-  integrity sha1-Cz2nwdRJIJzv/bvSyuNkq6Fu0Vk=
-  dependencies:
-    "@my-ui/core" "0.9.45"
-    classnames "^2.3.1"
-    draft-js "^0.11.7"
-    draftjs-to-html "^0.9.1"
-    react "17.0.0"
-    react-cropper "^2.1.8"
-    react-dnd "15.1.2"
-    react-dnd-html5-backend "^16.0.1"
-    react-dom "17.0.0"
-    react-draft-wysiwyg "^1.15.0"
-    react-jss "^10.8.2"
-    react-sortable-hoc "^2.0.0"
-    react-transition-group "^4.4.2"
-    regenerator-transform "^0.14.5"
-
 "@atom/design-system@^2.9.3":
   version "2.9.9"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.9.9.tgz"
@@ -229,6 +209,26 @@
     react-jss "^10.8.2"
     react-sortable-hoc "^2.0.0"
     react-transition-group "^4.4.2"
+
+"@atom/design-system@^4.4.7":
+  version "4.4.7"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.4.7.tgz#b6a294c3ea06477e4b8738c6db634167c6c5e51c"
+  integrity sha1-tqKUw+oGR35LhzjG22NBZ8bF5Rw=
+  dependencies:
+    "@my-ui/core" "0.9.45"
+    classnames "^2.3.1"
+    draft-js "^0.11.7"
+    draftjs-to-html "^0.9.1"
+    react "17.0.0"
+    react-cropper "^2.1.8"
+    react-dnd "15.1.2"
+    react-dnd-html5-backend "^16.0.1"
+    react-dom "17.0.0"
+    react-draft-wysiwyg "^1.15.0"
+    react-jss "^10.8.2"
+    react-sortable-hoc "^2.0.0"
+    react-transition-group "^4.4.2"
+    regenerator-transform "^0.14.5"
 
 "@atom/game-management@^0.1.0":
   version "0.1.6"
