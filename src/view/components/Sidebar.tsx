@@ -458,6 +458,13 @@ export const Sidebar = () => {
                     isActive: checkIfLocation('/payment/report-by-balances')
                   }
                 ]
+              },
+              {
+                label: t.get('promoCompaigns'),
+                onClick: createRedirectHandler('/promocode '),
+                icon: <Icons.PromoCodeSideBarIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocation('/promocode '),
+                subItems: []
               }
             ]
           : [])
