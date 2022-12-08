@@ -372,6 +372,23 @@ export const Sidebar = () => {
                           isActive: checkIfLocation('/bonus/bonuses')
                         }
                       ]
+                    },
+                    {
+                      label: t.get('taskManagement'),
+                      icon: <Icons.TaskSideBarIcon width='1.8rem' height='2.4rem' />,
+                      isActive: checkIfLocation('/task'),
+                      subItems: [
+                        {
+                          label: t.get('tasks'),
+                          onClick: createRedirectHandler('/task'),
+                          isActive: checkIfLocation('/task')
+                        },
+                        {
+                          label: t.get('configuration'),
+                          onClick: createRedirectHandler('/task/configuration'),
+                          isActive: checkIfLocation('/task/configuration')
+                        }
+                      ]
                     }
                   ]
                 : [])
