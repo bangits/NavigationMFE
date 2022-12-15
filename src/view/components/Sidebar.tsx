@@ -465,6 +465,23 @@ export const Sidebar = () => {
                 icon: <Icons.PromoCodeSideBarIcon width='1.8rem' height='2.4rem' />,
                 isActive: checkIfLocation('/promocode '),
                 subItems: []
+              },
+              {
+                label: t.get('shop'),
+                icon: <Icons.ShopSideBarIcon width='1.8rem' height='2.4rem' />,
+                isActive: checkIfLocationIncludes('/shop/items') || checkIfLocationIncludes('/shop/orders'),
+                subItems: [
+                  {
+                    label: t.get('items'),
+                    onClick: createRedirectHandler('/shop/items'),
+                    isActive: checkIfLocation('/shop/items')
+                  },
+                  {
+                    label: t.get('orders'),
+                    onClick: createRedirectHandler('/shop/orders'),
+                    isActive: checkIfLocation('/shop/orders')
+                  }
+                ]
               }
             ]
           : [])
