@@ -469,7 +469,7 @@ export const Sidebar = () => {
               {
                 label: t.get('shop'),
                 icon: <Icons.ShopSideBarIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocationIncludes('/shop/items') || checkIfLocationIncludes('/shop/orders'),
+                isActive: checkIfLocationIncludes('/shop'),
                 subItems: [
                   {
                     label: t.get('items'),
