@@ -375,6 +375,11 @@ export const Sidebar = () => {
                     label: t.get('bonuses'),
                     onClick: createRedirectHandler('/bonus/bonuses'),
                     isActive: checkIfLocation('/bonus/bonuses')
+                  },
+                  {
+                    label: t.get('promoCompaigns'),
+                    onClick: createRedirectHandler('/promocode '),
+                    isActive: checkIfLocationIncludes('/promocode')
                   }
                 ]
               },
@@ -458,13 +463,6 @@ export const Sidebar = () => {
                     isActive: checkIfLocation('/payment/report-by-balances')
                   }
                 ]
-              },
-              {
-                label: t.get('promoCompaigns'),
-                onClick: createRedirectHandler('/promocode '),
-                icon: <Icons.PromoCodeSideBarIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocation('/promocode '),
-                subItems: []
               },
               {
                 label: t.get('shop'),
