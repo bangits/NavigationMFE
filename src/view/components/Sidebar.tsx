@@ -368,8 +368,7 @@ export const Sidebar = () => {
               {
                 label: t.get('promotionalTools'),
                 icon: <Icons.BonusIcon width='1.8rem' height='2.4rem' />,
-                // onClick: createRedirectHandler('/bonus/'),
-                isActive: checkIfLocationIncludes('/bonus/'),
+                isActive: checkIfLocationIncludes('/bonus/') || checkIfLocationIncludes('/promocode/'),
                 subItems: [
                   {
                     label: t.get('bonuses'),
