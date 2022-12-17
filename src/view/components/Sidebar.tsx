@@ -376,7 +376,7 @@ export const Sidebar = () => {
                     isActive: checkIfLocation('/bonus/bonuses')
                   },
                   {
-                    label: t.get('promoCompaigns'),
+                    label: t.get('promoCampaigns'),
                     onClick: createRedirectHandler('/promocode '),
                     isActive: checkIfLocationIncludes('/promocode')
                   }
