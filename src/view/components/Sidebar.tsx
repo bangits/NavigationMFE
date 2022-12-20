@@ -383,6 +383,11 @@ export const Sidebar = () => {
                     label: t.get('promoCampaigns'),
                     onClick: createRedirectHandler('/promocode '),
                     isActive: checkIfLocationIncludes('/promocode')
+                  },
+                  {
+                    label: t.get('loyalotyProgram'),
+                    onClick: createRedirectHandler('/loyalty '),
+                    isActive: checkIfLocationIncludes('/loyalty')
                   }
                 ]
               },
