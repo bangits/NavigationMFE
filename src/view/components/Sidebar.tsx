@@ -385,7 +385,7 @@ export const Sidebar = () => {
                     isActive: checkIfLocationIncludes('/promocode')
                   },
                   {
-                    label: t.get('loyalotyProgram'),
+                    label: t.get('loyaltyProgram'),
                     onClick: createRedirectHandler('/loyalty '),
                     isActive: checkIfLocationIncludes('/loyalty')
                   }
