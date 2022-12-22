@@ -378,6 +378,37 @@ export const Sidebar = () => {
                       ]
                     },
                     {
+                      label: t.get('affiliateManagement'),
+                      // onClick: createRedirectHandler('/affiliate/commission-plans'),
+                      icon: <Icons.AffilateIcon width='1.8rem' height='2.4rem' />,
+                      isActive:
+                        checkIfLocationIncludes('/affiliate/commission-plans') ||
+                        checkIfLocationIncludes('/affiliate/report-by-affiliates') ||
+                        checkIfLocationIncludes('/affiliate/media'),
+                      subItems: [
+                        {
+                          label: t.get('commissionPlans'),
+                          onClick: createRedirectHandler('/affiliate/commission-plans'),
+                          isActive: checkIfLocation('/affiliate/commission-plans')
+                        },
+                        {
+                          label: t.get('reportByAffiliates'),
+                          onClick: createRedirectHandler('/affiliate/report-by-affiliates'),
+                          isActive: checkIfLocation('/affiliate/report-by-affiliates')
+                        },
+                        {
+                          label: t.get('links'),
+                          onClick: createRedirectHandler('/affiliate/media/links'),
+                          isActive: checkIfLocation('/affiliate/media/links')
+                        },
+                        {
+                          label: t.get('reportByLinks'),
+                          onClick: createRedirectHandler('/affiliate/media/report-by-media'),
+                          isActive: checkIfLocation('/affiliate/media/report-by-media')
+                        }
+                      ]
+                    },
+                    {
                       label: t.get('taskManagement'),
                       icon: <Icons.TaskSideBarIcon width='1.8rem' height='2.4rem' />,
                       isActive: checkIfLocation('/task'),
