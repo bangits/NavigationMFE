@@ -56,13 +56,13 @@ export const Sidebar = () => {
         logo: BetRabbitLogo,
         name: 'Bet Rabbit'
       },
+      6: {
+        logo: Mi7Bet,
+        name: 'Mi7bet'
+      },
       7: {
         logo: RevolucionLogo,
         name: 'Revolucion'
-      },
-      8: {
-        logo: Mi7Bet,
-        name: 'Mi7bet'
       }
     }),
     []
