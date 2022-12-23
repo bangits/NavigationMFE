@@ -358,6 +358,11 @@ export const Sidebar = () => {
                     label: t.get('templates'),
                     onClick: createRedirectHandler('/crm/templates'),
                     isActive: checkIfLocation('/crm/templates')
+                  },
+                  {
+                    label: t.get('leads'),
+                    onClick: createRedirectHandler('/crm/leads'),
+                    isActive: checkIfLocation('/crm/leads')
                   }
                 ]
               },
