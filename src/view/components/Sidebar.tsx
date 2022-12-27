@@ -387,7 +387,10 @@ export const Sidebar = () => {
               {
                 label: t.get('promotionalTools'),
                 icon: <Icons.BonusIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocationIncludes('/bonus/') || checkIfLocationIncludes('/promocode/'),
+                isActive:
+                  checkIfLocationIncludes('/bonus/') ||
+                  checkIfLocationIncludes('/promocode/') ||
+                  checkIfLocationIncludes('/loyalty/'),
                 subItems: [
                   {
                     label: t.get('bonuses'),
