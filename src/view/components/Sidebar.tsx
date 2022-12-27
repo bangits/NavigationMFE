@@ -232,14 +232,29 @@ export const Sidebar = () => {
           isActive: checkIfLocationIncludes('/crm/'),
           subItems: [
             {
-              label: t.get('systemNotifications'),
-              onClick: createRedirectHandler('/crm/system-notifications'),
-              isActive: checkIfLocation('/crm/system-notifications')
+              label: t.get('leads'),
+              onClick: createRedirectHandler('/crm/leads'),
+              isActive: checkIfLocation('/crm/leads')
             },
             {
               label: t.get('templates'),
               onClick: createRedirectHandler('/crm/templates'),
               isActive: checkIfLocation('/crm/templates')
+            },
+            {
+              label: t.get('campaigns'),
+              onClick: createRedirectHandler('/crm/campaigns'),
+              isActive: checkIfLocation('/crm/campaigns')
+            },
+            {
+              label: t.get('systemNotifications'),
+              onClick: createRedirectHandler('/crm/system-notifications'),
+              isActive: checkIfLocation('/crm/system-notifications')
+            },
+            {
+              label: t.get('reportsByChannels'),
+              onClick: createRedirectHandler('/crm/report-by-channels'),
+              isActive: checkIfLocation('/crm/report-by-channels')
             }
           ],
           showWhen: !isProvider
