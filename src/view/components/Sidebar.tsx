@@ -368,6 +368,11 @@ export const Sidebar = () => {
                     label: t.get('systemNotifications'),
                     onClick: createRedirectHandler('/crm/system-notifications'),
                     isActive: checkIfLocation('/crm/system-notifications')
+                  },
+                  {
+                    label: t.get('reportsByChannels'),
+                    onClick: createRedirectHandler('/crm/report-by-channels'),
+                    isActive: checkIfLocation('/crm/report-by-channels')
                   }
                 ]
               },
