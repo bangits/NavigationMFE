@@ -8,3 +8,4 @@ export const QantoApuestasLogo = 'https://storageaccountatom.blob.core.windows.n
 export const RevolucionLogo =
   'https://storageaccountatom.blob.core.windows.net/staging-storage/projects/10892c41-2dc8-459a-b5f3-4f56e49a78ee_Group%2048099446.png';
 export const Mi7Bet = 'https://storageaccountatom.blob.core.windows.net/mfe/Mi7bet.svg';
+export const BingWinLogo = 'https://storageaccountatom.blob.core.windows.net/mfe/bingwin.svg';

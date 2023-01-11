@@ -2,7 +2,16 @@ import { AuthenticatedContext, isAdminUser } from '@atom/authorization';
 import { redirectToURL, useLocation, useTranslation } from '@atom/common';
 import { Icons, Sidebar as DesignSystemSidebar } from '@atom/design-system';
 import { useCallback, useContext, useMemo } from 'react';
-import { BangitsLogo, BetRabbitLogo, KingBetLogo, Logo, Mi7Bet, QantoApuestasLogo, RevolucionLogo } from '../images';
+import {
+  BangitsLogo,
+  BetRabbitLogo,
+  BingWinLogo,
+  KingBetLogo,
+  Logo,
+  Mi7Bet,
+  QantoApuestasLogo,
+  RevolucionLogo
+} from '../images';
 
 export const Sidebar = () => {
   const { user } = useContext(AuthenticatedContext);
@@ -62,6 +71,10 @@ export const Sidebar = () => {
       7: {
         logo: RevolucionLogo,
         name: 'Revolucion'
+      },
+      8: {
+        logo: BingWinLogo,
+        name: 'BingWin'
       }
     }),
     []
@@ -378,8 +391,8 @@ export const Sidebar = () => {
       collapsedWidth={7.2}
       width={25}
       logoSrc={Logo}
-      bottomLogoSrc={projectsInformation[user.projectId].logo}
-      bottomTitle={projectsInformation[user.projectId].name}
+      bottomLogoSrc={projectsInformation[user.projectId]?.logo}
+      bottomTitle={projectsInformation[user.projectId]?.name}
     />
   );
 };
