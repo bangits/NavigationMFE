@@ -174,7 +174,7 @@ export const Sidebar = () => {
         {
           label: t.get('promotionalTools'),
           icon: <Icons.BonusIcon width='1.8rem' height='2.4rem' />,
-          isActive: checkIfLocationIncludes('/bonus/') || checkIfLocationIncludes('/promocode/'),
+          isActive: checkIfLocationIncludes('/bonus/') || checkIfLocationIncludes('/promocode/') || checkIfLocationIncludes('/loyalty/'),
           subItems: [
             {
               label: t.get('bonuses'),
@@ -185,6 +185,11 @@ export const Sidebar = () => {
               label: t.get('promoCampaigns'),
               onClick: createRedirectHandler('/promocode '),
               isActive: checkIfLocationIncludes('/promocode')
+            },
+            {
+              label: t.get('loyaltyProgram'),
+              onClick: createRedirectHandler('/loyalty'),
+              isActive: checkIfLocationIncludes('/loyalty')
             }
           ],
           showWhen: !isKingbet
