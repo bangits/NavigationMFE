@@ -51,9 +51,8 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
         localTime='Local Time'
         speed={wifiSpeed}
         isOffline={!isOnline}
-        onCorrectBalanceClick={
-          !isCommertionUser && !isBetShopUser(user) ? () => setShowCorrectionDialog(true) : undefined
-        }
+        // onCorrectBalanceClick={!isCommertionUser ? () => setShowCorrectionDialog(true) : undefined}
+        onCorrectBalanceClick={undefined}
         correctBalanceLabel={correctBalanceLabel}
       />
 
