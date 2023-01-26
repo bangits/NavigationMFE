@@ -7,7 +7,7 @@ import { BangitsLogo, BetRabbitLogo, KingBetLogo, Logo, Mi7Bet, QantoApuestasLog
 export const Sidebar = () => {
   const { user } = useContext(AuthenticatedContext);
 
-  const isProvider = [8285, 8286, 8287, 28435, 28590, 28675, 28788, 29387].includes(+user.userId);
+  const isProvider = [8285, 8286, 8287, 28435, 28590, 28675, 28788, 29402].includes(+user.userId);
   const isTestUser = [8324].includes(+user.userId);
   const isCommertionUser = [8365].includes(+user.userId);
   const adminUser = isAdminUser(user);
@@ -170,7 +170,7 @@ export const Sidebar = () => {
                 label: t.get('cms'),
                 // onClick: createRedirectHandler('/cms'),
                 icon: <Icons.CMSIcon width='1.8rem' height='2.4rem' />,
-                isActive: checkIfLocationIncludes('/cms/') || checkIfLocation('/segment/games-and-providers'),
+                isActive: checkIfLocationIncludes('/cms/') || checkIfLocation('/segment/'),
                 subItems: [
                   {
                     label: t.get('providersAndGames'),
@@ -209,8 +209,8 @@ export const Sidebar = () => {
                   },
                   {
                     label: t.get('segments'),
-                    onClick: createRedirectHandler('/segment/games-and-providers'),
-                    isActive: checkIfLocation('/segment/games-and-providers')
+                    onClick: createRedirectHandler('/segment/'),
+                    isActive: checkIfLocation('/segment/')
                   },
                   {
                     label: t.get('infoSection'),
