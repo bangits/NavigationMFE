@@ -394,6 +394,24 @@ export const Sidebar = () => {
             }
           ],
           showWhen: !isKingbet
+        },
+        {
+          label: t.get('shop'),
+          icon: <Icons.ShopSideBarIcon width='1.8rem' height='2.4rem' />,
+          isActive: checkIfLocationIncludes('/shop'),
+          subItems: [
+            {
+              label: t.get('items'),
+              onClick: createRedirectHandler('/shop/items'),
+              isActive: checkIfLocation('/shop/items')
+            },
+            {
+              label: t.get('orders'),
+              onClick: createRedirectHandler('/shop/orders'),
+              isActive: checkIfLocation('/shop/orders')
+            }
+          ],
+          showWhen: isBetRabbit
         }
       ].filter((i) => i.showWhen)}
       collapsedWidth={7.2}
