@@ -24,6 +24,7 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
   const correctBalanceLabel = isBetShopUser(user) ? t.get('cashInOut') : t.get('correctBalance');
 
   useEffect(() => {
+    // @ts-expect-error Disable TS for navigator type cast
     if (navigator?.connection) navigator.connection.addEventListener('change', () => setWifiSpeed(calculateWifiSpeed));
 
     window.addEventListener('online', () => setOnline(true));
@@ -47,7 +48,7 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
         }}
         money={money}
         currency={currency}
-        dateConverter={(date) => convertDate(date, 'MM/DD/YYYY HH:mm:ss', false)}
+        dateConverter={(date) => convertDate(date, 'DD/MM/YYYY HH:mm:ss', false)}
         localTime='Local Time'
         speed={wifiSpeed}
         isOffline={!isOnline}
