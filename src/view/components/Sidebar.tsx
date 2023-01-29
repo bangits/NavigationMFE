@@ -284,7 +284,7 @@ export const Sidebar = () => {
           label: t.get('cms'),
           // onClick: createRedirectHandler('/cms'),
           icon: <Icons.CMSIcon width='1.8rem' height='2.4rem' />,
-          isActive: checkIfLocationIncludes('/cms/') || checkIfLocation('/segment/games-and-providers'),
+          isActive: checkIfLocationIncludes('/cms/') || checkIfLocation('/segment/'),
           subItems: [
             {
               label: t.get('providersAndGames'),
@@ -323,8 +323,8 @@ export const Sidebar = () => {
             },
             {
               label: t.get('segments'),
-              onClick: createRedirectHandler('/segment/games-and-providers'),
-              isActive: checkIfLocation('/segment/games-and-providers')
+              onClick: createRedirectHandler('/segment/'),
+              isActive: checkIfLocation('/segment/')
             },
             {
               label: t.get('infoSection'),
