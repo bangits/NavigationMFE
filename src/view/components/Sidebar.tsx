@@ -5,10 +5,10 @@ import { useCallback, useContext, useMemo } from 'react';
 import {
   BangitsLogo,
   BetRabbitLogo,
-  BingWinLogo,
   KingBetLogo,
   Logo,
   Mi7Bet,
+  PingWinLogo,
   QantoApuestasLogo,
   RevolucionLogo
 } from '../images';
@@ -73,8 +73,8 @@ export const Sidebar = () => {
         name: 'Revolucion'
       },
       8: {
-        logo: BingWinLogo,
-        name: 'BingWin'
+        logo: PingWinLogo,
+        name: 'PingWin'
       }
     }),
     []
