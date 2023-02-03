@@ -75,6 +75,10 @@ export const Sidebar = () => {
       8: {
         logo: PingWinLogo,
         name: 'PingWin'
+      },
+      9: {
+        logo: '',
+        name: 'Bet Cesar'
       }
     }),
     []
