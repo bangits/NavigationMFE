@@ -19,6 +19,7 @@ export const Sidebar = () => {
   const isProvider = [8285, 8286, 8287, 28590].includes(+user.userId);
   const adminUser = isAdminUser(user);
   const isKingbet = user.projectId === 3;
+  const isBetCesar = user.projectId === 9;
   const isBetRabbit = user.projectId === 5;
 
   const location = useLocation();
@@ -193,11 +194,15 @@ export const Sidebar = () => {
               onClick: createRedirectHandler('/promocode '),
               isActive: checkIfLocationIncludes('/promocode')
             },
-            {
-              label: t.get('loyaltyProgram'),
-              onClick: createRedirectHandler('/loyalty'),
-              isActive: checkIfLocationIncludes('/loyalty')
-            }
+            ...(!isBetCesar
+              ? [
+                  {
+                    label: t.get('loyaltyProgram'),
+                    onClick: createRedirectHandler('/loyalty'),
+                    isActive: checkIfLocationIncludes('/loyalty')
+                  }
+                ]
+              : [])
           ],
           showWhen: !isKingbet
         },
@@ -217,7 +222,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/task/configuration')
             }
           ],
-          showWhen: !isKingbet
+          showWhen: !isKingbet && !isBetCesar
         },
         {
           label: t.get('affiliateManagement'),
@@ -249,7 +254,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/affiliate/media/report-by-media')
             }
           ],
-          showWhen: !isKingbet
+          showWhen: !isKingbet && !isBetCesar
         },
         {
           label: t.get('crm'),
