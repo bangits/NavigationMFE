@@ -94,11 +94,11 @@ export const Sidebar = () => {
                   },
                   // ...(isCommertionUser
                   // ? [
-                  // {
-                  //   label: 'Roles',
-                  //   onClick: createRedirectHandler('/role-permission/roles'),
-                  //   isActive: checkIfLocationIncludes('/role-permission/roles')
-                  // },
+                  {
+                    label: 'Roles',
+                    onClick: createRedirectHandler('/role-permission/roles'),
+                    isActive: checkIfLocationIncludes('/role-permission/roles')
+                  },
                   {
                     label: 'Permissions',
                     onClick: createRedirectHandler('/role-permission/permissions'),
