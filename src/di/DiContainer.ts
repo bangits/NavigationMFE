@@ -20,7 +20,7 @@ export class DiContainer {
     this.diContainer.bind<BalanceSocketUseCase>(DI_CONSTANTS.BalanceSocketUseCase).to(BalanceSocketUseCase);
 
     // Account management dependencies
-    configureSharedDependencies(this.diContainer);
+    configureSharedDependencies?.(this.diContainer);
   };
 }
 
