@@ -92,20 +92,20 @@ export const Sidebar = () => {
                     onClick: createRedirectHandler('/users/'),
                     isActive: checkIfLocationIncludes('/users/')
                   },
-                  ...(isCommertionUser
-                    ? [
-                        {
-                          label: 'Roles',
-                          onClick: createRedirectHandler('/users/roles'),
-                          isActive: checkIfLocationIncludes('/users/roles')
-                        },
-                        {
-                          label: 'Permissions',
-                          onClick: createRedirectHandler('/users/permissions'),
-                          isActive: checkIfLocationIncludes('/users/permissions')
-                        }
-                      ]
-                    : [])
+                  // ...(isCommertionUser
+                  // ? [
+                  {
+                    label: 'Roles',
+                    onClick: createRedirectHandler('/role-permission/roles'),
+                    isActive: checkIfLocationIncludes('/role-permission/roles')
+                  },
+                  {
+                    label: 'Permissions',
+                    onClick: createRedirectHandler('/role-permission/permissions'),
+                    isActive: checkIfLocationIncludes('/role-permission/permissions')
+                  }
+                  // ]
+                  // : [])
                 ]
               },
               ...(!isCommertionUser

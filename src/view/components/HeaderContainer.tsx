@@ -20,13 +20,13 @@ export const HeaderContainer = () => {
   const updateBalanceInfo = useCallback(
     (balance: Balance) => {
       updateUserInfo({
-        currencyId: balance.currencyId,
-        currencyName: balance.currencyIso
+        currencyId: balance?.currencyId,
+        currencyName: balance?.currencyIso
       });
 
       setUserBalance({
-        currency: balance.currencyIso,
-        money: balance.balance
+        currency: balance?.currencyIso,
+        money: balance?.balance
       });
     },
     [updateUserInfo]
