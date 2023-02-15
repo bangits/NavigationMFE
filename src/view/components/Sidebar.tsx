@@ -4,6 +4,7 @@ import { Icons, Sidebar as DesignSystemSidebar } from '@atom/design-system';
 import { useCallback, useContext, useMemo } from 'react';
 import {
   BangitsLogo,
+  BetCesarLogo,
   BetRabbitLogo,
   KingBetLogo,
   Logo,
@@ -79,7 +80,7 @@ export const Sidebar = () => {
         name: 'PingWin'
       },
       9: {
-        logo: '',
+        logo: BetCesarLogo,
         name: 'Bet Cesar'
       }
     }),
