@@ -20,6 +20,7 @@ export const Sidebar = () => {
   const adminUser = isAdminUser(user);
   const isProvider = [8285, 8286, 8287, 28590].includes(+user.userId);
   const isPaymentSupporter = [8855, 8856, 8857].includes(+user.userId);
+  const isAffiliate = [8876, 8875, 8874, 8873, 8872, 8871, 8870].includes(+user.userId);
   const isKingbet = user.projectId === 3;
   const isBetCesar = user.projectId === 9;
   const isBetRabbit = user.projectId === 5;
@@ -129,7 +130,7 @@ export const Sidebar = () => {
               isActive: checkIfLocationIncludes('/segment/players')
             }
           ],
-          showWhen: !isProvider && !isPaymentSupporter
+          showWhen: !isProvider && !isPaymentSupporter && !isAffiliate
         },
         {
           label: t.get('userManagement'),
@@ -142,7 +143,7 @@ export const Sidebar = () => {
               isActive: checkIfLocationIncludes('/users/')
             }
           ],
-          showWhen: isBetRabbit && !isPaymentSupporter
+          showWhen: isBetRabbit && !isPaymentSupporter && !isAffiliate
         },
         {
           label: t.get('gameManagement'),
@@ -160,7 +161,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/game')
             }
           ],
-          showWhen: (adminUser || isProvider) && !isPaymentSupporter
+          showWhen: (adminUser || isProvider) && !isPaymentSupporter && !isAffiliate
         },
         {
           label: t.get('paymentRequests'),
@@ -168,7 +169,7 @@ export const Sidebar = () => {
           icon: <Icons.PaymentSideBarIcon width='1.8rem' height='2.4rem' />,
           isActive: checkIfLocation('/payment/payments'),
           subItems: [],
-          showWhen: !isKingbet
+          showWhen: !isKingbet && !isAffiliate
         },
         {
           label: t.get('rules'),
@@ -176,7 +177,7 @@ export const Sidebar = () => {
           onClick: createRedirectHandler('/rule'),
           isActive: checkIfLocationIncludes('/rule'),
           subItems: [],
-          showWhen: !isKingbet && !isPaymentSupporter
+          showWhen: !isKingbet && !isPaymentSupporter && !isAffiliate
         },
         {
           label: t.get('promotionalTools'),
@@ -206,7 +207,7 @@ export const Sidebar = () => {
                 ]
               : [])
           ],
-          showWhen: !isKingbet && !isPaymentSupporter
+          showWhen: !isKingbet && !isPaymentSupporter && !isAffiliate
         },
         {
           label: t.get('taskManagement'),
@@ -224,7 +225,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/task/configuration')
             }
           ],
-          showWhen: !isKingbet && !isBetCesar && !isPaymentSupporter
+          showWhen: !isKingbet && !isBetCesar && !isPaymentSupporter && !isAffiliate
         },
         {
           label: t.get('affiliateManagement'),
@@ -256,7 +257,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/affiliate/media/report-by-media')
             }
           ],
-          showWhen: !isKingbet && !isBetCesar && !isPaymentSupporter
+          showWhen: (!isKingbet && !isBetCesar && !isPaymentSupporter) || isAffiliate
         },
         {
           label: t.get('crm'),
@@ -289,7 +290,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/crm/report-by-channels')
             }
           ],
-          showWhen: !isProvider && !isPaymentSupporter
+          showWhen: !isProvider && !isPaymentSupporter && !isAffiliate
         },
         {
           label: t.get('cms'),
@@ -348,7 +349,7 @@ export const Sidebar = () => {
               isActive: checkIfLocationIncludes('/cms/image-gallery')
             }
           ],
-          showWhen: !isProvider && !isPaymentSupporter
+          showWhen: !isProvider && !isPaymentSupporter && !isAffiliate
         },
         {
           label: t.get('translation'),
@@ -356,7 +357,7 @@ export const Sidebar = () => {
           icon: <Icons.TranslationIcon width='1.8rem' height='2.4rem' />,
           isActive: checkIfLocation('/translations'),
           subItems: [],
-          showWhen: !isProvider && !isPaymentSupporter
+          showWhen: !isProvider && !isPaymentSupporter && !isAffiliate
         },
         {
           label: t.get('betReports'),
@@ -384,7 +385,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/reports/transfers')
             }
           ],
-          showWhen: !isPaymentSupporter
+          showWhen: !isPaymentSupporter && !isAffiliate
         },
         {
           label: t.get('financicalReports'),
@@ -404,7 +405,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/payment/report-by-balances')
             }
           ],
-          showWhen: !isKingbet && !isPaymentSupporter
+          showWhen: !isKingbet && !isPaymentSupporter && !isAffiliate
         },
         {
           label: t.get('shop'),
@@ -422,7 +423,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/shop/orders')
             }
           ],
-          showWhen: isBetRabbit && !isPaymentSupporter
+          showWhen: isBetRabbit && !isPaymentSupporter && !isAffiliate
         }
       ].filter((i) => i.showWhen)}
       collapsedWidth={7.2}
