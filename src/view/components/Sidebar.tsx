@@ -257,7 +257,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/affiliate/media/report-by-media')
             }
           ],
-          showWhen: (!isKingbet && !isBetCesar && !isPaymentSupporter) || isAffiliate
+          showWhen: (!isKingbet && !isPaymentSupporter) || isAffiliate
         },
         {
           label: t.get('crm'),
