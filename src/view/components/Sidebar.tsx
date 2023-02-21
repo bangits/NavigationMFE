@@ -22,6 +22,7 @@ export const Sidebar = () => {
   const isPaymentSupporter = [8855, 8856, 8857].includes(+user.userId);
   const isAffiliate = [8876, 8875, 8874, 8873, 8872, 8871, 8870].includes(+user.userId);
   const isKingbet = user.projectId === 3;
+  const isRevolution = user.projectId === 7;
   const isBetCesar = user.projectId === 9;
   const isBetRabbit = user.projectId === 5;
 
@@ -197,7 +198,7 @@ export const Sidebar = () => {
               onClick: createRedirectHandler('/promocode '),
               isActive: checkIfLocationIncludes('/promocode')
             },
-            ...(!isBetCesar
+            ...(isBetRabbit
               ? [
                   {
                     label: t.get('loyaltyProgram'),
@@ -207,7 +208,7 @@ export const Sidebar = () => {
                 ]
               : [])
           ],
-          showWhen: isBetRabbit
+          showWhen: isBetRabbit || isRevolution || isBetCesar
         },
         {
           label: t.get('taskManagement'),
@@ -225,7 +226,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/task/configuration')
             }
           ],
-          showWhen: !isKingbet && !isBetCesar && !isPaymentSupporter && !isAffiliate
+          showWhen: isBetRabbit
         },
         {
           label: t.get('affiliateManagement'),
@@ -257,7 +258,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/affiliate/media/report-by-media')
             }
           ],
-          showWhen: (!isKingbet && !isPaymentSupporter) || isAffiliate
+          showWhen: (!isKingbet && !isPaymentSupporter && !isRevolution) || isAffiliate
         },
         {
           label: t.get('crm'),
