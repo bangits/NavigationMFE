@@ -208,7 +208,7 @@ export const Sidebar = () => {
                 ]
               : [])
           ],
-          showWhen: isBetRabbit || isRevolution || isBetCesar
+          showWhen: !isAffiliate && (isBetRabbit || isRevolution || isBetCesar)
         },
         {
           label: t.get('taskManagement'),
