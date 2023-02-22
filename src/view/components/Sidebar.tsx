@@ -20,7 +20,7 @@ export const Sidebar = () => {
   const adminUser = isAdminUser(user);
   const isProvider = [8285, 8286, 8287, 28590].includes(+user.userId);
   const isPaymentSupporter = [8855, 8856, 8857].includes(+user.userId);
-  const isAffiliate = [8876, 8875, 8874, 8873, 8872, 8871, 8870].includes(+user.userId);
+  const isAffiliate = [8876, 8875, 8874, 8873, 8872, 8871, 8870, 8980].includes(+user.userId);
   const isKingbet = user.projectId === 3;
   const isRevolution = user.projectId === 7;
   const isBetCesar = user.projectId === 9;
