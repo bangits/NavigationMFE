@@ -530,7 +530,7 @@ export const Sidebar = () => {
                     isActive: checkIfLocation('/sport-reports/markets')
                   }
                 ]
-              },
+              }
             ]
           : [])
       ]}
