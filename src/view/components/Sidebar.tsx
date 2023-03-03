@@ -506,7 +506,31 @@ export const Sidebar = () => {
                     isActive: checkIfLocation('/shop/orders')
                   }
                 ]
-              }
+              },
+              {
+                label: t.get('sportReports'),
+                icon: <Icons.SportReportSideBarIcon width='1.8rem' height='2.4rem' />,
+                isActive:
+                  checkIfLocationIncludes('/sport-reports/players') ||
+                  checkIfLocationIncludes('/sport-reports/competitions'),
+                subItems: [
+                  {
+                    label: t.get('reportByPlayers'),
+                    onClick: createRedirectHandler('/sport-reports/players'),
+                    isActive: checkIfLocation('/sport-reports/players')
+                  },
+                  {
+                    label: t.get('reportByCompetitions'),
+                    onClick: createRedirectHandler('/sport-reports/competitions'),
+                    isActive: checkIfLocation('/sport-reports/competitions')
+                  },
+                  {
+                    label: t.get('reportByMarkets'),
+                    onClick: createRedirectHandler('/sport-reports/markets'),
+                    isActive: checkIfLocation('/sport-reports/markets')
+                  }
+                ]
+              },
             ]
           : [])
       ]}
