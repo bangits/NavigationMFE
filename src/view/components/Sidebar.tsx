@@ -269,12 +269,12 @@ export const Sidebar = () => {
                     label: t.get('reportByGames'),
                     onClick: createRedirectHandler('/reports/games'),
                     isActive: checkIfLocation('/reports/games')
-                  },
-                  {
-                    label: t.get('reportByCashInOut'),
-                    onClick: createRedirectHandler('/reports/transfers'),
-                    isActive: checkIfLocation('/reports/transfers')
                   }
+                  // {
+                  //   label: t.get('reportByCashInOut'),
+                  //   onClick: createRedirectHandler('/reports/transfers'),
+                  //   isActive: checkIfLocation('/reports/transfers')
+                  // }
                 ]
               }
             ]
@@ -510,14 +510,17 @@ export const Sidebar = () => {
               {
                 label: t.get('sportReports'),
                 icon: <Icons.SportReportSideBarIcon width='1.8rem' height='2.4rem' />,
-                isActive:
-                  checkIfLocationIncludes('/sport-reports/players') ||
-                  checkIfLocationIncludes('/sport-reports/competitions'),
+                isActive: checkIfLocationIncludes('/sport-reports'),
                 subItems: [
                   {
                     label: t.get('reportByPlayers'),
                     onClick: createRedirectHandler('/sport-reports/players'),
                     isActive: checkIfLocation('/sport-reports/players')
+                  },
+                  {
+                    label: t.get('reportBySports'),
+                    onClick: createRedirectHandler('/sport-reports/sports'),
+                    isActive: checkIfLocation('/sport-reports/sports')
                   },
                   {
                     label: t.get('reportByCompetitions'),
