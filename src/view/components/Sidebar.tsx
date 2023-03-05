@@ -533,7 +533,7 @@ export const Sidebar = () => {
                     label: t.get('reportBySports'),
                     onClick: createRedirectHandler('/sport-reports/sports'),
                     isActive: checkIfLocation('/sport-reports/sports')
-                  },
+                  }
                 ]
               }
             ]
