@@ -512,7 +512,9 @@ export const Sidebar = () => {
                 icon: <Icons.SportReportSideBarIcon width='1.8rem' height='2.4rem' />,
                 isActive:
                   checkIfLocationIncludes('/sport-reports/players') ||
-                  checkIfLocationIncludes('/sport-reports/competitions'),
+                  checkIfLocationIncludes('/sport-reports/competitions') ||
+                  checkIfLocationIncludes('/sport-reports/markets') ||
+                  checkIfLocationIncludes('/sport-reports/sports'),
                 subItems: [
                   {
                     label: t.get('reportByPlayers'),
