@@ -532,11 +532,7 @@ export const Sidebar = () => {
                     onClick: createRedirectHandler('/sport-reports/markets'),
                     isActive: checkIfLocation('/sport-reports/markets')
                   },
-                  {
-                    label: t.get('reportBySports'),
-                    onClick: createRedirectHandler('/sport-reports/sports'),
-                    isActive: checkIfLocation('/sport-reports/sports')
-                  }
+                
                 ]
               }
             ]
