@@ -20,6 +20,8 @@ export const Sidebar = () => {
   const adminUser = isAdminUser(user);
   const isProvider = [8285, 8286, 8287, 28590].includes(+user.userId);
   const isPaymentSupporter = [8855, 8856, 8857].includes(+user.userId);
+  const isContentManager = [9221].includes(+user.userId);
+  const isFinancialSupporter = [9222].includes(+user.userId);
   const isAffiliate = [8876, 8875, 8874, 8873, 8872, 8871, 8870, 8980].includes(+user.userId);
   const isKingbet = user.projectId === 3;
   const isRevolution = user.projectId === 7;
@@ -144,7 +146,7 @@ export const Sidebar = () => {
               isActive: checkIfLocationIncludes('/users/')
             }
           ],
-          showWhen: isBetRabbit && !isPaymentSupporter && !isAffiliate
+          showWhen: isBetRabbit && !isPaymentSupporter && !isAffiliate && !isContentManager && !isFinancialSupporter
         },
         {
           label: t.get('gameManagement'),
@@ -162,7 +164,12 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/game')
             }
           ],
-          showWhen: (adminUser || isProvider) && !isPaymentSupporter && !isAffiliate
+          showWhen:
+            (adminUser || isProvider) &&
+            !isPaymentSupporter &&
+            !isAffiliate &&
+            !isContentManager &&
+            !isFinancialSupporter
         },
         {
           label: t.get('paymentRequests'),
@@ -178,7 +185,7 @@ export const Sidebar = () => {
           onClick: createRedirectHandler('/rule'),
           isActive: checkIfLocationIncludes('/rule'),
           subItems: [],
-          showWhen: !isKingbet && !isPaymentSupporter && !isAffiliate
+          showWhen: !isKingbet && !isPaymentSupporter && !isAffiliate && !isFinancialSupporter
         },
         {
           label: t.get('promotionalTools'),
@@ -208,7 +215,8 @@ export const Sidebar = () => {
                 ]
               : [])
           ],
-          showWhen: !isAffiliate && (isBetRabbit || isRevolution || isBetCesar)
+          showWhen:
+            !isAffiliate && (isBetRabbit || isRevolution || isBetCesar) && !isContentManager && !isFinancialSupporter
         },
         {
           label: t.get('taskManagement'),
@@ -226,7 +234,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/task/configuration')
             }
           ],
-          showWhen: isBetRabbit
+          showWhen: isBetRabbit || isContentManager
         },
         {
           label: t.get('affiliateManagement'),
@@ -258,7 +266,9 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/affiliate/media/report-by-media')
             }
           ],
-          showWhen: (!isKingbet && !isPaymentSupporter && !isRevolution) || isAffiliate
+          showWhen:
+            (!isKingbet && !isPaymentSupporter && !isRevolution && !isContentManager && !isFinancialSupporter) ||
+            isAffiliate
         },
         {
           label: t.get('crm'),
@@ -291,7 +301,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/crm/report-by-channels')
             }
           ],
-          showWhen: !isProvider && !isPaymentSupporter && !isAffiliate
+          showWhen: !isProvider && !isPaymentSupporter && !isAffiliate && !isContentManager && !isFinancialSupporter
         },
         {
           label: t.get('cms'),
@@ -350,7 +360,7 @@ export const Sidebar = () => {
               isActive: checkIfLocationIncludes('/cms/image-gallery')
             }
           ],
-          showWhen: !isProvider && !isPaymentSupporter && !isAffiliate
+          showWhen: !isProvider && !isPaymentSupporter && !isAffiliate && !isContentManager && !isFinancialSupporter
         },
         {
           label: t.get('translation'),
@@ -358,7 +368,7 @@ export const Sidebar = () => {
           icon: <Icons.TranslationIcon width='1.8rem' height='2.4rem' />,
           isActive: checkIfLocation('/translations'),
           subItems: [],
-          showWhen: !isProvider && !isPaymentSupporter && !isAffiliate
+          showWhen: !isProvider && !isPaymentSupporter && !isAffiliate && !isFinancialSupporter
         },
         {
           label: t.get('betReports'),
@@ -424,7 +434,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/shop/orders')
             }
           ],
-          showWhen: isBetRabbit && !isPaymentSupporter && !isAffiliate
+          showWhen: isBetRabbit && !isPaymentSupporter && !isAffiliate && !isContentManager && !isFinancialSupporter
         }
       ].filter((i) => i.showWhen)}
       collapsedWidth={7.2}
