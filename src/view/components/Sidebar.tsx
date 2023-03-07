@@ -25,6 +25,7 @@ export const Sidebar = () => {
   const isAffiliate = [8876, 8875, 8874, 8873, 8872, 8871, 8870, 8980].includes(+user.userId);
   const isKingbet = user.projectId === 3;
   const isRevolution = user.projectId === 7;
+  const isMi7 = user.projectId === 6;
   const isBetCesar = user.projectId === 9;
   const isBetRabbit = user.projectId === 5;
 
@@ -216,7 +217,10 @@ export const Sidebar = () => {
               : [])
           ],
           showWhen:
-            !isAffiliate && (isBetRabbit || isRevolution || isBetCesar) && !isContentManager && !isFinancialSupporter
+            !isAffiliate &&
+            (isBetRabbit || isRevolution || isBetCesar || isMi7) &&
+            !isContentManager &&
+            !isFinancialSupporter
         },
         {
           label: t.get('taskManagement'),
