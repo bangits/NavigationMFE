@@ -7,7 +7,7 @@ import { BangitsLogo, BetRabbitLogo, KingBetLogo, Logo, Mi7Bet, QantoApuestasLog
 export const Sidebar = () => {
   const { user } = useContext(AuthenticatedContext);
 
-  const isProvider = [8285, 29531, 8286, 8287, 28435, 28590, 28675, 28788, 29402].includes(+user.userId);
+  const isProvider = [8285, 29559, 29531, 8286, 8287, 28435, 28590, 28675, 28788, 29402].includes(+user.userId);
   const isTestUser = [8324].includes(+user.userId);
   const isCommertionUser = [8365].includes(+user.userId);
   const adminUser = isAdminUser(user);
@@ -62,6 +62,10 @@ export const Sidebar = () => {
       8: {
         logo: Mi7Bet,
         name: 'Mi7bet'
+      },
+      20: {
+        logo: '',
+        name: 'MostBet'
       }
     }),
     []
