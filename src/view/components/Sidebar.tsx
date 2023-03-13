@@ -28,6 +28,7 @@ export const Sidebar = () => {
   const isMi7 = user.projectId === 6;
   const isBetCesar = user.projectId === 9;
   const isBetRabbit = user.projectId === 5;
+  const isPingWin = user.projectId === 8;
 
   const location = useLocation();
   const t = useTranslation();
@@ -218,7 +219,7 @@ export const Sidebar = () => {
           ],
           showWhen:
             !isAffiliate &&
-            (isBetRabbit || isRevolution || isBetCesar || isMi7) &&
+            (isBetRabbit || isRevolution || isBetCesar || isMi7 || isPingWin) &&
             !isContentManager &&
             !isFinancialSupporter
         },
