@@ -1,6 +1,6 @@
 import { AuthenticatedContext, isAdminUser } from '@atom/authorization';
 import { redirectToURL, useLocation, useTranslation } from '@atom/common';
-import { Icons, Sidebar as DesignSystemSidebar } from '@atom/design-system';
+import { Sidebar as DesignSystemSidebar, Icons } from '@atom/design-system';
 import { useCallback, useContext, useMemo } from 'react';
 import {
   BangitsLogo,
@@ -21,7 +21,7 @@ export const Sidebar = () => {
   const isProvider = [8285, 8286, 8287, 28590].includes(+user.userId);
   const isPaymentSupporter = [8855, 8856, 8857].includes(+user.userId);
   const isContentManager = [9221].includes(+user.userId);
-  const isFinancialSupporter = [9222].includes(+user.userId);
+  const isFinancialSupporter = [9222, 9756, 9755].includes(+user.userId);
   const isAffiliate = [8876, 8875, 8874, 8873, 8872, 8871, 8870, 8980].includes(+user.userId);
   const isKingbet = user.projectId === 3;
   const isRevolution = user.projectId === 7;
