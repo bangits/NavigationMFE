@@ -1,6 +1,6 @@
 import { AuthenticatedContext, isAdminUser } from '@atom/authorization';
 import { redirectToURL, useLocation, useTranslation } from '@atom/common';
-import { Icons, Sidebar as DesignSystemSidebar } from '@atom/design-system';
+import { Sidebar as DesignSystemSidebar, Icons } from '@atom/design-system';
 import { useCallback, useContext, useMemo } from 'react';
 import { BangitsLogo, BetRabbitLogo, KingBetLogo, Logo, Mi7Bet, QantoApuestasLogo, RevolucionLogo } from '../images';
 
@@ -491,6 +491,11 @@ export const Sidebar = () => {
                     label: t.get('reportByBalances'),
                     onClick: createRedirectHandler('/payment/report-by-balances'),
                     isActive: checkIfLocation('/payment/report-by-balances')
+                  },
+                  {
+                    label: t.get('reportByCorrections'),
+                    onClick: createRedirectHandler('/payment/report-by-corrections'),
+                    isActive: checkIfLocation('/payment/report-by-corrections')
                   }
                 ]
               },
@@ -535,8 +540,7 @@ export const Sidebar = () => {
                     label: t.get('reportByMarkets'),
                     onClick: createRedirectHandler('/sport-reports/markets'),
                     isActive: checkIfLocation('/sport-reports/markets')
-                  },
-                
+                  }
                 ]
               }
             ]
