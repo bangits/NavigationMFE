@@ -207,7 +207,7 @@ export const Sidebar = () => {
               onClick: createRedirectHandler('/promocode '),
               isActive: checkIfLocationIncludes('/promocode')
             },
-            ...(isBetRabbit
+            ...(isBetRabbit || isMi7
               ? [
                   {
                     label: t.get('loyaltyProgram'),
