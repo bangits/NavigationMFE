@@ -491,6 +491,11 @@ export const Sidebar = () => {
                     label: t.get('reportByCorrections'),
                     onClick: createRedirectHandler('/payment/report-by-corrections'),
                     isActive: checkIfLocation('/payment/report-by-corrections')
+                  },
+                  {
+                    label: t.get('reportByPlayers'),
+                    onClick: createRedirectHandler('/payment/report-by-players'),
+                    isActive: checkIfLocation('/payment/report-by-players')
                   }
                 ]
               },
