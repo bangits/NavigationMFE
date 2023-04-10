@@ -239,7 +239,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/task/configuration')
             }
           ],
-          showWhen: isBetRabbit || isContentManager
+          showWhen: isBetRabbit || isMi7 || isContentManager
         },
         {
           label: t.get('affiliateManagement'),
