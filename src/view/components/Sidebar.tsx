@@ -488,11 +488,6 @@ export const Sidebar = () => {
                     isActive: checkIfLocation('/payment/report-by-payments')
                   },
                   {
-                    label: t.get('reportByBalances'),
-                    onClick: createRedirectHandler('/payment/report-by-balances'),
-                    isActive: checkIfLocation('/payment/report-by-balances')
-                  },
-                  {
                     label: t.get('reportByCorrections'),
                     onClick: createRedirectHandler('/payment/report-by-corrections'),
                     isActive: checkIfLocation('/payment/report-by-corrections')
