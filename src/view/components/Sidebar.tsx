@@ -439,7 +439,8 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/shop/orders')
             }
           ],
-          showWhen: isBetRabbit && !isPaymentSupporter && !isAffiliate && !isContentManager && !isFinancialSupporter
+          showWhen:
+            (isBetRabbit || isMi7) && !isPaymentSupporter && !isAffiliate && !isContentManager && !isFinancialSupporter
         }
       ].filter((i) => i.showWhen)}
       collapsedWidth={7.2}
