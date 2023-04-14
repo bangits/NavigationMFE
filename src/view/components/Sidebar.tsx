@@ -406,9 +406,7 @@ export const Sidebar = () => {
         {
           label: t.get('financicalReports'),
           icon: <Icons.FinacicalReportSideBarIcon width='1.8rem' height='2.4rem' />,
-          isActive:
-            checkIfLocationIncludes('/payment/report-by-balances') ||
-            checkIfLocationIncludes('/payment/report-by-payments'),
+          isActive: checkIfLocationIncludes('/payment/report'),
           subItems: [
             {
               label: t.get('reportByPayments'),
@@ -416,9 +414,14 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/payment/report-by-payments')
             },
             {
-              label: t.get('reportByBalances'),
-              onClick: createRedirectHandler('/payment/report-by-balances'),
-              isActive: checkIfLocation('/payment/report-by-balances')
+              label: t.get('reportByCorrections'),
+              onClick: createRedirectHandler('/payment/report-by-corrections'),
+              isActive: checkIfLocation('/payment/report-by-corrections')
+            },
+            {
+              label: t.get('reportByPlayers'),
+              onClick: createRedirectHandler('/payment/report-by-players'),
+              isActive: checkIfLocation('/payment/report-by-players')
             }
           ],
           showWhen: !isKingbet && !isPaymentSupporter && !isAffiliate
