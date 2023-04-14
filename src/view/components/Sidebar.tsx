@@ -478,9 +478,7 @@ export const Sidebar = () => {
               {
                 label: t.get('financicalReports'),
                 icon: <Icons.FinacicalReportSideBarIcon width='1.8rem' height='2.4rem' />,
-                isActive:
-                  checkIfLocationIncludes('/payment/report') ||
-                  checkIfLocationIncludes('/payment/report'),
+                isActive: checkIfLocationIncludes('/payment/report'),
                 subItems: [
                   {
                     label: t.get('reportByPayments'),
