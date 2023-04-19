@@ -1,8 +1,8 @@
 import { AuthenticatedContext, isAdminUser } from '@atom/authorization';
-import { redirectToURL, useLocation, useTranslation } from '@atom/common';
+import { projects, redirectToURL, useLocation, useTranslation } from '@atom/common';
 import { Sidebar as DesignSystemSidebar, Icons } from '@atom/design-system';
-import { useCallback, useContext, useMemo } from 'react';
-import { BangitsLogo, BetRabbitLogo, KingBetLogo, Logo, Mi7Bet, QantoApuestasLogo, RevolucionLogo } from '../images';
+import { useCallback, useContext } from 'react';
+import { Logo } from '../images';
 
 export const Sidebar = () => {
   const { user } = useContext(AuthenticatedContext);
@@ -27,48 +27,6 @@ export const Sidebar = () => {
   const checkIfLocation = useCallback(
     (url: string) => location.pathname === url || location.pathname === url + '/' || location.pathname + '/' === url,
     [location]
-  );
-
-  const projectsInformation = useMemo<
-    Record<
-      string,
-      {
-        name: string;
-        logo: string;
-      }
-    >
-  >(
-    () => ({
-      1: {
-        logo: QantoApuestasLogo,
-        name: 'Qanto Apuestas'
-      },
-      2: {
-        logo: BangitsLogo,
-        name: 'Bangits'
-      },
-      3: {
-        logo: KingBetLogo,
-        name: 'King Bet'
-      },
-      5: {
-        logo: BetRabbitLogo,
-        name: 'Bet Rabbit'
-      },
-      7: {
-        logo: RevolucionLogo,
-        name: 'Revolucion'
-      },
-      8: {
-        logo: Mi7Bet,
-        name: 'Mi7bet'
-      },
-      20: {
-        logo: '',
-        name: 'MostBet'
-      }
-    }),
-    []
   );
 
   return (
@@ -547,8 +505,8 @@ export const Sidebar = () => {
       collapsedWidth={7.2}
       width={25}
       logoSrc={Logo}
-      bottomLogoSrc={projectsInformation[user.projectId].logo}
-      bottomTitle={projectsInformation[user.projectId].name}
+      bottomLogoSrc={projects[user.projectId].logo}
+      bottomTitle={projects[user.projectId].name}
     />
   );
 };
