@@ -478,25 +478,25 @@ export const Sidebar = () => {
                 isActive: checkIfLocationIncludes('/sport-reports'),
                 subItems: [
                   {
-                    label: t.get('reportByPlayers'),
-                    onClick: createRedirectHandler('/sport-reports/players'),
-                    isActive: checkIfLocation('/sport-reports/players')
-                  },
-                  {
-                    label: t.get('reportBySports'),
-                    onClick: createRedirectHandler('/sport-reports/sports'),
-                    isActive: checkIfLocation('/sport-reports/sports')
-                  },
-                  {
-                    label: t.get('reportByCompetitions'),
-                    onClick: createRedirectHandler('/sport-reports/competitions'),
-                    isActive: checkIfLocation('/sport-reports/competitions')
-                  },
-                  {
-                    label: t.get('reportByMarkets'),
-                    onClick: createRedirectHandler('/sport-reports/markets'),
-                    isActive: checkIfLocation('/sport-reports/markets')
+                    label: t.get('reportByBets'),
+                    onClick: createRedirectHandler('/sport-reports/bets'),
+                    isActive: checkIfLocation('/sport-reports/bets')
                   }
+                  // {
+                  //   label: t.get('reportBySports'),
+                  //   onClick: createRedirectHandler('/sport-reports/sports'),
+                  //   isActive: checkIfLocation('/sport-reports/sports')
+                  // },
+                  // {
+                  //   label: t.get('reportByCompetitions'),
+                  //   onClick: createRedirectHandler('/sport-reports/competitions'),
+                  //   isActive: checkIfLocation('/sport-reports/competitions')
+                  // },
+                  // {
+                  //   label: t.get('reportByMarkets'),
+                  //   onClick: createRedirectHandler('/sport-reports/markets'),
+                  //   isActive: checkIfLocation('/sport-reports/markets')
+                  // }
                 ]
               }
             ]
