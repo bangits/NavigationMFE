@@ -213,19 +213,24 @@ export const Sidebar = () => {
         ...(!isProvider
           ? [
               {
-                label: t.get('betReports'),
+                label: t.get('casinoReports'),
                 icon: <Icons.ReportsIcon />,
                 isActive: checkIfLocationIncludes('/reports/'),
                 subItems: [
                   {
-                    label: t.get('reportByProviders'),
-                    onClick: createRedirectHandler('/reports/providers'),
-                    isActive: checkIfLocation('/reports/providers')
+                    label: t.get('reportByBets'),
+                    onClick: createRedirectHandler('/reports/bets'),
+                    isActive: checkIfLocation('/reports/bets')
                   },
                   {
                     label: t.get('reportByPlayers'),
                     onClick: createRedirectHandler('/reports/players'),
                     isActive: checkIfLocation('/reports/players')
+                  },
+                  {
+                    label: t.get('reportByProviders'),
+                    onClick: createRedirectHandler('/reports/providers'),
+                    isActive: checkIfLocation('/reports/providers')
                   },
                   {
                     label: t.get('reportByGames'),
