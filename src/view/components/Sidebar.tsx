@@ -7,7 +7,7 @@ import { Logo } from '../images';
 export const Sidebar = () => {
   const { user } = useContext(AuthenticatedContext);
 
-  const isProvider = [29631, 29629, 8285, 29559, 29531, 8286, 8287, 28435, 28590, 28675, 28788, 29402].includes(
+  const isProvider = [29633, 29631, 29629, 8285, 29559, 29531, 8286, 8287, 28435, 28590, 28675, 28788, 29402].includes(
     +user.userId
   );
   const isTestUser = [8324].includes(+user.userId);
