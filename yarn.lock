@@ -81,37 +81,6 @@
     single-spa-react "^4.4.0"
     yup "^0.32.10"
 
-<<<<<<< HEAD
-"@atom/authorization@^0.1.4":
-  version "0.1.4"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/authorization/-/authorization-0.1.4.tgz#60aca43e63a059be00d29d6e1a9b52a9a7939528"
-  integrity sha1-YKykPmOgWb4A0p1uGptSqaeTlSg=
-=======
-"@atom/authorization@^1.2.9":
-  version "1.2.9"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/authorization/-/authorization-1.2.9.tgz#483b77d6a1b5b54a7514fc350e7144954186be97"
-  integrity sha1-SDt31qG1tUp1FPw1DnFElUGGvpc=
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
-  dependencies:
-    "@atom/common" "^2.1.7"
-    "@atom/design-system" "^3.1.0"
-    "@atom/user-management" "^0.2.0"
-    "@automapper/classes" "^7.0.2"
-    "@automapper/core" "^7.0.2"
-    "@reduxjs/toolkit" "^1.6.1"
-    formik "^2.2.9"
-    inversify "^5.1.1"
-    oidc-client "^1.11.5"
-    react "^17.0.2"
-    react-dom "^17.0.2"
-    react-redux "^7.2.5"
-    react-router-dom "5.3.0"
-    reflect-metadata "^0.1.13"
-    single-spa "^5.9.3"
-    single-spa-react "^4.4.0"
-    yup "^0.32.10"
-
-<<<<<<< HEAD
 "@atom/authorization@^1.2.9":
   version "1.2.9"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/authorization/-/authorization-1.2.9.tgz#483b77d6a1b5b54a7514fc350e7144954186be97"
@@ -135,11 +104,6 @@
     single-spa-react "^4.4.0"
     yup "^0.32.10"
 
-"@atom/common@^0.1.12":
-  version "0.1.24"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-0.1.24.tgz#6c0d8c33068f8f76ba73c03ea50e22e6fc01dd5e"
-  integrity sha1-bA2MMwaPj3a6c8A+pQ4i5vwB3V4=
-=======
 "@atom/cms-management@^0.2.9":
   version "0.2.10"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/cms-management/-/cms-management-0.2.10.tgz#3436e91ce83068dbcabb3edc360c307c88bf08a8"
@@ -167,7 +131,6 @@
   version "2.2.44"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.2.44.tgz#f0978552ec458a0f43751659d027a2d0dfd90277"
   integrity sha1-8JeFUuxFig9DdRZZ0Cei0N/ZAnc=
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
   dependencies:
     "@automapper/classes" "^7.0.2"
     "@automapper/core" "^7.0.2"
@@ -199,26 +162,6 @@
     react "^17.0.2"
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
-
-"@atom/design-system@4.5.6":
-  version "4.5.6"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.5.6.tgz#24d23b7186309ab03432ad72fe5a5112e2d86d83"
-  integrity sha1-JNI7cYYwmrA0Mq1y/lpREuLYbYM=
-  dependencies:
-    "@my-ui/core" "^0.9.46"
-    classnames "^2.3.1"
-    draft-js "^0.11.7"
-    draftjs-to-html "^0.9.1"
-    react "17.0.0"
-    react-cropper "^2.1.8"
-    react-dnd "15.1.2"
-    react-dnd-html5-backend "^16.0.1"
-    react-dom "17.0.0"
-    react-draft-wysiwyg "^1.15.0"
-    react-jss "^10.8.2"
-    react-sortable-hoc "^2.0.0"
-    react-transition-group "^4.4.2"
-    regenerator-transform "^0.14.5"
 
 "@atom/design-system@^2.9.3":
   version "2.9.9"
@@ -262,25 +205,6 @@
     draftjs-to-html "^0.9.1"
     react "17.0.0"
     react-cropper "^2.1.8"
-<<<<<<< HEAD
-    react-dom "^17.0.2"
-    react-jss "^10.8.2"
-    react-sortable-hoc "^2.0.0"
-    react-transition-group "^4.4.2"
-
-"@atom/design-system@^4.5.1":
-  version "4.5.1"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.5.1.tgz#2b9de4ba961697a47cefb98973523daeb977ebc1"
-  integrity sha1-K53kupYWl6R877mJc1I9rrl368E=
-  dependencies:
-    "@my-ui/core" "^0.9.46"
-    classnames "^2.3.1"
-    draft-js "^0.11.7"
-    draftjs-to-html "^0.9.1"
-    react "17.0.0"
-    react-cropper "^2.1.8"
-=======
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
     react-dnd "15.1.2"
     react-dnd-html5-backend "^16.0.1"
     react-dom "17.0.0"
@@ -288,6 +212,28 @@
     react-jss "^10.8.2"
     react-sortable-hoc "^2.0.0"
     react-transition-group "^4.4.2"
+    regenerator-transform "^0.14.5"
+
+"@atom/design-system@^4.7.3":
+  version "4.7.3"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.7.3.tgz#e98b13d4aec62642ab47cfd5e0a18e451e208f62"
+  integrity sha1-6YsT1K7GJkKrR8/V4KGORR4gj2I=
+  dependencies:
+    "@my-ui/core" "0.11.0"
+    classnames "^2.3.1"
+    codemirror "^5.65.10"
+    draft-js "^0.11.7"
+    draftjs-to-html "^0.9.1"
+    react "17.0.0"
+    react-codemirror2 "^7.2.1"
+    react-cropper "^2.1.8"
+    react-dnd "15.1.2"
+    react-dnd-html5-backend "^16.0.1"
+    react-dom "17.0.0"
+    react-draft-wysiwyg "^1.15.0"
+    react-jss "^10.8.2"
+    react-sortable-hoc "^2.0.0"
+    react-transition-group "^4.4.5"
     regenerator-transform "^0.14.5"
 
 "@atom/game-management@^0.1.0":
@@ -1946,6 +1892,22 @@
   resolved "https://registry.npmjs.org/@msgpack/msgpack/-/msgpack-2.8.0.tgz#4210deb771ee3912964f14a15ddfb5ff877e70b9"
   integrity sha512-h9u4u/jiIRKbq25PM+zymTyW6bhTzELvOoUd+AvYriWOAKpLGnIamaET3pnHYoI5iYphAHBI4ayx0MehR+VVPQ==
 
+"@my-ui/core@0.11.0":
+  version "0.11.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.11.0.tgz#4258084146a8b962b211a29dc506b0f3abc4209a"
+  integrity sha1-QlgIQUaouWKyEaKdxQaw86vEIJo=
+  dependencies:
+    "@my-ui/react-datepicker" "^1.5.0"
+    "@my-ui/react-select" "1.1.6"
+    "@my-ui/react-table" "1.3.0"
+    "@my-ui/scrollbar" "^1.0.2"
+    classnames "^2.3.1"
+    react-flip-move "^3.0.4"
+    react-jss "^10.8.0"
+    react-paginate "^7.1.5"
+    react-transition-group "^4.4.2"
+    throttle-debounce "^3.0.1"
+
 "@my-ui/core@^0.5.0":
   version "0.5.21"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.5.21.tgz#8d297d03f92f8c1d11d970001ff2a96708be3ecb"
@@ -1962,65 +1924,10 @@
     react-transition-group "^4.4.2"
     throttle-debounce "^3.0.1"
 
-<<<<<<< HEAD
-"@my-ui/core@^0.7.4":
-  version "0.7.6"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.7.6.tgz#074f76848e5885ae0853b7fcc2cae1811cb846e4"
-  integrity sha1-B092hI5Yha4IU7f8wsrhgRy4RuQ=
-  dependencies:
-    "@my-ui/react-datepicker" "^1.5.0"
-    "@my-ui/react-select" "1.1.6"
-    "@my-ui/react-table" "1.3.0"
-    "@my-ui/scrollbar" "^1.0.2"
-    classnames "^2.3.1"
-    react-flip-move "^3.0.4"
-    react-jss "^10.8.0"
-    react-paginate "^7.1.5"
-    react-transition-group "^4.4.2"
-    throttle-debounce "^3.0.1"
-
-"@my-ui/core@^0.7.6":
-  version "0.7.7"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.7.7.tgz#08e5a8296f22bb71664f613c34b67ee53e2648b7"
-  integrity sha1-COWoKW8iu3FmT2E8NLZ+5T4mSLc=
-  dependencies:
-    "@my-ui/react-datepicker" "^1.5.0"
-    "@my-ui/react-select" "1.1.6"
-    "@my-ui/react-table" "1.3.0"
-    "@my-ui/scrollbar" "^1.0.2"
-    classnames "^2.3.1"
-    react-flip-move "^3.0.4"
-    react-jss "^10.8.0"
-    react-paginate "^7.1.5"
-    react-transition-group "^4.4.2"
-    throttle-debounce "^3.0.1"
-
-"@my-ui/core@^0.9.46":
-  version "0.9.46"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.9.46.tgz#9a575f82dc417bb18f921fb9c8602418ca95da4a"
-  integrity sha1-mldfgtxBe7GPkh+5yGAkGMqV2ko=
-  dependencies:
-    "@my-ui/react-datepicker" "^1.5.0"
-    "@my-ui/react-select" "1.1.6"
-    "@my-ui/react-table" "1.3.0"
-    "@my-ui/scrollbar" "^1.0.2"
-    classnames "^2.3.1"
-    react-flip-move "^3.0.4"
-    react-jss "^10.8.0"
-    react-paginate "^7.1.5"
-    react-transition-group "^4.4.2"
-    throttle-debounce "^3.0.1"
-
-"@my-ui/core@^2.28.18":
-  version "2.28.18"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.28.18.tgz#b4851785848e29cb34638f90d8dbdaeef4820c1f"
-  integrity sha1-tIUXhYSOKcs0Y4+Q2Nva7vSCDB8=
-=======
-"@my-ui/core@^0.9.14", "@my-ui/core@^0.9.17", "@my-ui/core@^0.9.23", "@my-ui/core@^0.9.46", "@my-ui/core@^0.9.47":
+"@my-ui/core@^0.9.14", "@my-ui/core@^0.9.17", "@my-ui/core@^0.9.23", "@my-ui/core@^0.9.47":
   version "0.9.47"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.9.47.tgz#bea24a3ca52433b6e47cc8a940c025241044280e"
   integrity sha1-vqJKPKUkM7bkfMipQMAlJBBEKA4=
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
@@ -2114,31 +2021,6 @@
   version "2.11.6"
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.6.tgz#cee20bd55e68a1720bdab363ecf0c821ded4cd45"
   integrity sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==
-
-"@react-dnd/asap@4.0.1":
-  version "4.0.1"
-  resolved "https://registry.npmjs.org/@react-dnd/asap/-/asap-4.0.1.tgz#5291850a6b58ce6f2da25352a64f1b0674871aab"
-  integrity sha512-kLy0PJDDwvwwTXxqTFNAAllPHD73AycE9ypWeln/IguoGBEbvFcPDbCV03G52bEcC5E+YgupBE0VzHGdC8SIXg==
-
-"@react-dnd/asap@^5.0.1":
-  version "5.0.2"
-  resolved "https://registry.npmjs.org/@react-dnd/asap/-/asap-5.0.2.tgz#1f81f124c1cd6f39511c11a881cfb0f715343488"
-  integrity sha512-WLyfoHvxhs0V9U+GTsGilGgf2QsPl6ZZ44fnv0/b8T3nQyvzxidxsg/ZltbWssbsRDlYW8UKSQMTGotuTotZ6A==
-
-"@react-dnd/invariant@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/@react-dnd/invariant/-/invariant-3.0.1.tgz#7e70be19ea21b539e8bf1da28466f4f05df2a4cc"
-  integrity sha512-blqduwV86oiKw2Gr44wbe3pj3Z/OsXirc7ybCv9F/pLAR+Aih8F3rjeJzK0ANgtYKv5lCpkGVoZAeKitKDaD/g==
-
-"@react-dnd/invariant@^4.0.1":
-  version "4.0.2"
-  resolved "https://registry.npmjs.org/@react-dnd/invariant/-/invariant-4.0.2.tgz#b92edffca10a26466643349fac7cdfb8799769df"
-  integrity sha512-xKCTqAK/FFauOM9Ta2pswIyT3D8AQlfrYdOi/toTPEhqCuAs1v5tcJ3Y08Izh1cJ5Jchwy9SeAXmMg6zrKs2iw==
-
-"@react-dnd/shallowequal@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/@react-dnd/shallowequal/-/shallowequal-3.0.1.tgz#8056fe046a8d10a275e321ec0557ae652d7a4d06"
-  integrity sha512-XjDVbs3ZU16CO1h5Q3Ew2RPJqmZBDE/EVf1LYp6ePEffs3V/MX9ZbL5bJr8qiK5SbGmUMuDoaFgyKacYz8prRA==
 
 "@react-dnd/asap@4.0.1":
   version "4.0.1"
@@ -3163,11 +3045,7 @@ arrify@^2.0.1:
   resolved "https://registry.npmjs.org/arrify/-/arrify-2.0.1.tgz#c9655e9331e0abcd588d2a7cad7e9956f66701fa"
   integrity sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug==
 
-<<<<<<< HEAD
-asap@^2.0.0, asap@~2.0.3:
-=======
 asap@~2.0.3:
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
   version "2.0.6"
   resolved "https://registry.npmjs.org/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
   integrity sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==
@@ -3746,6 +3624,11 @@ code-point-at@^1.0.0:
   resolved "https://registry.npmjs.org/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha512-RpAVKQA5T63xEj6/giIbUEtZwJ4UFIc3ZtvEkiaUERylqe8xb5IvqcgOurZLahv93CLKfxcw5YI+DZcUBRyLXA==
 
+codemirror@^5.65.10:
+  version "5.65.13"
+  resolved "https://registry.npmjs.org/codemirror/-/codemirror-5.65.13.tgz#c098a6f409db8b5a7c5722788bd9fa3bb2367f2e"
+  integrity sha512-SVWEzKXmbHmTQQWaz03Shrh4nybG0wXx2MEu3FO4ezbPW8IbnZEd5iGHGEffSUaitKYa3i+pHpBsSvw8sPHtzg==
+
 collect-v8-coverage@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/collect-v8-coverage/-/collect-v8-coverage-1.0.1.tgz#cc2c8e94fc18bbdffe64d6534570c8a673b27f59"
@@ -3918,22 +3801,10 @@ core-js@^2.4.0:
   resolved "https://registry.npmjs.org/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
-<<<<<<< HEAD
-core-js@^3.6.4:
-  version "3.26.1"
-  resolved "https://registry.npmjs.org/core-js/-/core-js-3.26.1.tgz#7a9816dabd9ee846c1c0fe0e8fcad68f3709134e"
-  integrity sha512-21491RRQVzUn0GGM9Z1Jrpr6PNPxPi+Za8OM9q4tksTSnlbXXGKK1nXNg/QvwFYettXvSX6zWKCtHHfjN4puyA==
-
-core-js@^3.8.3:
-  version "3.23.3"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.23.3.tgz#3b977612b15da6da0c9cc4aec487e8d24f371112"
-  integrity sha512-oAKwkj9xcWNBAvGbT//WiCdOMpb9XQG92/Fe3ABFM/R16BsHgePG00mFOgKf7IsCtfj8tA1kHtf/VwErhriz5Q==
-=======
 core-js@^3.6.4, core-js@^3.8.3:
   version "3.26.1"
   resolved "https://registry.npmjs.org/core-js/-/core-js-3.26.1.tgz#7a9816dabd9ee846c1c0fe0e8fcad68f3709134e"
   integrity sha512-21491RRQVzUn0GGM9Z1Jrpr6PNPxPi+Za8OM9q4tksTSnlbXXGKK1nXNg/QvwFYettXvSX6zWKCtHHfjN4puyA==
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
 
 core-util-is@1.0.2:
   version "1.0.2"
@@ -4317,11 +4188,7 @@ dir-glob@^3.0.1:
 
 dnd-core@15.1.2:
   version "15.1.2"
-<<<<<<< HEAD
-  resolved "https://registry.yarnpkg.com/dnd-core/-/dnd-core-15.1.2.tgz#0983bce555c4985f58b731ffe1faed31e1ea7f6f"
-=======
   resolved "https://registry.npmjs.org/dnd-core/-/dnd-core-15.1.2.tgz#0983bce555c4985f58b731ffe1faed31e1ea7f6f"
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
   integrity sha512-EOec1LyJUuGRFg0LDa55rSRAUe97uNVKVkUo8iyvzQlcECYTuPblVQfRWXWj1OyPseFIeebWpNmKFy0h6BcF1A==
   dependencies:
     "@react-dnd/asap" "4.0.1"
@@ -4330,11 +4197,7 @@ dnd-core@15.1.2:
 
 dnd-core@^16.0.1:
   version "16.0.1"
-<<<<<<< HEAD
-  resolved "https://registry.yarnpkg.com/dnd-core/-/dnd-core-16.0.1.tgz#a1c213ed08961f6bd1959a28bb76f1a868360d19"
-=======
   resolved "https://registry.npmjs.org/dnd-core/-/dnd-core-16.0.1.tgz#a1c213ed08961f6bd1959a28bb76f1a868360d19"
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
   integrity sha512-HK294sl7tbw6F6IeuK16YSBUoorvHpY8RHO+9yFfaJyCDVb6n7PRcezrOEOa2SBCqiYpemh5Jx20ZcjKdFAVng==
   dependencies:
     "@react-dnd/asap" "^5.0.1"
@@ -8292,6 +8155,11 @@ raw-body@2.5.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+react-codemirror2@^7.2.1:
+  version "7.2.1"
+  resolved "https://registry.npmjs.org/react-codemirror2/-/react-codemirror2-7.2.1.tgz#38dab492fcbe5fb8ebf5630e5bb7922db8d3a10c"
+  integrity sha512-t7YFmz1AXdlImgHXA9Ja0T6AWuopilub24jRaQdPVbzUJVNKIYuy3uCFZYa7CE5S3UW6SrSa5nAqVQvtzRF9gw==
+
 react-cropper@^2.1.8:
   version "2.1.8"
   resolved "https://registry.npmjs.org/react-cropper/-/react-cropper-2.1.8.tgz#bf35a7de65769f8ad357e8ae884e791fe3fe9212"
@@ -8306,22 +8174,14 @@ react-display-name@^0.2.4:
 
 react-dnd-html5-backend@^16.0.1:
   version "16.0.1"
-<<<<<<< HEAD
-  resolved "https://registry.yarnpkg.com/react-dnd-html5-backend/-/react-dnd-html5-backend-16.0.1.tgz#87faef15845d512a23b3c08d29ecfd34871688b6"
-=======
   resolved "https://registry.npmjs.org/react-dnd-html5-backend/-/react-dnd-html5-backend-16.0.1.tgz#87faef15845d512a23b3c08d29ecfd34871688b6"
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
   integrity sha512-Wu3dw5aDJmOGw8WjH1I1/yTH+vlXEL4vmjk5p+MHxP8HuHJS1lAGeIdG/hze1AvNeXWo/JgULV87LyQOr+r5jw==
   dependencies:
     dnd-core "^16.0.1"
 
 react-dnd@15.1.2:
   version "15.1.2"
-<<<<<<< HEAD
-  resolved "https://registry.yarnpkg.com/react-dnd/-/react-dnd-15.1.2.tgz#211b30fd842326209c63f26f1bdf1bc52eef4f64"
-=======
   resolved "https://registry.npmjs.org/react-dnd/-/react-dnd-15.1.2.tgz#211b30fd842326209c63f26f1bdf1bc52eef4f64"
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
   integrity sha512-EaSbMD9iFJDY/o48T3c8wn3uWU+2uxfFojhesZN3LhigJoAIvH2iOjxofSA9KbqhAKP6V9P853G6XG8JngKVtA==
   dependencies:
     "@react-dnd/invariant" "3.0.1"
@@ -8332,11 +8192,7 @@ react-dnd@15.1.2:
 
 react-dom@17.0.0:
   version "17.0.0"
-<<<<<<< HEAD
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.0.tgz#f8266e4d9861584553ccbd186d596a1c7dd8dcb4"
-=======
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-17.0.0.tgz#f8266e4d9861584553ccbd186d596a1c7dd8dcb4"
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
   integrity sha512-OGnFbxCjI2TMAZYMVxi4hqheJiN8rCEVVrL7XIGzCB6beNc4Am8M47HtkvxODZw9QgjmAPKpLba9FTu4fC1byA==
   dependencies:
     loose-envify "^1.1.0"
@@ -8508,7 +8364,7 @@ react-sortable-hoc@^2.0.0:
     invariant "^2.2.4"
     prop-types "^15.5.7"
 
-react-transition-group@^4.3.0, react-transition-group@^4.4.2:
+react-transition-group@^4.3.0, react-transition-group@^4.4.2, react-transition-group@^4.4.5:
   version "4.4.5"
   resolved "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.5.tgz#e53d4e3f3344da8521489fbef8f2581d42becdd1"
   integrity sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==
@@ -8520,11 +8376,7 @@ react-transition-group@^4.3.0, react-transition-group@^4.4.2:
 
 react@17.0.0:
   version "17.0.0"
-<<<<<<< HEAD
-  resolved "https://registry.yarnpkg.com/react/-/react-17.0.0.tgz#ad96d5fa1a33bb9b06d0cc52672f7992d84aa662"
-=======
   resolved "https://registry.npmjs.org/react/-/react-17.0.0.tgz#ad96d5fa1a33bb9b06d0cc52672f7992d84aa662"
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
   integrity sha512-rG9bqS3LMuetoSUKHN8G3fMNuQOePKDThK6+2yXFWtoeTDLVNh/QCaxT+Jr+rNf4lwNXpx+atdn3Aa0oi8/6eQ==
   dependencies:
     loose-envify "^1.1.0"
@@ -8649,20 +8501,8 @@ regenerator-runtime@^0.13.11:
 
 regenerator-transform@^0.14.5:
   version "0.14.5"
-<<<<<<< HEAD
-  resolved "https://registry.yarnpkg.com/regenerator-transform/-/regenerator-transform-0.14.5.tgz#c98da154683671c9c4dcb16ece736517e1b7feb4"
-  integrity sha512-eOf6vka5IO151Jfsw2NO9WpGX58W6wWmefK3I1zEGr0lOD0u8rwPaNqQL1aRxUaxLeKO3ArNh3VYg1KbaD+FFw==
-  dependencies:
-    "@babel/runtime" "^7.8.4"
-
-regenerator-transform@^0.15.0:
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/regenerator-transform/-/regenerator-transform-0.15.0.tgz#cbd9ead5d77fae1a48d957cf889ad0586adb6537"
-  integrity sha512-LsrGtPmbYg19bcPHwdtmXwbW+TqNvtY4riE3P83foeHRroMbH6/2ddFBfab3t7kbzc7v7p4wbkIecHImqt0QNg==
-=======
   resolved "https://registry.npmjs.org/regenerator-transform/-/regenerator-transform-0.14.5.tgz#c98da154683671c9c4dcb16ece736517e1b7feb4"
   integrity sha512-eOf6vka5IO151Jfsw2NO9WpGX58W6wWmefK3I1zEGr0lOD0u8rwPaNqQL1aRxUaxLeKO3ArNh3VYg1KbaD+FFw==
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
   dependencies:
     "@babel/runtime" "^7.8.4"
 
@@ -9091,8 +8931,6 @@ set-blocking@^2.0.0, set-blocking@~2.0.0:
   resolved "https://registry.npmjs.org/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
   integrity sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==
 
-<<<<<<< HEAD
-=======
 set-cookie-parser@^2.4.8:
   version "2.5.1"
   resolved "https://registry.npmjs.org/set-cookie-parser/-/set-cookie-parser-2.5.1.tgz#ddd3e9a566b0e8e0862aca974a6ac0e01349430b"
@@ -9108,7 +8946,6 @@ set-value@^2.0.0, set-value@^2.0.1:
     is-plain-object "^2.0.3"
     split-string "^3.0.1"
 
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
 setimmediate@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
@@ -9943,19 +9780,6 @@ ua-parser-js@^0.7.18:
   version "0.7.32"
   resolved "https://registry.npmjs.org/ua-parser-js/-/ua-parser-js-0.7.32.tgz#cd8c639cdca949e30fa68c44b7813ef13e36d211"
   integrity sha512-f9BESNVhzlhEFf2CHMSj40NWOjYPl1YKYbrvIr/hFTDEmLq7SRbWvm7FcdcpCYT95zrOhC7gZSxjdnnTpBcwVw==
-<<<<<<< HEAD
-
-uc.micro@^1.0.1:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/uc.micro/-/uc.micro-1.0.6.tgz#9c411a802a409a91fc6cf74081baba34b24499ac"
-  integrity sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==
-
-uid-number@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/uid-number/-/uid-number-0.0.6.tgz#0ea10e8035e8eb5b8e4449f06da1c730663baa81"
-  integrity sha512-c461FXIljswCuscZn67xq9PpszkPT6RjheWFQTgCyabJrTUozElanb0YEqv2UGgk247YpcJkFBuSGNvBlpXM9w==
-=======
->>>>>>> 945cf45435888e2182320cfea213fbdb874f72fe
 
 uc.micro@^1.0.1:
   version "1.0.6"
