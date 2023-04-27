@@ -404,6 +404,19 @@ export const Sidebar = () => {
           showWhen: !isPaymentSupporter && !isAffiliate
         },
         {
+          label: t.get('sportReports'),
+          icon: <Icons.SportReportSideBarIcon width='1.8rem' height='2.4rem' />,
+          isActive: checkIfLocationIncludes('/sport-reports'),
+          subItems: [
+            {
+              label: t.get('reportByBets'),
+              onClick: createRedirectHandler('/sport-reports/bets'),
+              isActive: checkIfLocation('/sport-reports/bets')
+            }
+          ],
+          showWhen: isRevolution
+        },
+        {
           label: t.get('financicalReports'),
           icon: <Icons.FinacicalReportSideBarIcon width='1.8rem' height='2.4rem' />,
           isActive: checkIfLocationIncludes('/payment/report'),
