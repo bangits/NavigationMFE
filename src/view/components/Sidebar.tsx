@@ -29,6 +29,9 @@ export const Sidebar = () => {
   const isBetCesar = user.projectId === 9;
   const isBetRabbit = user.projectId === 5;
   const isPingWin = user.projectId === 8;
+  const isRuby = user.projectId === 11;
+  const isWinGrade = user.projectId === 12;
+  const isHarembet = user.projectId === 13;
 
   const location = useLocation();
   const t = useTranslation();
@@ -207,7 +210,7 @@ export const Sidebar = () => {
               onClick: createRedirectHandler('/promocode '),
               isActive: checkIfLocationIncludes('/promocode')
             },
-            ...(isBetRabbit || isMi7
+            ...(isBetRabbit || isMi7 || isRuby || isWinGrade || isHarembet
               ? [
                   {
                     label: t.get('loyaltyProgram'),
@@ -219,7 +222,7 @@ export const Sidebar = () => {
           ],
           showWhen:
             !isAffiliate &&
-            (isBetRabbit || isRevolution || isBetCesar || isMi7 || isPingWin) &&
+            (isBetRabbit || isRevolution || isBetCesar || isMi7 || isRuby || isWinGrade || isHarembet || isPingWin) &&
             !isContentManager &&
             !isFinancialSupporter
         },
@@ -239,7 +242,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/task/configuration')
             }
           ],
-          showWhen: isBetRabbit || isMi7 || isContentManager
+          showWhen: isBetRabbit || isMi7 || isRuby || isWinGrade || isHarembet || isContentManager
         },
         {
           label: t.get('affiliateManagement'),
@@ -456,7 +459,11 @@ export const Sidebar = () => {
             }
           ],
           showWhen:
-            (isBetRabbit || isMi7) && !isPaymentSupporter && !isAffiliate && !isContentManager && !isFinancialSupporter
+            (isBetRabbit || isMi7 || isRuby || isWinGrade || isHarembet) &&
+            !isPaymentSupporter &&
+            !isAffiliate &&
+            !isContentManager &&
+            !isFinancialSupporter
         }
       ].filter((i) => i.showWhen)}
       collapsedWidth={7.2}
