@@ -30,3 +30,4 @@ jobs:
 
       - name: Purge CDN endpoint
         run: az cdn endpoint purge --profile-name atom --resource-group AksAtom9f2e-rg --name atom-cdn --content-paths '/mfe-staging/atom-navigation.js'
+
