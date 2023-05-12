@@ -90,6 +90,16 @@ export const Sidebar = () => {
               label: t.get('users'),
               onClick: createRedirectHandler('/users/'),
               isActive: checkIfLocationIncludes('/users/')
+            },
+            {
+              label: t.get('roles'),
+              onClick: createRedirectHandler('/role-permission/roles'),
+              isActive: checkIfLocationIncludes('/role-permission/roles')
+            },
+            {
+              label: t.get('permissions'),
+              onClick: createRedirectHandler('/role-permission/permissions'),
+              isActive: checkIfLocationIncludes('/role-permission/permissions')
             }
           ],
           showWhen: isBetRabbit && !isPaymentSupporter && !isAffiliate && !isContentManager && !isFinancialSupporter
