@@ -107,6 +107,29 @@
     single-spa-react "^4.4.0"
     yup "^0.32.10"
 
+"@atom/authorization@^0.1.7":
+  version "0.1.7"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/authorization/-/authorization-0.1.7.tgz#e56ba07d2f5f97be890e40ca2bd22fb0661980b1"
+  integrity sha1-5WugfS9fl76JDkDKK9IvsGYZgLE=
+  dependencies:
+    "@atom/common" "^2.2.85"
+    "@atom/design-system" "^3.1.0"
+    "@atom/user-management" "^0.2.0"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.1"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    oidc-client "^1.11.5"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa "^5.9.3"
+    single-spa-react "^4.4.0"
+    yup "^0.32.10"
+
 "@atom/authorization@^0.2.1":
   version "0.2.1"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/authorization/-/authorization-0.2.1.tgz#e8f6f7dc347b9e60ab81bc3be55b5b433146b0db"
@@ -279,11 +302,31 @@
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
-"@atom/common@^2.3.4":
-  version "2.3.4"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.3.4.tgz#93aa8ad6bd893d864eda21ac9e213b4d86e3ff7b"
-  integrity sha1-k6qK1r2JPYZO2iGsniE7TYbj/3s=
+"@atom/common@^2.2.85":
+  version "2.3.5"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.3.5.tgz#cfd543e379416eec0175061b6763096bcc1f5eb8"
+  integrity sha1-z9VD43lBbuwBdQYbZ2MJa8wfXrg=
   dependencies:
+    "@atom/authorization" "^0.1.7"
+    "@atom/cms-management" "^0.2.12"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@microsoft/signalr" "^6.0.1"
+    "@microsoft/signalr-protocol-msgpack" "^6.0.1"
+    axios "^0.23.0"
+    dayjs "^1.10.7"
+    formik "^2.2.9"
+    query-string "^7.0.1"
+    react "^17.0.2"
+    single-spa "^5.9.3"
+    single-spa-react "^4.6.0"
+
+"@atom/common@^2.4.4":
+  version "2.4.4"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.4.4.tgz#8dcbdf9d29282adddf6c3b9c07eb44eb0d390d20"
+  integrity sha1-jcvfnSkoKt3fbDucB+tE6w05DSA=
+  dependencies:
+    "@atom/authorization" "^0.1.7"
     "@atom/cms-management" "^0.2.12"
     "@automapper/classes" "^7.0.2"
     "@automapper/core" "^7.0.2"
