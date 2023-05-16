@@ -321,10 +321,10 @@
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
-"@atom/common@^2.4.5":
-  version "2.4.5"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.4.5.tgz#5980216ee9c6beac1b1cf3d42bf610fb3c67657d"
-  integrity sha1-WYAhbunGvqwbHPPUK/YQ+zxnZX0=
+"@atom/common@^2.4.7":
+  version "2.4.7"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.4.7.tgz#b855cb2f5328edf961dfcfe3ae9ecc9ad38d19f5"
+  integrity sha1-uFXLL1Mo7flh38/jrp7MmtONGfU=
   dependencies:
     "@atom/authorization" "^0.1.7"
     "@atom/cms-management" "^0.2.12"

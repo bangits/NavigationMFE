@@ -50,7 +50,7 @@ export const Sidebar = () => {
               isActive: checkIfLocationIncludes('/partners/'),
               showWhen: hasPermission(PermissionSlugs.PARTNERS_GET_PARTNERS_NAME)
             }
-          ],
+          ]
         },
         {
           label: t.get('playerManagement'),
@@ -69,7 +69,7 @@ export const Sidebar = () => {
               isActive: checkIfLocationIncludes('/segment/players'),
               showWhen: hasPermission(PermissionSlugs.GET_SEGMENT)
             }
-          ],
+          ]
         },
         {
           label: t.get('userManagement'),
@@ -94,7 +94,7 @@ export const Sidebar = () => {
               isActive: checkIfLocationIncludes('/role-permission/permissions'),
               showWhen: hasPermission(PermissionSlugs.GET_PERMISSIONS)
             }
-          ],
+          ]
         },
         {
           label: t.get('gameManagement'),
@@ -113,7 +113,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/game'),
               showWhen: hasPermission(PermissionSlugs.GAMES_GET)
             }
-          ],
+          ]
         },
         {
           label: t.get('paymentRequests'),
@@ -157,7 +157,7 @@ export const Sidebar = () => {
               isActive: checkIfLocationIncludes('/loyalty'),
               showWhen: hasPermission(PermissionSlugs.GET_LOYALTY_PROGRAMS)
             }
-          ],
+          ]
         },
         {
           label: t.get('taskManagement'),
@@ -176,7 +176,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/task/configuration'),
               showWhen: hasPermission(PermissionSlugs.GET_TASK_TYPES)
             }
-          ],
+          ]
         },
         {
           label: t.get('affiliateManagement'),
@@ -211,7 +211,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/affiliate/media/report-by-media'),
               showWhen: hasPermission(PermissionSlugs.GET_REPORT_BY_MEDIA)
             }
-          ],
+          ]
         },
         {
           label: t.get('crm'),
@@ -234,13 +234,13 @@ export const Sidebar = () => {
               label: t.get('campaigns'),
               onClick: createRedirectHandler('/crm/campaigns'),
               isActive: checkIfLocation('/crm/campaigns'),
-              showWhen: false //TODO DUPLICATES hasPermission(PermissionSlugs.GET_TRIGGER_CAMPAIGN)
+              showWhen: hasPermission(PermissionSlugs.GET_TRIGGER_CAMPAIGN)
             },
             {
               label: t.get('systemNotifications'),
               onClick: createRedirectHandler('/crm/system-notifications'),
               isActive: checkIfLocation('/crm/system-notifications'),
-              showWhen: false //TODO DUPLICATES hasPermission(PermissionSlugs.GET_TRIGGER_NOTIFICATIONS)
+              showWhen: hasPermission(PermissionSlugs.GET_TRIGGER_NOTIFICATIONS)
             },
             {
               label: t.get('reportsByChannels'),
@@ -248,7 +248,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/crm/report-by-channels'),
               showWhen: hasPermission(PermissionSlugs.GET_COUNTS_NOTIFICATION_REPORT)
             }
-          ],
+          ]
         },
         {
           label: t.get('cms'),
@@ -260,7 +260,7 @@ export const Sidebar = () => {
               label: t.get('providersAndGames'),
               onClick: createRedirectHandler('/cms/providers-games'),
               isActive: checkIfLocation('/cms/providers-games'),
-              showWhen: hasPermission(PermissionSlugs.PROVIDERS_POST)
+              showWhen: hasPermission(PermissionSlugs.PROVIDERS_GET)
             },
             {
               label: t.get('website'),
@@ -316,7 +316,7 @@ export const Sidebar = () => {
               isActive: checkIfLocationIncludes('/cms/image-gallery'),
               showWhen: hasPermission(PermissionSlugs.GALLERY_SECTION_GET)
             }
-          ],
+          ]
         },
         {
           label: t.get('translation'),
@@ -354,7 +354,7 @@ export const Sidebar = () => {
             //   onClick: createRedirectHandler('/reports/transfers'),
             //   isActive: checkIfLocation('/reports/transfers')
             // }
-          ],
+          ]
         },
         {
           label: t.get('sportReports'),
@@ -367,7 +367,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/sport-reports/bets'),
               showWhen: hasPermission(PermissionSlugs.SPORT_PLAYER)
             }
-          ],
+          ]
         },
         {
           label: t.get('financicalReports'),
@@ -390,9 +390,9 @@ export const Sidebar = () => {
               label: t.get('reportByPlayers'),
               onClick: createRedirectHandler('/payment/report-by-players'),
               isActive: checkIfLocation('/payment/report-by-players'),
-              showWhen: false //TODO WITHOUT ID hasPermission(PermissionSlugs.USER_TRANSACTIONS)
+              showWhen: hasPermission(PermissionSlugs.USER_TRANSACTIONS)
             }
-          ],
+          ]
         },
         {
           label: t.get('shop'),
@@ -411,9 +411,9 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/shop/orders'),
               showWhen: hasPermission(PermissionSlugs.GET_CASINO_SHOP_ORDER)
             }
-          ],
+          ]
         }
-      ].filter((i) => i.subItems.length > 0 ? i.subItems.some((item) => item.showWhen) : i.showWhen)}
+      ].filter((i) => (i.subItems.length > 0 ? i.subItems.some((item) => item.showWhen) : i.showWhen))}
       collapsedWidth={7.2}
       width={25}
       logoSrc={Logo}
