@@ -197,7 +197,7 @@ export const Sidebar = () => {
               label: t.get('reportByAffiliates'),
               onClick: createRedirectHandler('/affiliate/report-by-affiliates'),
               isActive: checkIfLocation('/affiliate/report-by-affiliates'),
-              showWhen: false //TODO DUPLICATES hasPermission(PermissionSlugs.GET_REPORT_BY_AFFILIATE)
+              showWhen: hasPermission(PermissionSlugs.GET_REPORT_BY_AFFILIATE),
             },
             {
               label: t.get('links'),
