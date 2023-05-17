@@ -75,7 +75,7 @@
   "dependencies": {
     "@atom/account-management": "^0.1.0",
     "@atom/authorization": "^0.1.4",
-    "@atom/common": "^2.4.7",
+    "@atom/common": "^2.4.8",
     "@atom/player-management": "^0.1.4",
     "@atom/user-management": "^0.2.0",
     "react": "^17.0.2",
