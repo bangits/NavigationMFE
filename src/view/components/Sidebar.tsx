@@ -210,7 +210,7 @@ export const Sidebar = () => {
               onClick: createRedirectHandler('/promocode '),
               isActive: checkIfLocationIncludes('/promocode')
             },
-            ...(isBetRabbit || isMi7 || isRuby || isWinGrade || isHarembet
+            ...(isBetRabbit || isMi7 || isWinGrade || isHarembet
               ? [
                   {
                     label: t.get('loyaltyProgram'),
@@ -242,7 +242,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/task/configuration')
             }
           ],
-          showWhen: isBetRabbit || isMi7 || isRuby || isWinGrade || isHarembet || isContentManager
+          showWhen: isBetRabbit || isMi7 || isWinGrade || isHarembet || isContentManager
         },
         {
           label: t.get('affiliateManagement'),
@@ -464,7 +464,7 @@ export const Sidebar = () => {
             }
           ],
           showWhen:
-            (isBetRabbit || isMi7 || isRuby || isWinGrade || isHarembet) &&
+            (isBetRabbit || isMi7 || isWinGrade || isHarembet) &&
             !isPaymentSupporter &&
             !isAffiliate &&
             !isContentManager &&
