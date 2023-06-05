@@ -20,6 +20,7 @@ export const Sidebar = () => {
   const adminUser = isAdminUser(user);
   const isProvider = [8285, 8286, 8287, 28590].includes(+user.userId);
   const isPaymentSupporter = [8855, 8856, 8857].includes(+user.userId);
+  const isSupport = [10815, 10825, 10826].includes(+user.userId);
   const isContentManager = [9221].includes(+user.userId);
   const isFinancialSupporter = [9222, 9756, 9755].includes(+user.userId);
   const isAffiliate = [10756, 10166, 8876, 8875, 8874, 8873, 8872, 8871, 8870, 8980].includes(+user.userId);
@@ -190,7 +191,7 @@ export const Sidebar = () => {
           onClick: createRedirectHandler('/rule'),
           isActive: checkIfLocationIncludes('/rule'),
           subItems: [],
-          showWhen: !isKingbet && !isPaymentSupporter && !isAffiliate && !isFinancialSupporter
+          showWhen: !isSupport && !isKingbet && !isPaymentSupporter && !isAffiliate && !isFinancialSupporter
         },
         {
           label: t.get('promotionalTools'),
@@ -275,7 +276,12 @@ export const Sidebar = () => {
             }
           ],
           showWhen:
-            (!isKingbet && !isPaymentSupporter && !isRevolution && !isContentManager && !isFinancialSupporter) ||
+            (!isSupport &&
+              !isKingbet &&
+              !isPaymentSupporter &&
+              !isRevolution &&
+              !isContentManager &&
+              !isFinancialSupporter) ||
             isAffiliate
         },
         {
@@ -309,7 +315,13 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/crm/report-by-channels')
             }
           ],
-          showWhen: !isProvider && !isPaymentSupporter && !isAffiliate && !isContentManager && !isFinancialSupporter
+          showWhen:
+            !isSupport &&
+            !isProvider &&
+            !isPaymentSupporter &&
+            !isAffiliate &&
+            !isContentManager &&
+            !isFinancialSupporter
         },
         {
           label: t.get('cms'),
@@ -322,51 +334,55 @@ export const Sidebar = () => {
               onClick: createRedirectHandler('/cms/providers-games'),
               isActive: checkIfLocation('/cms/providers-games')
             },
-            {
-              label: t.get('website'),
-              onClick: createRedirectHandler('/cms/website'),
-              isActive: checkIfLocationIncludes('/cms/website')
-            },
-            {
-              label: t.get('sliders'),
-              onClick: createRedirectHandler('/cms/sliders'),
-              isActive: checkIfLocationIncludes('/cms/sliders')
-            },
-            {
-              label: t.get('banners'),
-              onClick: createRedirectHandler('/cms/banners'),
-              isActive: checkIfLocationIncludes('/cms/banners')
-            },
-            {
-              label: t.get('categoriesAndGroups'),
-              onClick: createRedirectHandler('/cms/game-categories'),
-              isActive: checkIfLocationIncludes('/cms/game-categories')
-            },
-            {
-              label: t.get('pages'),
-              onClick: createRedirectHandler('/cms/pages'),
-              isActive: checkIfLocationIncludes('/cms/pages')
-            },
-            {
-              label: t.get('cards'),
-              onClick: createRedirectHandler('/cms/cards'),
-              isActive: checkIfLocationIncludes('/cms/cards')
-            },
-            {
-              label: t.get('segments'),
-              onClick: createRedirectHandler('/segment/'),
-              isActive: checkIfLocation('/segment/')
-            },
-            {
-              label: t.get('infoSection'),
-              onClick: createRedirectHandler('/cms/info-section'),
-              isActive: checkIfLocation('/cms/info-section')
-            },
-            {
-              label: t.get('imageGalleries'),
-              onClick: createRedirectHandler('/cms/image-gallery'),
-              isActive: checkIfLocationIncludes('/cms/image-gallery')
-            }
+            ...(!isSupport
+              ? [
+                  {
+                    label: t.get('website'),
+                    onClick: createRedirectHandler('/cms/website'),
+                    isActive: checkIfLocationIncludes('/cms/website')
+                  },
+                  {
+                    label: t.get('sliders'),
+                    onClick: createRedirectHandler('/cms/sliders'),
+                    isActive: checkIfLocationIncludes('/cms/sliders')
+                  },
+                  {
+                    label: t.get('banners'),
+                    onClick: createRedirectHandler('/cms/banners'),
+                    isActive: checkIfLocationIncludes('/cms/banners')
+                  },
+                  {
+                    label: t.get('categoriesAndGroups'),
+                    onClick: createRedirectHandler('/cms/game-categories'),
+                    isActive: checkIfLocationIncludes('/cms/game-categories')
+                  },
+                  {
+                    label: t.get('pages'),
+                    onClick: createRedirectHandler('/cms/pages'),
+                    isActive: checkIfLocationIncludes('/cms/pages')
+                  },
+                  {
+                    label: t.get('cards'),
+                    onClick: createRedirectHandler('/cms/cards'),
+                    isActive: checkIfLocationIncludes('/cms/cards')
+                  },
+                  {
+                    label: t.get('segments'),
+                    onClick: createRedirectHandler('/segment/'),
+                    isActive: checkIfLocation('/segment/')
+                  },
+                  {
+                    label: t.get('infoSection'),
+                    onClick: createRedirectHandler('/cms/info-section'),
+                    isActive: checkIfLocation('/cms/info-section')
+                  },
+                  {
+                    label: t.get('imageGalleries'),
+                    onClick: createRedirectHandler('/cms/image-gallery'),
+                    isActive: checkIfLocationIncludes('/cms/image-gallery')
+                  }
+                ]
+              : [])
           ],
           showWhen: !isProvider && !isPaymentSupporter && !isAffiliate && !isContentManager && !isFinancialSupporter
         },
@@ -376,7 +392,7 @@ export const Sidebar = () => {
           icon: <Icons.TranslationIcon width='1.8rem' height='2.4rem' />,
           isActive: checkIfLocation('/translations'),
           subItems: [],
-          showWhen: !isProvider && !isPaymentSupporter && !isAffiliate && !isFinancialSupporter
+          showWhen: !isSupport && !isProvider && !isPaymentSupporter && !isAffiliate && !isFinancialSupporter
         },
         {
           label: t.get('casinoReports'),
@@ -445,7 +461,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/payment/report-by-players')
             }
           ],
-          showWhen: !isKingbet && !isPaymentSupporter && !isAffiliate
+          showWhen: !isSupport && !isKingbet && !isPaymentSupporter && !isAffiliate
         },
         {
           label: t.get('shop'),
