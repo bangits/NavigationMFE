@@ -18,7 +18,7 @@
     "pre-push": "yarn format"
   },
   "devDependencies": {
-    "@atom/design-system": "^4.5.45",
+    "@atom/design-system": "^4.8.9",
     "@babel/core": "^7.14.6",
     "@babel/eslint-parser": "^7.14.7",
     "@babel/plugin-proposal-decorators": "^7.15.8",
@@ -75,7 +75,7 @@
   "dependencies": {
     "@atom/account-management": "^0.1.0",
     "@atom/authorization": "^0.1.4",
-    "@atom/common": "^2.4.8",
+    "@atom/common": "^2.8.6",
     "@atom/player-management": "^0.1.4",
     "@atom/user-management": "^0.2.0",
     "react": "^17.0.2",

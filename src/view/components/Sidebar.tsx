@@ -25,6 +25,7 @@ export const Sidebar = () => {
     (url: string) => location.pathname === url || location.pathname === url + '/' || location.pathname + '/' === url,
     [location]
   );
+  const checkIfLocationStartsWith = useCallback((url: string) => location.pathname.startsWith(url), [location]);
 
   return (
     <DesignSystemSidebar
@@ -97,6 +98,25 @@ export const Sidebar = () => {
           ]
         },
         {
+          label: t.get('paymentManagement'),
+          icon: <Icons.PaymentManagementSidebarIcon />,
+          isActive: checkIfLocationIncludes('/payment-content/'),
+          subItems: [
+            {
+              label: t.get('providers'),
+              onClick: createRedirectHandler('/payment-content/providers'),
+              isActive: checkIfLocation('/payment-content/providers'),
+              showWhen: hasPermission(PermissionSlugs.GET_PAYMENT_MANAGER_PROVIDERS)
+            },
+            {
+              label: t.get('paymentMethods'),
+              onClick: createRedirectHandler('/payment-content/payment-methods'),
+              isActive: checkIfLocation('/payment-content/payment-methods'),
+              showWhen: hasPermission(PermissionSlugs.GET_PAYMENT_MANAGER_METHODS)
+            }
+          ]
+        },
+        {
           label: t.get('gameManagement'),
           icon: <Icons.GamesIcon />,
           isActive: checkIfLocationIncludes('/game/'),
@@ -117,11 +137,23 @@ export const Sidebar = () => {
         },
         {
           label: t.get('paymentRequests'),
-          onClick: createRedirectHandler('/payment/payments'),
+          onClick: createRedirectHandler('/payment'),
           icon: <Icons.PaymentSideBarIcon width='1.8rem' height='2.4rem' />,
-          isActive: checkIfLocation('/payment/payments'),
-          subItems: [],
-          showWhen: hasPermission(PermissionSlugs.PAYMENT_GET_PLAYERS_REQUESTS)
+          isActive: checkIfLocationStartsWith('/payment') && !checkIfLocationStartsWith('/payment-'),
+          subItems: [
+            {
+              label: t.get('deposits'),
+              onClick: createRedirectHandler('/payment/deposits'),
+              isActive: checkIfLocation('/payment/deposits'),
+              showWhen: hasPermission(PermissionSlugs.PAYMENT_GATEWAY_TRANSACTION_GET_DEPOSITS)
+            },
+            {
+              label: t.get('withdrawals'),
+              onClick: createRedirectHandler('/payment/withdrawals'),
+              isActive: checkIfLocation('/payment/withdrawals'),
+              showWhen: hasPermission(PermissionSlugs.PAYMENT_GATEWAY_TRANSACTION_GET_WITHDRAWALS)
+            }
+          ]
         },
         {
           label: t.get('rules'),
@@ -197,7 +229,7 @@ export const Sidebar = () => {
               label: t.get('reportByAffiliates'),
               onClick: createRedirectHandler('/affiliate/report-by-affiliates'),
               isActive: checkIfLocation('/affiliate/report-by-affiliates'),
-              showWhen: hasPermission(PermissionSlugs.GET_REPORT_BY_AFFILIATE),
+              showWhen: hasPermission(PermissionSlugs.GET_REPORT_BY_AFFILIATE)
             },
             {
               label: t.get('links'),
@@ -261,6 +293,16 @@ export const Sidebar = () => {
               onClick: createRedirectHandler('/cms/providers-games'),
               isActive: checkIfLocation('/cms/providers-games'),
               showWhen: hasPermission(PermissionSlugs.PROVIDERS_GET)
+            },
+            {
+              label: t.get('paymentsInventory'),
+              onClick: createRedirectHandler('/cms-payment'),
+              isActive: checkIfLocationIncludes('/cms-payment'),
+              showWhen: hasPermission([
+                PermissionSlugs.CMS_MANAGER_GET_PAYMENT_GENERAL_SETTINGS,
+                PermissionSlugs.CMS_MANAGER_PAYMENT_METHOD_GET,
+                PermissionSlugs.CMS_MANAGER_PAYMENT_PROVIDER_GET
+              ])
             },
             {
               label: t.get('website'),
