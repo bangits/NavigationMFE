@@ -178,6 +178,24 @@ export const Sidebar = () => {
             !isFinancialSupporter
         },
         {
+          label: t.get('paymentManagement'),
+          icon: <Icons.PaymentManagementSidebarIcon />,
+          isActive: checkIfLocationIncludes('/payment-content/'),
+          subItems: [
+            {
+              label: t.get('providers'),
+              onClick: createRedirectHandler('/payment-content/providers'),
+              isActive: checkIfLocation('/payment-content/providers')
+            },
+            {
+              label: t.get('paymentMethods'),
+              onClick: createRedirectHandler('/payment-content/payment-methods'),
+              isActive: checkIfLocation('/payment-content/payment-methods')
+            }
+          ],
+          showWhen: adminUser
+        },
+        {
           label: t.get('paymentRequests'),
           onClick: createRedirectHandler('/payment/payments'),
           icon: <Icons.PaymentSideBarIcon width='1.8rem' height='2.4rem' />,
