@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: ['staging','navigation-button-permissions']
+    branches: ['staging', 'navigation-button-permissions']
   pull_request:
-    branches: ['staging','navigation-button-permissions']
+    branches: ['staging', 'navigation-button-permissions']
 
   workflow_dispatch:
 

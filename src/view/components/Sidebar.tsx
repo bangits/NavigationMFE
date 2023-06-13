@@ -20,6 +20,14 @@ export const Sidebar = () => {
     []
   );
 
+  const createWindowRedirectHandler = useCallback(
+    (url: string) => () => {
+      // historyService.redirectToURL(url);
+      window.location.replace(url);
+    },
+    []
+  );
+
   const checkIfLocationIncludes = useCallback((url: string) => location.pathname.includes(url), [location]);
   const checkIfLocation = useCallback(
     (url: string) => location.pathname === url || location.pathname === url + '/' || location.pathname + '/' === url,
@@ -137,20 +145,20 @@ export const Sidebar = () => {
         },
         {
           label: t.get('paymentRequests'),
-          onClick: createRedirectHandler('/payment'),
+          onClick: createRedirectHandler('/payment-requests'),
           icon: <Icons.PaymentSideBarIcon width='1.8rem' height='2.4rem' />,
-          isActive: checkIfLocationStartsWith('/payment') && !checkIfLocationStartsWith('/payment-'),
+          isActive: checkIfLocationStartsWith('/payment-requests'),
           subItems: [
             {
               label: t.get('deposits'),
-              onClick: createRedirectHandler('/payment/deposits'),
-              isActive: checkIfLocation('/payment/deposits'),
+              onClick: createRedirectHandler('/payment-requests/deposits'),
+              isActive: checkIfLocation('/payment-requests/deposits'),
               showWhen: hasPermission(PermissionSlugs.PAYMENT_GATEWAY_TRANSACTION_GET_DEPOSITS)
             },
             {
               label: t.get('withdrawals'),
-              onClick: createRedirectHandler('/payment/withdrawals'),
-              isActive: checkIfLocation('/payment/withdrawals'),
+              onClick: createWindowRedirectHandler('/payment-requests/withdrawals'),
+              isActive: checkIfLocation('/payment-requests/withdrawals'),
               showWhen: hasPermission(PermissionSlugs.PAYMENT_GATEWAY_TRANSACTION_GET_WITHDRAWALS)
             }
           ]
