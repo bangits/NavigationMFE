@@ -146,7 +146,7 @@ export const Sidebar = () => {
         {
           label: t.get('paymentRequests'),
           icon: <Icons.PaymentSideBarIcon width='1.8rem' height='2.4rem' />,
-          isActive: checkIfLocationStartsWith('/payment-requests'),
+          isActive: checkIfLocationStartsWith('/payment-requests/deposits') || checkIfLocationStartsWith('/payment-requests/withdrawals'),
           subItems: [
             {
               label: t.get('deposits'),
@@ -421,24 +421,24 @@ export const Sidebar = () => {
         {
           label: t.get('financicalReports'),
           icon: <Icons.FinacicalReportSideBarIcon width='1.8rem' height='2.4rem' />,
-          isActive: checkIfLocationIncludes('/payment/report'),
+          isActive: checkIfLocationIncludes('/payment-requests/report'),
           subItems: [
             {
               label: t.get('reportByPayments'),
-              onClick: createRedirectHandler('/payment/report-by-payments'),
-              isActive: checkIfLocation('/payment/report-by-payments'),
+              onClick: createRedirectHandler('/payment-requests/report-by-payments'),
+              isActive: checkIfLocation('/payment-requests/report-by-payments'),
               showWhen: hasPermission(PermissionSlugs.PAYMENT_GET_REPORT_BY_PAYMENTS)
             },
             {
               label: t.get('reportByCorrections'),
-              onClick: createRedirectHandler('/payment/report-by-corrections'),
-              isActive: checkIfLocation('/payment/report-by-corrections'),
+              onClick: createRedirectHandler('/payment-requests/report-by-corrections'),
+              isActive: checkIfLocation('/payment-requests/report-by-corrections'),
               showWhen: hasPermission(PermissionSlugs.CORRECTION_REPORTS_GET)
             },
             {
               label: t.get('reportByPlayers'),
-              onClick: createRedirectHandler('/payment/report-by-players'),
-              isActive: checkIfLocation('/payment/report-by-players'),
+              onClick: createRedirectHandler('/payment-requests/report-by-players'),
+              isActive: checkIfLocation('/payment-requests/report-by-players'),
               showWhen: hasPermission(PermissionSlugs.USER_TRANSACTIONS)
             }
           ]
