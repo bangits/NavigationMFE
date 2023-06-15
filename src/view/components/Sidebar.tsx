@@ -397,7 +397,13 @@ export const Sidebar = () => {
               onClick: createRedirectHandler('/reports/games'),
               isActive: checkIfLocation('/reports/games'),
               showWhen: hasPermission(PermissionSlugs.GET_ALL_GAME_NAMES)
-            }
+            },
+            {
+              label: t.get('reportByGames'),
+              onClick: createRedirectHandler('/reports/bets'),
+              isActive: checkIfLocation('/reports/bets'),
+              showWhen: hasPermission(PermissionSlugs.GET_REPORT_BY_BETS)
+            },
             // {
             //   label: t.get('reportByCashInOut'),
             //   onClick: createRedirectHandler('/reports/transfers'),
