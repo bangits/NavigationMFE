@@ -24,6 +24,7 @@ export const Sidebar = () => {
   const isContentManager = [9221].includes(+user.userId);
   const isFinancialSupporter = [9222, 9756, 9755].includes(+user.userId);
   const isOnlyCasinoReports = [11001].includes(+user.userId);
+  const isOnlyGameManager = [11065].includes(+user.userId);
   const isAffiliate = [10756, 10166, 8876, 8875, 8874, 8873, 8872, 8871, 8870, 8980].includes(+user.userId);
   const isKingbet = user.projectId === 3;
   const isRevolution = user.projectId === 7;
@@ -149,7 +150,7 @@ export const Sidebar = () => {
               isActive: checkIfLocationIncludes('/segment/players')
             }
           ],
-          showWhen: !isProvider && !isPaymentSupporter && !isAffiliate && !isOnlyCasinoReports
+          showWhen: !isProvider && !isPaymentSupporter && !isAffiliate && !isOnlyCasinoReports && !isOnlyGameManager
         },
         {
           label: t.get('userManagement'),
@@ -181,7 +182,7 @@ export const Sidebar = () => {
             }
           ],
           showWhen:
-            (adminUser || isProvider) &&
+            (adminUser || isProvider || isOnlyGameManager) &&
             !isPaymentSupporter &&
             !isAffiliate &&
             !isContentManager &&
@@ -203,7 +204,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/payment-content/payment-methods')
             }
           ],
-          showWhen: adminUser
+          showWhen: adminUser && !isOnlyGameManager
         },
         {
           label: t.get('paymentRequests'),
@@ -223,7 +224,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/payment-requests/withdrawals')
             }
           ],
-          showWhen: !isKingbet && !isAffiliate && !isOnlyCasinoReports
+          showWhen: !isKingbet && !isAffiliate && !isOnlyCasinoReports && !isOnlyGameManager
         },
         {
           label: t.get('rules'),
@@ -237,7 +238,8 @@ export const Sidebar = () => {
             !isPaymentSupporter &&
             !isAffiliate &&
             !isFinancialSupporter &&
-            !isOnlyCasinoReports
+            !isOnlyCasinoReports &&
+            !isOnlyGameManager
         },
         {
           label: t.get('promotionalTools'),
@@ -328,7 +330,8 @@ export const Sidebar = () => {
               !isRevolution &&
               !isContentManager &&
               !isFinancialSupporter &&
-              !isOnlyCasinoReports) ||
+              !isOnlyCasinoReports &&
+              !isOnlyGameManager) ||
             isAffiliate
         },
         {
@@ -369,7 +372,8 @@ export const Sidebar = () => {
             !isAffiliate &&
             !isContentManager &&
             !isFinancialSupporter &&
-            !isOnlyCasinoReports
+            !isOnlyCasinoReports &&
+            !isOnlyGameManager
         },
         {
           label: t.get('cms'),
@@ -443,7 +447,8 @@ export const Sidebar = () => {
             !isAffiliate &&
             !isContentManager &&
             !isFinancialSupporter &&
-            !isOnlyCasinoReports
+            !isOnlyCasinoReports &&
+            !isOnlyGameManager
         },
         {
           label: t.get('translation'),
@@ -457,7 +462,8 @@ export const Sidebar = () => {
             !isPaymentSupporter &&
             !isAffiliate &&
             !isFinancialSupporter &&
-            !isOnlyCasinoReports
+            !isOnlyCasinoReports &&
+            !isOnlyGameManager
         },
         {
           label: t.get('casinoReports'),
@@ -490,7 +496,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/reports/countries')
             }
           ],
-          showWhen: !isPaymentSupporter && !isAffiliate
+          showWhen: !isPaymentSupporter && !isAffiliate && !isOnlyGameManager
         },
         {
           label: t.get('sportReports'),
@@ -526,7 +532,13 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/payment-requests/report-by-players')
             }
           ],
-          showWhen: !isSupport && !isKingbet && !isPaymentSupporter && !isAffiliate && !isOnlyCasinoReports
+          showWhen:
+            !isSupport &&
+            !isKingbet &&
+            !isPaymentSupporter &&
+            !isAffiliate &&
+            !isOnlyCasinoReports &&
+            !isOnlyGameManager
         },
         {
           label: t.get('shop'),
