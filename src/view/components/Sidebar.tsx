@@ -24,7 +24,7 @@ export const Sidebar = () => {
   const isContentManager = [9221].includes(+user.userId);
   const isFinancialSupporter = [9222, 9756, 9755].includes(+user.userId);
   const isOnlyCasinoReports = [11001].includes(+user.userId);
-  const isOnlyGameManager = [11065].includes(+user.userId);
+  const isOnlyGameManager = [11091, 11065].includes(+user.userId);
   const isAffiliate = [10756, 10166, 8876, 8875, 8874, 8873, 8872, 8871, 8870, 8980].includes(+user.userId);
   const isKingbet = user.projectId === 3;
   const isRevolution = user.projectId === 7;
