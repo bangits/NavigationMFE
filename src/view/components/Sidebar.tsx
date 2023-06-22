@@ -20,7 +20,8 @@ export const Sidebar = () => {
   const adminUser = isAdminUser(user);
   const isProvider = [8285, 8286, 8287, 28590].includes(+user.userId);
   const isPaymentSupporter = [8855, 8856, 8857].includes(+user.userId);
-  const isSupport = [10815, 10825, 10826].includes(+user.userId);
+  const isSupport = [11110, 11111, 10815, 10825, 10826].includes(+user.userId);
+  const showAllCMSSections = [11110, 11111].includes(+user.userId);
   const isContentManager = [9221].includes(+user.userId);
   const isFinancialSupporter = [9222, 9756, 9755].includes(+user.userId);
   const isOnlyCasinoReports = [11001].includes(+user.userId);
@@ -386,7 +387,7 @@ export const Sidebar = () => {
               onClick: createRedirectHandler('/cms/providers-games'),
               isActive: checkIfLocation('/cms/providers-games')
             },
-            ...(!isSupport
+            ...(!isSupport || showAllCMSSections
               ? [
                   {
                     label: t.get('paymentsInventory'),
