@@ -354,6 +354,26 @@
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
+"@atom/common@^2.9.1":
+  version "2.9.1"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.9.1.tgz#6b2eabc4b3403acf03602d1181f0ff040ad3c8b1"
+  integrity sha1-ay6rxLNAOs8DYC0RgfD/BArTyLE=
+  dependencies:
+    "@atom/authorization" "^0.1.7"
+    "@atom/cms-management" "^0.2.12"
+    "@atom/design-system" "^4.9.6"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@microsoft/signalr" "^6.0.1"
+    "@microsoft/signalr-protocol-msgpack" "^6.0.1"
+    axios "^0.23.0"
+    dayjs "^1.10.7"
+    formik "^2.2.9"
+    query-string "^7.0.1"
+    react "^17.0.2"
+    single-spa "^5.9.3"
+    single-spa-react "^4.6.0"
+
 "@atom/design-system@4.5.8":
   version "4.5.8"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.5.8.tgz#f2a8a1ad575b593cf6dbd4abce9d2558ccceb375"
@@ -456,6 +476,30 @@
   dependencies:
     "@atom/common" "^2.4.6"
     "@my-ui/core" "^0.11.19"
+    classnames "^2.3.1"
+    codemirror "^5.65.10"
+    draft-js "^0.11.7"
+    draftjs-to-html "^0.9.1"
+    react "17.0.0"
+    react-codemirror2 "^7.2.1"
+    react-cropper "^2.1.8"
+    react-dnd "15.1.2"
+    react-dnd-html5-backend "^16.0.1"
+    react-dom "17.0.0"
+    react-draft-wysiwyg "^1.15.0"
+    react-jss "^10.8.2"
+    react-sortable-hoc "^2.0.0"
+    react-transition-group "^4.4.5"
+    regenerator-transform "^0.14.5"
+    vite-plugin-svgr "^2.4.0"
+
+"@atom/design-system@^4.9.6":
+  version "4.9.7"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.9.7.tgz#cc7e8323a234c39ccf1e2f7eecc7a9d9f8e94fbe"
+  integrity sha1-zH6DI6I0w5zPHi9+7Mep2fjpT74=
+  dependencies:
+    "@atom/common" "^2.4.6"
+    "@my-ui/core" "^0.11.26"
     classnames "^2.3.1"
     codemirror "^5.65.10"
     draft-js "^0.11.7"
@@ -2583,6 +2627,22 @@
   version "0.11.23"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.11.23.tgz#613a25d950ab87eea56abf91f2fd0abe8206d7b0"
   integrity sha1-YTol2VCrh+6lar+R8v0KvoIG17A=
+  dependencies:
+    "@my-ui/react-datepicker" "^1.5.0"
+    "@my-ui/react-select" "1.1.6"
+    "@my-ui/react-table" "1.3.0"
+    "@my-ui/scrollbar" "^1.0.2"
+    classnames "^2.3.1"
+    react-flip-move "^3.0.4"
+    react-jss "^10.8.0"
+    react-paginate "^7.1.5"
+    react-transition-group "^4.4.2"
+    throttle-debounce "^3.0.1"
+
+"@my-ui/core@^0.11.26":
+  version "0.11.26"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.11.26.tgz#93ebfd8e4615c96f206be5ef3434b7cfffe23953"
+  integrity sha1-k+v9jkYVyW8ga+XvNDS3z//iOVM=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
