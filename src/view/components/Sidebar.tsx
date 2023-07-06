@@ -454,7 +454,7 @@ export const Sidebar = () => {
               isActive: checkIfLocation('/sport-reports/bets')
             }
           ],
-          showWhen: isRevolution || isBetCesar
+          showWhen: isRevolution || isBetCesar || isHarembet
         },
         {
           label: t.get('financicalReports'),
