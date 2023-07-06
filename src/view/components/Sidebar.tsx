@@ -324,6 +324,12 @@ export const Sidebar = () => {
               showWhen: hasPermission(PermissionSlugs.SLIDER_SECTION_GET_ALL_SECTIONS)
             },
             {
+              label: t.get('labels'),
+              onClick: createRedirectHandler('/cms-label'),
+              isActive: checkIfLocationIncludes('/cms-label'),
+              showWhen: hasPermission(PermissionSlugs.LABELS_GET)
+            },
+            {
               label: t.get('banners'),
               onClick: createRedirectHandler('/cms/banners'),
               isActive: checkIfLocationIncludes('/cms/banners'),
