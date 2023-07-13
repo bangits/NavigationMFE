@@ -155,6 +155,29 @@
     single-spa-react "^4.4.0"
     yup "^0.32.10"
 
+"@atom/authorization@^0.1.8":
+  version "0.1.8"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/authorization/-/authorization-0.1.8.tgz#6b09240483d8e2048744b2e26b977033a9f4e87e"
+  integrity sha1-awkkBIPY4gSHRLLia5dwM6n06H4=
+  dependencies:
+    "@atom/common" "^2.2.85"
+    "@atom/design-system" "^5.6.4"
+    "@atom/user-management" "^0.2.8"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.1"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    oidc-client "^1.11.5"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa "^5.9.3"
+    single-spa-react "^4.4.0"
+    yup "^0.32.10"
+
 "@atom/authorization@^0.2.1":
   version "0.2.1"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/authorization/-/authorization-0.2.1.tgz#e8f6f7dc347b9e60ab81bc3be55b5b433146b0db"
@@ -394,7 +417,7 @@
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
-"@atom/common@^2.2.88", "@atom/common@^2.5.5", "@atom/common@^2.8.5", "@atom/common@^2.8.9", "@atom/common@^2.9.0":
+"@atom/common@^2.2.88", "@atom/common@^2.4.1", "@atom/common@^2.5.5", "@atom/common@^2.8.5", "@atom/common@^2.8.9", "@atom/common@^2.9.0":
   version "2.9.8"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.9.8.tgz#9cf671072307511eead7fb826a49920a462860bc"
   integrity sha1-nPZxByMHUR7q1/uCakmSCkYoYLw=
@@ -547,7 +570,7 @@
     react-transition-group "^4.4.5"
     regenerator-transform "^0.14.5"
 
-"@atom/design-system@^4.7.1", "@atom/design-system@^4.7.21", "@atom/design-system@^4.9.1", "@atom/design-system@^4.9.3", "@atom/design-system@^4.9.5":
+"@atom/design-system@^4.7.1", "@atom/design-system@^4.7.21", "@atom/design-system@^4.7.6", "@atom/design-system@^4.9.1", "@atom/design-system@^4.9.3", "@atom/design-system@^4.9.5":
   version "4.9.9"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.9.9.tgz#075c7b47270a4f7d2e73285cfe7667786bb6917a"
   integrity sha1-B1x7RycKT30ucyhc/nZneGu2kXo=
@@ -626,6 +649,30 @@
   dependencies:
     "@atom/common" "^2.4.6"
     "@my-ui/core" "^0.11.79"
+    classnames "^2.3.1"
+    codemirror "^5.65.10"
+    draft-js "^0.11.7"
+    draftjs-to-html "^0.9.1"
+    react "17.0.0"
+    react-codemirror2 "^7.2.1"
+    react-cropper "^2.1.8"
+    react-dnd "15.1.2"
+    react-dnd-html5-backend "^16.0.1"
+    react-dom "17.0.0"
+    react-draft-wysiwyg "^1.15.0"
+    react-jss "^10.8.2"
+    react-sortable-hoc "^2.0.0"
+    react-transition-group "^4.4.5"
+    regenerator-transform "^0.14.5"
+    vite-plugin-svgr "^2.4.0"
+
+"@atom/design-system@^5.6.4":
+  version "5.6.4"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-5.6.4.tgz#9fef3b70a44699cadc92f8bbe9e705e254c69f3c"
+  integrity sha1-n+87cKRGmcrckvi76ecF4lTGnzw=
+  dependencies:
+    "@atom/common" "^2.4.6"
+    "@my-ui/core" "^0.11.80"
     classnames "^2.3.1"
     codemirror "^5.65.10"
     draft-js "^0.11.7"
@@ -832,6 +879,31 @@
     "@atom/authorization" "^0.1.6"
     "@atom/common" "^2.2.64"
     "@atom/design-system" "^4.5.35"
+    "@atom/reward-management" "^0.1.5"
+    "@atom/segment-management" "^0.2.6"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.2"
+    "@types/react-router-dom" "^5.3.3"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+    tscpaths "^0.0.9"
+    yup "^0.32.10"
+
+"@atom/role-permission-management@^0.2.5":
+  version "0.2.5"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/role-permission-management/-/role-permission-management-0.2.5.tgz#2879591c95df1fc165819e162d24df9b51581d64"
+  integrity sha1-KHlZHJXfH8FlgZ4WLSTfm1FYHWQ=
+  dependencies:
+    "@atom/authorization" "^0.1.6"
+    "@atom/common" "^2.4.1"
+    "@atom/design-system" "^4.7.6"
     "@atom/reward-management" "^0.1.5"
     "@atom/segment-management" "^0.2.6"
     "@automapper/classes" "^7.0.2"
@@ -1077,6 +1149,31 @@
     "@atom/game-management" "^0.1.0"
     "@atom/partner-management" "^0.1.0"
     "@atom/role-permission-management" "^0.1.9"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.2"
+    "@types/react-router-dom" "^5.3.3"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+    yup "^0.32.10"
+
+"@atom/user-management@^0.2.8":
+  version "0.2.8"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/user-management/-/user-management-0.2.8.tgz#8aaa2d0dceaf7c98fe4f81f0aa20dc809c5cce80"
+  integrity sha1-iqotDc6vfJj+T4HwqiDcgJxczoA=
+  dependencies:
+    "@atom/account-management" "^0.1.0"
+    "@atom/affiliate-management" "0.2.18"
+    "@atom/authorization" "^0.1.0"
+    "@atom/game-management" "^0.1.0"
+    "@atom/partner-management" "^0.1.0"
+    "@atom/role-permission-management" "^0.2.5"
     "@automapper/classes" "^7.0.2"
     "@automapper/core" "^7.0.2"
     "@reduxjs/toolkit" "^1.6.2"
@@ -2840,6 +2937,22 @@
   version "0.11.79"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.11.79.tgz#c7dbc886e89969ab2bec50347906ee59d1dc9e52"
   integrity sha1-x9vIhuiZaasr7FA0eQbuWdHcnlI=
+  dependencies:
+    "@my-ui/react-datepicker" "^1.5.0"
+    "@my-ui/react-select" "1.1.6"
+    "@my-ui/react-table" "1.3.0"
+    "@my-ui/scrollbar" "^1.0.2"
+    classnames "^2.3.1"
+    react-flip-move "^3.0.4"
+    react-jss "^10.8.0"
+    react-paginate "^7.1.5"
+    react-transition-group "^4.4.2"
+    throttle-debounce "^3.0.1"
+
+"@my-ui/core@^0.11.80":
+  version "0.11.80"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.11.80.tgz#383ec6936e13cd954d37b4100212fbecfec41a69"
+  integrity sha1-OD7Gk24TzZVNN7QQAhL77P7EGmk=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"

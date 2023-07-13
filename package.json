@@ -74,10 +74,10 @@
   },
   "dependencies": {
     "@atom/account-management": "^0.1.0",
-    "@atom/authorization": "^0.1.4",
+    "@atom/authorization": "^0.1.8",
     "@atom/common": "^3.0.1",
     "@atom/player-management": "^0.1.4",
-    "@atom/user-management": "^0.2.0",
+    "@atom/user-management": "^0.2.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.5",
