@@ -15,10 +15,35 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
+"@ampproject/remapping@^2.2.0":
+  version "2.2.1"
+  resolved "https://registry.npmjs.org/@ampproject/remapping/-/remapping-2.2.1.tgz#99e8e11851128b8702cd57c33684f1d0f260b630"
+  integrity sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==
+  dependencies:
+    "@jridgewell/gen-mapping" "^0.3.0"
+    "@jridgewell/trace-mapping" "^0.3.9"
+
 "@atom/account-management@^0.1.0", "@atom/account-management@^0.1.2":
   version "0.1.3"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/account-management/-/account-management-0.1.3.tgz#030fe6e6d617880ddd6667632ac85c1340e107d2"
   integrity sha1-Aw/m5tYXiA3dZmdjKshcE0DhB9I=
+  dependencies:
+    "@atom/authorization" "^0.1.0"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.7.1"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+
+"@atom/account-management@^0.1.4":
+  version "0.1.4"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/account-management/-/account-management-0.1.4.tgz#f97324e325ab0ddb2b474daa7f0cb0f74968a300"
+  integrity sha1-+XMk4yWrDdsrR02qfwyw90loowA=
   dependencies:
     "@atom/authorization" "^0.1.0"
     "@automapper/classes" "^7.0.2"
@@ -107,6 +132,52 @@
     single-spa-react "^4.4.0"
     yup "^0.32.10"
 
+"@atom/authorization@^0.1.7":
+  version "0.1.7"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/authorization/-/authorization-0.1.7.tgz#e56ba07d2f5f97be890e40ca2bd22fb0661980b1"
+  integrity sha1-5WugfS9fl76JDkDKK9IvsGYZgLE=
+  dependencies:
+    "@atom/common" "^2.2.85"
+    "@atom/design-system" "^3.1.0"
+    "@atom/user-management" "^0.2.0"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.1"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    oidc-client "^1.11.5"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa "^5.9.3"
+    single-spa-react "^4.4.0"
+    yup "^0.32.10"
+
+"@atom/authorization@^0.1.8":
+  version "0.1.8"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/authorization/-/authorization-0.1.8.tgz#6b09240483d8e2048744b2e26b977033a9f4e87e"
+  integrity sha1-awkkBIPY4gSHRLLia5dwM6n06H4=
+  dependencies:
+    "@atom/common" "^2.2.85"
+    "@atom/design-system" "^5.6.4"
+    "@atom/user-management" "^0.2.8"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.1"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    oidc-client "^1.11.5"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa "^5.9.3"
+    single-spa-react "^4.4.0"
+    yup "^0.32.10"
+
 "@atom/authorization@^0.2.1":
   version "0.2.1"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/authorization/-/authorization-0.2.1.tgz#e8f6f7dc347b9e60ab81bc3be55b5b433146b0db"
@@ -153,7 +224,7 @@
     single-spa-react "^4.4.0"
     yup "^0.32.10"
 
-"@atom/bonus-management@^0.1.0":
+"@atom/bonus-management@0.1.9", "@atom/bonus-management@^0.1.0":
   version "0.1.9"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/bonus-management/-/bonus-management-0.1.9.tgz#096b4eea288d15b87a5ffb6b93be05aeef8304d9"
   integrity sha1-CWtO6iiNFbh6X/trk74Fru+DBNk=
@@ -225,6 +296,54 @@
     single-spa-react "^4.2.0"
     yup "^0.32.10"
 
+"@atom/cms-management@^0.3.0", "@atom/cms-management@^0.3.1":
+  version "0.3.1"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/cms-management/-/cms-management-0.3.1.tgz#b1e40dfd19e6496071348b0cb1a720db11eef706"
+  integrity sha1-seQN/RnmSWBxNIsMsacg2xHu9wY=
+  dependencies:
+    "@atom/authorization" "^0.1.4"
+    "@atom/common" "^2.8.9"
+    "@atom/design-system" "^4.7.21"
+    "@atom/segment-management" "^0.2.29"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.2"
+    "@types/react-router-dom" "^5.3.3"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+    yup "^0.32.10"
+
+"@atom/cms-payment-management@^0.2.2":
+  version "0.2.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/cms-payment-management/-/cms-payment-management-0.2.2.tgz#10eba29617894123d6b5873b49e1ba5772e63740"
+  integrity sha1-EOuilheJQSPWtYc7SeG6V3LmN0A=
+  dependencies:
+    "@atom/authorization" "^0.1.6"
+    "@atom/common" "^2.8.5"
+    "@atom/design-system" "^4.9.1"
+    "@atom/payment-content-management" "^0.1.7"
+    "@atom/segment-management" "^0.2.28"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.2"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+    start "^5.1.0"
+    tscpaths "^0.0.9"
+    yup "^0.32.10"
+
 "@atom/common@2.2.44":
   version "2.2.44"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.2.44.tgz#f0978552ec458a0f43751659d027a2d0dfd90277"
@@ -279,12 +398,73 @@
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
-"@atom/common@^2.3.4":
-  version "2.3.4"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.3.4.tgz#93aa8ad6bd893d864eda21ac9e213b4d86e3ff7b"
-  integrity sha1-k6qK1r2JPYZO2iGsniE7TYbj/3s=
+"@atom/common@^2.2.85":
+  version "2.3.5"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.3.5.tgz#cfd543e379416eec0175061b6763096bcc1f5eb8"
+  integrity sha1-z9VD43lBbuwBdQYbZ2MJa8wfXrg=
   dependencies:
+    "@atom/authorization" "^0.1.7"
     "@atom/cms-management" "^0.2.12"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@microsoft/signalr" "^6.0.1"
+    "@microsoft/signalr-protocol-msgpack" "^6.0.1"
+    axios "^0.23.0"
+    dayjs "^1.10.7"
+    formik "^2.2.9"
+    query-string "^7.0.1"
+    react "^17.0.2"
+    single-spa "^5.9.3"
+    single-spa-react "^4.6.0"
+
+"@atom/common@^2.2.88", "@atom/common@^2.4.1", "@atom/common@^2.5.5", "@atom/common@^2.8.5", "@atom/common@^2.8.9", "@atom/common@^2.9.0":
+  version "2.9.8"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.9.8.tgz#9cf671072307511eead7fb826a49920a462860bc"
+  integrity sha1-nPZxByMHUR7q1/uCakmSCkYoYLw=
+  dependencies:
+    "@atom/authorization" "^0.1.7"
+    "@atom/cms-management" "^0.3.0"
+    "@atom/design-system" "^5.0.5"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@microsoft/signalr" "^6.0.1"
+    "@microsoft/signalr-protocol-msgpack" "^6.0.1"
+    axios "^0.23.0"
+    dayjs "^1.10.7"
+    formik "^2.2.9"
+    query-string "^7.0.1"
+    react "^17.0.2"
+    single-spa "^5.9.3"
+    single-spa-react "^4.6.0"
+
+"@atom/common@^2.4.6":
+  version "2.8.6"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.6.tgz#428806e2cee5b34a45f8088f90af6c727a1b1e61"
+  integrity sha1-QogG4s7ls0pF+AiPkK9scnobHmE=
+  dependencies:
+    "@atom/authorization" "^0.1.7"
+    "@atom/cms-management" "^0.2.12"
+    "@atom/design-system" "^4.8.4"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@microsoft/signalr" "^6.0.1"
+    "@microsoft/signalr-protocol-msgpack" "^6.0.1"
+    axios "^0.23.0"
+    dayjs "^1.10.7"
+    formik "^2.2.9"
+    query-string "^7.0.1"
+    react "^17.0.2"
+    single-spa "^5.9.3"
+    single-spa-react "^4.6.0"
+
+"@atom/common@^3.0.1":
+  version "3.0.1"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-3.0.1.tgz#0b6bb06ae39111b24a6d8e44d239b65f70449ec9"
+  integrity sha1-C2uwauOREbJKbY5E0jm2X3BEnsk=
+  dependencies:
+    "@atom/authorization" "^0.1.7"
+    "@atom/cms-management" "^0.3.0"
+    "@atom/design-system" "^5.0.5"
     "@automapper/classes" "^7.0.2"
     "@automapper/core" "^7.0.2"
     "@microsoft/signalr" "^6.0.1"
@@ -390,12 +570,13 @@
     react-transition-group "^4.4.5"
     regenerator-transform "^0.14.5"
 
-"@atom/design-system@^4.5.45":
-  version "4.5.45"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.5.45.tgz#1b7d08ff3f7c5d33ea3adfd9fb826a04e52411c4"
-  integrity sha1-G30I/z98XTPqOt/Z+4JqBOUkEcQ=
+"@atom/design-system@^4.7.1", "@atom/design-system@^4.7.21", "@atom/design-system@^4.7.6", "@atom/design-system@^4.9.1", "@atom/design-system@^4.9.3", "@atom/design-system@^4.9.5":
+  version "4.9.9"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.9.9.tgz#075c7b47270a4f7d2e73285cfe7667786bb6917a"
+  integrity sha1-B1x7RycKT30ucyhc/nZneGu2kXo=
   dependencies:
-    "@my-ui/core" "^0.9.71"
+    "@atom/common" "^2.4.6"
+    "@my-ui/core" "^0.11.31"
     classnames "^2.3.1"
     codemirror "^5.65.10"
     draft-js "^0.11.7"
@@ -411,6 +592,103 @@
     react-sortable-hoc "^2.0.0"
     react-transition-group "^4.4.5"
     regenerator-transform "^0.14.5"
+    vite-plugin-svgr "^2.4.0"
+
+"@atom/design-system@^4.8.4":
+  version "4.8.8"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.8.8.tgz#97e938c88e6ded689edd683b4a9929434deeb314"
+  integrity sha1-l+k4yI5t7Wie3Wg7SpkpQ03usxQ=
+  dependencies:
+    "@atom/common" "^2.4.6"
+    "@my-ui/core" "^0.11.15"
+    classnames "^2.3.1"
+    codemirror "^5.65.10"
+    draft-js "^0.11.7"
+    draftjs-to-html "^0.9.1"
+    react "17.0.0"
+    react-codemirror2 "^7.2.1"
+    react-cropper "^2.1.8"
+    react-dnd "15.1.2"
+    react-dnd-html5-backend "^16.0.1"
+    react-dom "17.0.0"
+    react-draft-wysiwyg "^1.15.0"
+    react-jss "^10.8.2"
+    react-sortable-hoc "^2.0.0"
+    react-transition-group "^4.4.5"
+    regenerator-transform "^0.14.5"
+    vite-plugin-svgr "^2.4.0"
+
+"@atom/design-system@^5.0.5":
+  version "5.3.5"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-5.3.5.tgz#279c9250e6dfbd22ca5ed0cde0bc509a626fc3ec"
+  integrity sha1-J5ySUObfvSLKXtDN4LxQmmJvw+w=
+  dependencies:
+    "@atom/common" "^2.4.6"
+    "@my-ui/core" "^0.11.67"
+    classnames "^2.3.1"
+    codemirror "^5.65.10"
+    draft-js "^0.11.7"
+    draftjs-to-html "^0.9.1"
+    react "17.0.0"
+    react-codemirror2 "^7.2.1"
+    react-cropper "^2.1.8"
+    react-dnd "15.1.2"
+    react-dnd-html5-backend "^16.0.1"
+    react-dom "17.0.0"
+    react-draft-wysiwyg "^1.15.0"
+    react-jss "^10.8.2"
+    react-sortable-hoc "^2.0.0"
+    react-transition-group "^4.4.5"
+    regenerator-transform "^0.14.5"
+    vite-plugin-svgr "^2.4.0"
+
+"@atom/design-system@^5.6.3":
+  version "5.6.3"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-5.6.3.tgz#cb76db94232b088d4b5648838d0d0818b400b147"
+  integrity sha1-y3bblCMrCI1LVkiDjQ0IGLQAsUc=
+  dependencies:
+    "@atom/common" "^2.4.6"
+    "@my-ui/core" "^0.11.79"
+    classnames "^2.3.1"
+    codemirror "^5.65.10"
+    draft-js "^0.11.7"
+    draftjs-to-html "^0.9.1"
+    react "17.0.0"
+    react-codemirror2 "^7.2.1"
+    react-cropper "^2.1.8"
+    react-dnd "15.1.2"
+    react-dnd-html5-backend "^16.0.1"
+    react-dom "17.0.0"
+    react-draft-wysiwyg "^1.15.0"
+    react-jss "^10.8.2"
+    react-sortable-hoc "^2.0.0"
+    react-transition-group "^4.4.5"
+    regenerator-transform "^0.14.5"
+    vite-plugin-svgr "^2.4.0"
+
+"@atom/design-system@^5.6.4":
+  version "5.6.4"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-5.6.4.tgz#9fef3b70a44699cadc92f8bbe9e705e254c69f3c"
+  integrity sha1-n+87cKRGmcrckvi76ecF4lTGnzw=
+  dependencies:
+    "@atom/common" "^2.4.6"
+    "@my-ui/core" "^0.11.80"
+    classnames "^2.3.1"
+    codemirror "^5.65.10"
+    draft-js "^0.11.7"
+    draftjs-to-html "^0.9.1"
+    react "17.0.0"
+    react-codemirror2 "^7.2.1"
+    react-cropper "^2.1.8"
+    react-dnd "15.1.2"
+    react-dnd-html5-backend "^16.0.1"
+    react-dom "17.0.0"
+    react-draft-wysiwyg "^1.15.0"
+    react-jss "^10.8.2"
+    react-sortable-hoc "^2.0.0"
+    react-transition-group "^4.4.5"
+    regenerator-transform "^0.14.5"
+    vite-plugin-svgr "^2.4.0"
 
 "@atom/game-management@^0.1.0":
   version "0.1.6"
@@ -473,6 +751,56 @@
     single-spa-react "^4.2.0"
     yup "^0.32.10"
 
+"@atom/partner-management@^1.1.1":
+  version "1.1.1"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/partner-management/-/partner-management-1.1.1.tgz#e83a0910b1f6f66176989ca607afc06af3b50129"
+  integrity sha1-6DoJELH29mF2mJymB6/AavO1ASk=
+  dependencies:
+    "@atom/authorization" "^0.1.6"
+    "@atom/common" "^2.5.5"
+    "@atom/design-system" "^4.5.35"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.2"
+    "@types/react-router-dom" "^5.3.3"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+    tscpaths "^0.0.9"
+    yup "^0.32.10"
+
+"@atom/payment-content-management@^0.1.7":
+  version "0.1.9"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/payment-content-management/-/payment-content-management-0.1.9.tgz#ca1b0e920fd0396c4db80faf5053bcc1e7e88048"
+  integrity sha1-yhsOkg/QOWxNuA+vUFO8wefogEg=
+  dependencies:
+    "@atom/authorization" "^0.1.6"
+    "@atom/common" "^2.9.0"
+    "@atom/design-system" "^4.9.5"
+    "@atom/partner-management" "^1.1.1"
+    "@atom/player-management" "^0.2.2"
+    "@atom/segment-management" "^0.2.32"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.2"
+    "@types/react-router-dom" "^5.3.3"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+    start "^5.1.0"
+    tscpaths "^0.0.9"
+    yup "^0.32.10"
+
 "@atom/player-management@^0.1.4":
   version "0.1.4"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/player-management/-/player-management-0.1.4.tgz#d76c4d883711d62c2fa169bb8ee14f2219253253"
@@ -482,6 +810,30 @@
     "@atom/authorization" "^0.1.0"
     "@atom/common" "^2.1.6"
     "@atom/design-system" "^3.7.1"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.2"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+    yup "^0.32.10"
+
+"@atom/player-management@^0.2.2":
+  version "0.2.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/player-management/-/player-management-0.2.2.tgz#8b7b7fd0d149c57db26df975784f544a01f4845c"
+  integrity sha1-i3t/0NFJxX2ybfl1eE9USgH0hFw=
+  dependencies:
+    "@atom/account-management" "^0.1.4"
+    "@atom/authorization" "^1.2.9"
+    "@atom/bonus-management" "0.1.9"
+    "@atom/common" "^2.2.88"
+    "@atom/design-system" "^4.7.1"
+    "@atom/segment-management" "^0.2.2"
     "@automapper/classes" "^7.0.2"
     "@automapper/core" "^7.0.2"
     "@reduxjs/toolkit" "^1.6.2"
@@ -527,6 +879,31 @@
     "@atom/authorization" "^0.1.6"
     "@atom/common" "^2.2.64"
     "@atom/design-system" "^4.5.35"
+    "@atom/reward-management" "^0.1.5"
+    "@atom/segment-management" "^0.2.6"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.2"
+    "@types/react-router-dom" "^5.3.3"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+    tscpaths "^0.0.9"
+    yup "^0.32.10"
+
+"@atom/role-permission-management@^0.2.5":
+  version "0.2.5"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/role-permission-management/-/role-permission-management-0.2.5.tgz#2879591c95df1fc165819e162d24df9b51581d64"
+  integrity sha1-KHlZHJXfH8FlgZ4WLSTfm1FYHWQ=
+  dependencies:
+    "@atom/authorization" "^0.1.6"
+    "@atom/common" "^2.4.1"
+    "@atom/design-system" "^4.7.6"
     "@atom/reward-management" "^0.1.5"
     "@atom/segment-management" "^0.2.6"
     "@automapper/classes" "^7.0.2"
@@ -612,6 +989,31 @@
     single-spa-react "^4.2.0"
     yup "^0.32.10"
 
+"@atom/segment-management@^0.2.2", "@atom/segment-management@^0.2.28", "@atom/segment-management@^0.2.29", "@atom/segment-management@^0.2.32":
+  version "0.2.43"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/segment-management/-/segment-management-0.2.43.tgz#6dd316d38e1b248f32a6cb7f8cea9f5331f045dd"
+  integrity sha1-bdMW044bJI8ypst/jOqfUzHwRd0=
+  dependencies:
+    "@atom/authorization" "^0.1.4"
+    "@atom/cms-management" "^0.3.1"
+    "@atom/cms-payment-management" "^0.2.2"
+    "@atom/common" "^2.2.73"
+    "@atom/design-system" "^4.9.3"
+    "@atom/shop-management" "^0.1.16"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.2"
+    "@types/react-router-dom" "^5.3.3"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+    yup "^0.32.10"
+
 "@atom/segment-management@^0.2.5", "@atom/segment-management@^0.2.6", "@atom/segment-management@^0.2.7":
   version "0.2.15"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/segment-management/-/segment-management-0.2.15.tgz#7da4316e65d131eb7ca17a07946163442234ac81"
@@ -640,6 +1042,32 @@
   version "0.1.12"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/shop-management/-/shop-management-0.1.12.tgz#51d2219994c83afbcf8cfc9c3cd0f9b381e654d2"
   integrity sha1-UdIhmZTIOvvPjPycPND5s4HmVNI=
+  dependencies:
+    "@atom/authorization" "^0.1.6"
+    "@atom/common" "^2.2.62"
+    "@atom/design-system" "^4.5.33"
+    "@atom/reward-management" "^0.1.5"
+    "@atom/rule-management" "^0.1.7"
+    "@atom/segment-management" "^0.2.6"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.2"
+    "@types/react-router-dom" "^5.3.3"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+    tscpaths "^0.0.9"
+    yup "^0.32.10"
+
+"@atom/shop-management@^0.1.16":
+  version "0.1.16"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/shop-management/-/shop-management-0.1.16.tgz#423bb4e04e1da03fedf0fe534dfa95475b40ea7e"
+  integrity sha1-Qju04E4doD/t8P5TTfqVR1tA6n4=
   dependencies:
     "@atom/authorization" "^0.1.6"
     "@atom/common" "^2.2.62"
@@ -735,6 +1163,31 @@
     single-spa-react "^4.2.0"
     yup "^0.32.10"
 
+"@atom/user-management@^0.2.8":
+  version "0.2.8"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/user-management/-/user-management-0.2.8.tgz#8aaa2d0dceaf7c98fe4f81f0aa20dc809c5cce80"
+  integrity sha1-iqotDc6vfJj+T4HwqiDcgJxczoA=
+  dependencies:
+    "@atom/account-management" "^0.1.0"
+    "@atom/affiliate-management" "0.2.18"
+    "@atom/authorization" "^0.1.0"
+    "@atom/game-management" "^0.1.0"
+    "@atom/partner-management" "^0.1.0"
+    "@atom/role-permission-management" "^0.2.5"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    "@reduxjs/toolkit" "^1.6.2"
+    "@types/react-router-dom" "^5.3.3"
+    formik "^2.2.9"
+    inversify "^5.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-redux "^7.2.5"
+    react-router-dom "^5.3.0"
+    reflect-metadata "^0.1.13"
+    single-spa-react "^4.2.0"
+    yup "^0.32.10"
+
 "@automapper/classes@^7.0.2":
   version "7.3.14"
   resolved "https://registry.npmjs.org/@automapper/classes/-/classes-7.3.14.tgz#8b2423843b1222773ce8c8f83f458697361db58e"
@@ -759,10 +1212,22 @@
   dependencies:
     "@babel/highlight" "^7.18.6"
 
+"@babel/code-frame@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.22.5.tgz#234d98e1551960604f1246e6475891a570ad5658"
+  integrity sha512-Xmwn266vad+6DAqEB2A6V/CcZVp62BbwVmcOJc2RPuwih1kw02TjQvWVWlcKGbBPd+8/0V5DEkOcizRGYsspYQ==
+  dependencies:
+    "@babel/highlight" "^7.22.5"
+
 "@babel/compat-data@^7.17.7", "@babel/compat-data@^7.20.0", "@babel/compat-data@^7.20.1":
   version "7.20.5"
   resolved "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.20.5.tgz#86f172690b093373a933223b4745deeb6049e733"
   integrity sha512-KZXo2t10+/jxmkhNXc7pZTqRvSOIvVv/+lJwHS+B2rErwOyjuVRh60yVpb7liQ1U5t7lLJ1bz+t8tSypUZdm0g==
+
+"@babel/compat-data@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.22.5.tgz#b1f6c86a02d85d2dd3368a2b67c09add8cd0c255"
+  integrity sha512-4Jc/YuIaYqKnDDz892kPIledykKg12Aw1PYX5i/TY28anJtacvM1Rrr8wbieB9GfEJwlzqT0hUEao0CxEebiDA==
 
 "@babel/core@^7.1.0", "@babel/core@^7.12.3", "@babel/core@^7.14.6", "@babel/core@^7.7.2", "@babel/core@^7.8.0":
   version "7.20.5"
@@ -785,6 +1250,27 @@
     json5 "^2.2.1"
     semver "^6.3.0"
 
+"@babel/core@^7.19.6":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/core/-/core-7.22.5.tgz#d67d9747ecf26ee7ecd3ebae1ee22225fe902a89"
+  integrity sha512-SBuTAjg91A3eKOvD+bPEz3LlhHZRNu1nFOVts9lzDJTXshHTjII0BAtDS3Y2DAkdZdDKWVZGVwkDfc4Clxn1dg==
+  dependencies:
+    "@ampproject/remapping" "^2.2.0"
+    "@babel/code-frame" "^7.22.5"
+    "@babel/generator" "^7.22.5"
+    "@babel/helper-compilation-targets" "^7.22.5"
+    "@babel/helper-module-transforms" "^7.22.5"
+    "@babel/helpers" "^7.22.5"
+    "@babel/parser" "^7.22.5"
+    "@babel/template" "^7.22.5"
+    "@babel/traverse" "^7.22.5"
+    "@babel/types" "^7.22.5"
+    convert-source-map "^1.7.0"
+    debug "^4.1.0"
+    gensync "^1.0.0-beta.2"
+    json5 "^2.2.2"
+    semver "^6.3.0"
+
 "@babel/eslint-parser@^7.14.7":
   version "7.19.1"
   resolved "https://registry.npmjs.org/@babel/eslint-parser/-/eslint-parser-7.19.1.tgz#4f68f6b0825489e00a24b41b6a1ae35414ecd2f4"
@@ -801,6 +1287,16 @@
   dependencies:
     "@babel/types" "^7.20.5"
     "@jridgewell/gen-mapping" "^0.3.2"
+    jsesc "^2.5.1"
+
+"@babel/generator@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/generator/-/generator-7.22.5.tgz#1e7bf768688acfb05cf30b2369ef855e82d984f7"
+  integrity sha512-+lcUbnTRhd0jOewtFSedLyiPsD5tswKkbgcezOqqWFUVNEwoUTlpPOBmvhG7OXWLR4jMdv0czPGH5XbflnD1EA==
+  dependencies:
+    "@babel/types" "^7.22.5"
+    "@jridgewell/gen-mapping" "^0.3.2"
+    "@jridgewell/trace-mapping" "^0.3.17"
     jsesc "^2.5.1"
 
 "@babel/helper-annotate-as-pure@^7.18.6":
@@ -826,6 +1322,17 @@
     "@babel/compat-data" "^7.20.0"
     "@babel/helper-validator-option" "^7.18.6"
     browserslist "^4.21.3"
+    semver "^6.3.0"
+
+"@babel/helper-compilation-targets@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/helper-compilation-targets/-/helper-compilation-targets-7.22.5.tgz#fc7319fc54c5e2fa14b2909cf3c5fd3046813e02"
+  integrity sha512-Ji+ywpHeuqxB8WDxraCiqR0xfhYjiDE/e6k7FuIaANnoOFxAHskHChz4vA1mJC9Lbm01s1PVAGhQY4FUKSkGZw==
+  dependencies:
+    "@babel/compat-data" "^7.22.5"
+    "@babel/helper-validator-option" "^7.22.5"
+    browserslist "^4.21.3"
+    lru-cache "^5.1.1"
     semver "^6.3.0"
 
 "@babel/helper-create-class-features-plugin@^7.18.6", "@babel/helper-create-class-features-plugin@^7.20.2", "@babel/helper-create-class-features-plugin@^7.20.5":
@@ -866,6 +1373,11 @@
   resolved "https://registry.npmjs.org/@babel/helper-environment-visitor/-/helper-environment-visitor-7.18.9.tgz#0c0cee9b35d2ca190478756865bb3528422f51be"
   integrity sha512-3r/aACDJ3fhQ/EVgFy0hpj8oHyHpQc+LPtJoY9SzTThAsStm4Ptegq92vqKoE3vD706ZVFWITnMnxucw+S9Ipg==
 
+"@babel/helper-environment-visitor@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/helper-environment-visitor/-/helper-environment-visitor-7.22.5.tgz#f06dd41b7c1f44e1f8da6c4055b41ab3a09a7e98"
+  integrity sha512-XGmhECfVA/5sAt+H+xpSg0mfrHq6FzNr9Oxh7PSEBBRUb/mL7Kz3NICXb194rCqAEdxkhPT1a88teizAFyvk8Q==
+
 "@babel/helper-explode-assignable-expression@^7.18.6":
   version "7.18.6"
   resolved "https://registry.npmjs.org/@babel/helper-explode-assignable-expression/-/helper-explode-assignable-expression-7.18.6.tgz#41f8228ef0a6f1a036b8dfdfec7ce94f9a6bc096"
@@ -881,12 +1393,27 @@
     "@babel/template" "^7.18.10"
     "@babel/types" "^7.19.0"
 
+"@babel/helper-function-name@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/helper-function-name/-/helper-function-name-7.22.5.tgz#ede300828905bb15e582c037162f99d5183af1be"
+  integrity sha512-wtHSq6jMRE3uF2otvfuD3DIvVhOsSNshQl0Qrd7qC9oQJzHvOL4qQXlQn2916+CXGywIjpGuIkoyZRRxHPiNQQ==
+  dependencies:
+    "@babel/template" "^7.22.5"
+    "@babel/types" "^7.22.5"
+
 "@babel/helper-hoist-variables@^7.18.6":
   version "7.18.6"
   resolved "https://registry.npmjs.org/@babel/helper-hoist-variables/-/helper-hoist-variables-7.18.6.tgz#d4d2c8fb4baeaa5c68b99cc8245c56554f926678"
   integrity sha512-UlJQPkFqFULIcyW5sbzgbkxn2FKRgwWiRexcuaR8RNJRy8+LLveqPjwZV/bwrLZCN0eUHD/x8D0heK1ozuoo6Q==
   dependencies:
     "@babel/types" "^7.18.6"
+
+"@babel/helper-hoist-variables@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/helper-hoist-variables/-/helper-hoist-variables-7.22.5.tgz#c01a007dac05c085914e8fb652b339db50d823bb"
+  integrity sha512-wGjk9QZVzvknA6yKIUURb8zY3grXCcOZt+/7Wcy8O2uctxhplmUPkOdlgoNhmdVee2c92JXbf1xpMtVNbfoxRw==
+  dependencies:
+    "@babel/types" "^7.22.5"
 
 "@babel/helper-member-expression-to-functions@^7.18.9":
   version "7.18.9"
@@ -902,6 +1429,13 @@
   dependencies:
     "@babel/types" "^7.18.6"
 
+"@babel/helper-module-imports@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.22.5.tgz#1a8f4c9f4027d23f520bd76b364d44434a72660c"
+  integrity sha512-8Dl6+HD/cKifutF5qGd/8ZJi84QeAKh+CEe1sBzz8UayBBGg1dAIJrdHOcOM5b2MpzWL2yuotJTtGjETq0qjXg==
+  dependencies:
+    "@babel/types" "^7.22.5"
+
 "@babel/helper-module-transforms@^7.18.6", "@babel/helper-module-transforms@^7.19.6", "@babel/helper-module-transforms@^7.20.2":
   version "7.20.2"
   resolved "https://registry.npmjs.org/@babel/helper-module-transforms/-/helper-module-transforms-7.20.2.tgz#ac53da669501edd37e658602a21ba14c08748712"
@@ -915,6 +1449,20 @@
     "@babel/template" "^7.18.10"
     "@babel/traverse" "^7.20.1"
     "@babel/types" "^7.20.2"
+
+"@babel/helper-module-transforms@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/helper-module-transforms/-/helper-module-transforms-7.22.5.tgz#0f65daa0716961b6e96b164034e737f60a80d2ef"
+  integrity sha512-+hGKDt/Ze8GFExiVHno/2dvG5IdstpzCq0y4Qc9OJ25D4q3pKfiIP/4Vp3/JvhDkLKsDK2api3q3fpIgiIF5bw==
+  dependencies:
+    "@babel/helper-environment-visitor" "^7.22.5"
+    "@babel/helper-module-imports" "^7.22.5"
+    "@babel/helper-simple-access" "^7.22.5"
+    "@babel/helper-split-export-declaration" "^7.22.5"
+    "@babel/helper-validator-identifier" "^7.22.5"
+    "@babel/template" "^7.22.5"
+    "@babel/traverse" "^7.22.5"
+    "@babel/types" "^7.22.5"
 
 "@babel/helper-optimise-call-expression@^7.18.6":
   version "7.18.6"
@@ -956,6 +1504,13 @@
   dependencies:
     "@babel/types" "^7.20.2"
 
+"@babel/helper-simple-access@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/helper-simple-access/-/helper-simple-access-7.22.5.tgz#4938357dc7d782b80ed6dbb03a0fba3d22b1d5de"
+  integrity sha512-n0H99E/K+Bika3++WNL17POvo4rKWZ7lZEp1Q+fStVbUi8nxPQEBOlTmCOxW/0JsS56SKKQ+ojAe2pHKJHN35w==
+  dependencies:
+    "@babel/types" "^7.22.5"
+
 "@babel/helper-skip-transparent-expression-wrappers@^7.18.9":
   version "7.20.0"
   resolved "https://registry.npmjs.org/@babel/helper-skip-transparent-expression-wrappers/-/helper-skip-transparent-expression-wrappers-7.20.0.tgz#fbe4c52f60518cab8140d77101f0e63a8a230684"
@@ -970,20 +1525,42 @@
   dependencies:
     "@babel/types" "^7.18.6"
 
+"@babel/helper-split-export-declaration@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.22.5.tgz#88cf11050edb95ed08d596f7a044462189127a08"
+  integrity sha512-thqK5QFghPKWLhAV321lxF95yCg2K3Ob5yw+M3VHWfdia0IkPXUtoLH8x/6Fh486QUvzhb8YOWHChTVen2/PoQ==
+  dependencies:
+    "@babel/types" "^7.22.5"
+
 "@babel/helper-string-parser@^7.19.4":
   version "7.19.4"
   resolved "https://registry.npmjs.org/@babel/helper-string-parser/-/helper-string-parser-7.19.4.tgz#38d3acb654b4701a9b77fb0615a96f775c3a9e63"
   integrity sha512-nHtDoQcuqFmwYNYPz3Rah5ph2p8PFeFCsZk9A/48dPc/rGocJ5J3hAAZ7pb76VWX3fZKu+uEr/FhH5jLx7umrw==
+
+"@babel/helper-string-parser@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/helper-string-parser/-/helper-string-parser-7.22.5.tgz#533f36457a25814cf1df6488523ad547d784a99f"
+  integrity sha512-mM4COjgZox8U+JcXQwPijIZLElkgEpO5rsERVDJTc2qfCDfERyob6k5WegS14SX18IIjv+XD+GrqNumY5JRCDw==
 
 "@babel/helper-validator-identifier@^7.18.6", "@babel/helper-validator-identifier@^7.19.1":
   version "7.19.1"
   resolved "https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.19.1.tgz#7eea834cf32901ffdc1a7ee555e2f9c27e249ca2"
   integrity sha512-awrNfaMtnHUr653GgGEs++LlAvW6w+DcPrOliSMXWCKo597CwL5Acf/wWdNkf/tfEQE3mjkeD1YOVZOUV/od1w==
 
+"@babel/helper-validator-identifier@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.22.5.tgz#9544ef6a33999343c8740fa51350f30eeaaaf193"
+  integrity sha512-aJXu+6lErq8ltp+JhkJUfk1MTGyuA4v7f3pA+BJ5HLfNC6nAQ0Cpi9uOquUj8Hehg0aUiHzWQbOVJGao6ztBAQ==
+
 "@babel/helper-validator-option@^7.18.6":
   version "7.18.6"
   resolved "https://registry.npmjs.org/@babel/helper-validator-option/-/helper-validator-option-7.18.6.tgz#bf0d2b5a509b1f336099e4ff36e1a63aa5db4db8"
   integrity sha512-XO7gESt5ouv/LRJdrVjkShckw6STTaB7l9BrpBaAHDeF5YZT+01PCwmR0SJHnkW6i8OwW/EVWRShfi4j2x+KQw==
+
+"@babel/helper-validator-option@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/helper-validator-option/-/helper-validator-option-7.22.5.tgz#de52000a15a177413c8234fa3a8af4ee8102d0ac"
+  integrity sha512-R3oB6xlIVKUnxNUxbmgq7pKjxpru24zlimpE8WK47fACIlM0II/Hm1RS8IaOI7NgCr6LNS+jl5l75m20npAziw==
 
 "@babel/helper-wrap-function@^7.18.9":
   version "7.20.5"
@@ -1004,6 +1581,15 @@
     "@babel/traverse" "^7.20.5"
     "@babel/types" "^7.20.5"
 
+"@babel/helpers@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/helpers/-/helpers-7.22.5.tgz#74bb4373eb390d1ceed74a15ef97767e63120820"
+  integrity sha512-pSXRmfE1vzcUIDFQcSGA5Mr+GxBV9oiRKDuDxXvWQQBCh8HoIjs/2DlDB7H8smac1IVrB9/xdXj2N3Wol9Cr+Q==
+  dependencies:
+    "@babel/template" "^7.22.5"
+    "@babel/traverse" "^7.22.5"
+    "@babel/types" "^7.22.5"
+
 "@babel/highlight@^7.10.4", "@babel/highlight@^7.18.6":
   version "7.18.6"
   resolved "https://registry.npmjs.org/@babel/highlight/-/highlight-7.18.6.tgz#81158601e93e2563795adcbfbdf5d64be3f2ecdf"
@@ -1013,10 +1599,24 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@babel/highlight@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/highlight/-/highlight-7.22.5.tgz#aa6c05c5407a67ebce408162b7ede789b4d22031"
+  integrity sha512-BSKlD1hgnedS5XRnGOljZawtag7H1yPfQp0tdNJCHoH6AZ+Pcm9VvkrK59/Yy593Ypg0zMxH2BxD1VPYUQ7UIw==
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.22.5"
+    chalk "^2.0.0"
+    js-tokens "^4.0.0"
+
 "@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.18.10", "@babel/parser@^7.20.5":
   version "7.20.5"
   resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.20.5.tgz#7f3c7335fe417665d929f34ae5dceae4c04015e8"
   integrity sha512-r27t/cy/m9uKLXQNWWebeCUHgnAZq0CpG1OwKRxzJMP1vpSU4bSIK2hq+/cp0bQxetkXx38n09rNu8jVkcK/zA==
+
+"@babel/parser@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.22.5.tgz#721fd042f3ce1896238cf1b341c77eb7dee7dbea"
+  integrity sha512-DFZMC9LJUG9PLOclRC32G63UXwzqS2koQC8dkx+PLdmt1xSePYpbT/NbsrJy8Q/muXz7o/h/d4A7Fuyixm559Q==
 
 "@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression@^7.18.6":
   version "7.18.6"
@@ -1755,6 +2355,15 @@
     "@babel/parser" "^7.18.10"
     "@babel/types" "^7.18.10"
 
+"@babel/template@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/template/-/template-7.22.5.tgz#0c8c4d944509875849bd0344ff0050756eefc6ec"
+  integrity sha512-X7yV7eiwAxdj9k94NEylvbVHLiVG1nvzCV2EAowhxLTwODV1jl9UzZ48leOC0sH7OnuHrIkllaBgneUykIcZaw==
+  dependencies:
+    "@babel/code-frame" "^7.22.5"
+    "@babel/parser" "^7.22.5"
+    "@babel/types" "^7.22.5"
+
 "@babel/traverse@^7.19.1", "@babel/traverse@^7.20.1", "@babel/traverse@^7.20.5", "@babel/traverse@^7.7.2":
   version "7.20.5"
   resolved "https://registry.npmjs.org/@babel/traverse/-/traverse-7.20.5.tgz#78eb244bea8270fdda1ef9af22a5d5e5b7e57133"
@@ -1771,6 +2380,22 @@
     debug "^4.1.0"
     globals "^11.1.0"
 
+"@babel/traverse@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/traverse/-/traverse-7.22.5.tgz#44bd276690db6f4940fdb84e1cb4abd2f729ccd1"
+  integrity sha512-7DuIjPgERaNo6r+PZwItpjCZEa5vyw4eJGufeLxrPdBXBoLcCJCIasvK6pK/9DVNrLZTLFhUGqaC6X/PA007TQ==
+  dependencies:
+    "@babel/code-frame" "^7.22.5"
+    "@babel/generator" "^7.22.5"
+    "@babel/helper-environment-visitor" "^7.22.5"
+    "@babel/helper-function-name" "^7.22.5"
+    "@babel/helper-hoist-variables" "^7.22.5"
+    "@babel/helper-split-export-declaration" "^7.22.5"
+    "@babel/parser" "^7.22.5"
+    "@babel/types" "^7.22.5"
+    debug "^4.1.0"
+    globals "^11.1.0"
+
 "@babel/types@^7.0.0", "@babel/types@^7.18.10", "@babel/types@^7.18.6", "@babel/types@^7.18.9", "@babel/types@^7.19.0", "@babel/types@^7.20.0", "@babel/types@^7.20.2", "@babel/types@^7.20.5", "@babel/types@^7.3.0", "@babel/types@^7.3.3", "@babel/types@^7.4.4":
   version "7.20.5"
   resolved "https://registry.npmjs.org/@babel/types/-/types-7.20.5.tgz#e206ae370b5393d94dfd1d04cd687cace53efa84"
@@ -1778,6 +2403,15 @@
   dependencies:
     "@babel/helper-string-parser" "^7.19.4"
     "@babel/helper-validator-identifier" "^7.19.1"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.npmjs.org/@babel/types/-/types-7.22.5.tgz#cd93eeaab025880a3a47ec881f4b096a5b786fbe"
+  integrity sha512-zo3MIHGOkPOfoRXitsgHLjEXmlDaD/5KU1Uzuc9GNiZPhSqVxVRtxuPaSBZDsYZ9qV88AjtMtWW7ww98loJ9KA==
+  dependencies:
+    "@babel/helper-string-parser" "^7.22.5"
+    "@babel/helper-validator-identifier" "^7.22.5"
     to-fast-properties "^2.0.0"
 
 "@bcoe/v8-coverage@^0.2.3":
@@ -2195,6 +2829,14 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@jridgewell/trace-mapping@^0.3.17":
+  version "0.3.18"
+  resolved "https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.18.tgz#25783b2086daf6ff1dcb53c9249ae480e4dd4cd6"
+  integrity sha512-w+niJYzMHdd7USdiH2U6869nqhD2nbfZXND5Yp93qIbEmnDNk7PD48o+YchRVpzMU7M6jVCbenTR7PA1FLQ9pA==
+  dependencies:
+    "@jridgewell/resolve-uri" "3.1.0"
+    "@jridgewell/sourcemap-codec" "1.4.14"
+
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.4"
   resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
@@ -2259,6 +2901,70 @@
     react-transition-group "^4.4.2"
     throttle-debounce "^3.0.1"
 
+"@my-ui/core@^0.11.15":
+  version "0.11.15"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.11.15.tgz#cf8e7df012ef8e4eef287c8e69f81671562594cd"
+  integrity sha1-z4598BLvjk7vKHyOafgWcVYllM0=
+  dependencies:
+    "@my-ui/react-datepicker" "^1.5.0"
+    "@my-ui/react-select" "1.1.6"
+    "@my-ui/react-table" "1.3.0"
+    "@my-ui/scrollbar" "^1.0.2"
+    classnames "^2.3.1"
+    react-flip-move "^3.0.4"
+    react-jss "^10.8.0"
+    react-paginate "^7.1.5"
+    react-transition-group "^4.4.2"
+    throttle-debounce "^3.0.1"
+
+"@my-ui/core@^0.11.31", "@my-ui/core@^0.11.67":
+  version "0.11.67"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.11.67.tgz#492de55f6aa53d4ee875ad1577062b0f7a7914a4"
+  integrity sha1-SS3lX2qlPU7oda0VdwYrD3p5FKQ=
+  dependencies:
+    "@my-ui/react-datepicker" "^1.5.0"
+    "@my-ui/react-select" "1.1.6"
+    "@my-ui/react-table" "1.3.0"
+    "@my-ui/scrollbar" "^1.0.2"
+    classnames "^2.3.1"
+    react-flip-move "^3.0.4"
+    react-jss "^10.8.0"
+    react-paginate "^7.1.5"
+    react-transition-group "^4.4.2"
+    throttle-debounce "^3.0.1"
+
+"@my-ui/core@^0.11.79":
+  version "0.11.79"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.11.79.tgz#c7dbc886e89969ab2bec50347906ee59d1dc9e52"
+  integrity sha1-x9vIhuiZaasr7FA0eQbuWdHcnlI=
+  dependencies:
+    "@my-ui/react-datepicker" "^1.5.0"
+    "@my-ui/react-select" "1.1.6"
+    "@my-ui/react-table" "1.3.0"
+    "@my-ui/scrollbar" "^1.0.2"
+    classnames "^2.3.1"
+    react-flip-move "^3.0.4"
+    react-jss "^10.8.0"
+    react-paginate "^7.1.5"
+    react-transition-group "^4.4.2"
+    throttle-debounce "^3.0.1"
+
+"@my-ui/core@^0.11.80":
+  version "0.11.80"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.11.80.tgz#383ec6936e13cd954d37b4100212fbecfec41a69"
+  integrity sha1-OD7Gk24TzZVNN7QQAhL77P7EGmk=
+  dependencies:
+    "@my-ui/react-datepicker" "^1.5.0"
+    "@my-ui/react-select" "1.1.6"
+    "@my-ui/react-table" "1.3.0"
+    "@my-ui/scrollbar" "^1.0.2"
+    classnames "^2.3.1"
+    react-flip-move "^3.0.4"
+    react-jss "^10.8.0"
+    react-paginate "^7.1.5"
+    react-transition-group "^4.4.2"
+    throttle-debounce "^3.0.1"
+
 "@my-ui/core@^0.5.0":
   version "0.5.21"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.5.21.tgz#8d297d03f92f8c1d11d970001ff2a96708be3ecb"
@@ -2279,22 +2985,6 @@
   version "0.9.47"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.9.47.tgz#bea24a3ca52433b6e47cc8a940c025241044280e"
   integrity sha1-vqJKPKUkM7bkfMipQMAlJBBEKA4=
-  dependencies:
-    "@my-ui/react-datepicker" "^1.5.0"
-    "@my-ui/react-select" "1.1.6"
-    "@my-ui/react-table" "1.3.0"
-    "@my-ui/scrollbar" "^1.0.2"
-    classnames "^2.3.1"
-    react-flip-move "^3.0.4"
-    react-jss "^10.8.0"
-    react-paginate "^7.1.5"
-    react-transition-group "^4.4.2"
-    throttle-debounce "^3.0.1"
-
-"@my-ui/core@^0.9.71":
-  version "0.9.82"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.9.82.tgz#a958915b381b2bd335754feaf6fe3939d0fc2c3c"
-  integrity sha1-qViRWzgbK9M1dU/q9v45OdD8LDw=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
@@ -2456,6 +3146,15 @@
     redux-thunk "^2.4.2"
     reselect "^4.1.7"
 
+"@rollup/pluginutils@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.npmjs.org/@rollup/pluginutils/-/pluginutils-5.0.2.tgz#012b8f53c71e4f6f9cb317e311df1404f56e7a33"
+  integrity sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==
+  dependencies:
+    "@types/estree" "^1.0.0"
+    estree-walker "^2.0.2"
+    picomatch "^2.3.1"
+
 "@sinclair/typebox@^0.24.1":
   version "0.24.51"
   resolved "https://registry.npmjs.org/@sinclair/typebox/-/typebox-0.24.51.tgz#645f33fe4e02defe26f2f5c0410e1c094eac7f5f"
@@ -2474,6 +3173,89 @@
   integrity sha512-OAPJUAtgeINhh/TAlUID4QTs53Njm7xzddaVlEs/SXwgtiD1tW22zAB/W1wdqfrpmikgaWQ9Fw6Ws+hsiRm5Vg==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+"@svgr/babel-plugin-add-jsx-attribute@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.npmjs.org/@svgr/babel-plugin-add-jsx-attribute/-/babel-plugin-add-jsx-attribute-6.5.1.tgz#74a5d648bd0347bda99d82409d87b8ca80b9a1ba"
+  integrity sha512-9PYGcXrAxitycIjRmZB+Q0JaN07GZIWaTBIGQzfaZv+qr1n8X1XUEJ5rZ/vx6OVD9RRYlrNnXWExQXcmZeD/BQ==
+
+"@svgr/babel-plugin-remove-jsx-attribute@*":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@svgr/babel-plugin-remove-jsx-attribute/-/babel-plugin-remove-jsx-attribute-8.0.0.tgz#69177f7937233caca3a1afb051906698f2f59186"
+  integrity sha512-BcCkm/STipKvbCl6b7QFrMh/vx00vIP63k2eM66MfHJzPr6O2U0jYEViXkHJWqXqQYjdeA9cuCl5KWmlwjDvbA==
+
+"@svgr/babel-plugin-remove-jsx-empty-expression@*":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@svgr/babel-plugin-remove-jsx-empty-expression/-/babel-plugin-remove-jsx-empty-expression-8.0.0.tgz#c2c48104cfd7dcd557f373b70a56e9e3bdae1d44"
+  integrity sha512-5BcGCBfBxB5+XSDSWnhTThfI9jcO5f0Ai2V24gZpG+wXF14BzwxxdDb4g6trdOux0rhibGs385BeFMSmxtS3uA==
+
+"@svgr/babel-plugin-replace-jsx-attribute-value@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.npmjs.org/@svgr/babel-plugin-replace-jsx-attribute-value/-/babel-plugin-replace-jsx-attribute-value-6.5.1.tgz#fb9d22ea26d2bc5e0a44b763d4c46d5d3f596c60"
+  integrity sha512-8DPaVVE3fd5JKuIC29dqyMB54sA6mfgki2H2+swh+zNJoynC8pMPzOkidqHOSc6Wj032fhl8Z0TVn1GiPpAiJg==
+
+"@svgr/babel-plugin-svg-dynamic-title@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.npmjs.org/@svgr/babel-plugin-svg-dynamic-title/-/babel-plugin-svg-dynamic-title-6.5.1.tgz#01b2024a2b53ffaa5efceaa0bf3e1d5a4c520ce4"
+  integrity sha512-FwOEi0Il72iAzlkaHrlemVurgSQRDFbk0OC8dSvD5fSBPHltNh7JtLsxmZUhjYBZo2PpcU/RJvvi6Q0l7O7ogw==
+
+"@svgr/babel-plugin-svg-em-dimensions@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.npmjs.org/@svgr/babel-plugin-svg-em-dimensions/-/babel-plugin-svg-em-dimensions-6.5.1.tgz#dd3fa9f5b24eb4f93bcf121c3d40ff5facecb217"
+  integrity sha512-gWGsiwjb4tw+ITOJ86ndY/DZZ6cuXMNE/SjcDRg+HLuCmwpcjOktwRF9WgAiycTqJD/QXqL2f8IzE2Rzh7aVXA==
+
+"@svgr/babel-plugin-transform-react-native-svg@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.npmjs.org/@svgr/babel-plugin-transform-react-native-svg/-/babel-plugin-transform-react-native-svg-6.5.1.tgz#1d8e945a03df65b601551097d8f5e34351d3d305"
+  integrity sha512-2jT3nTayyYP7kI6aGutkyfJ7UMGtuguD72OjeGLwVNyfPRBD8zQthlvL+fAbAKk5n9ZNcvFkp/b1lZ7VsYqVJg==
+
+"@svgr/babel-plugin-transform-svg-component@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.npmjs.org/@svgr/babel-plugin-transform-svg-component/-/babel-plugin-transform-svg-component-6.5.1.tgz#48620b9e590e25ff95a80f811544218d27f8a250"
+  integrity sha512-a1p6LF5Jt33O3rZoVRBqdxL350oge54iZWHNI6LJB5tQ7EelvD/Mb1mfBiZNAan0dt4i3VArkFRjA4iObuNykQ==
+
+"@svgr/babel-preset@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.npmjs.org/@svgr/babel-preset/-/babel-preset-6.5.1.tgz#b90de7979c8843c5c580c7e2ec71f024b49eb828"
+  integrity sha512-6127fvO/FF2oi5EzSQOAjo1LE3OtNVh11R+/8FXa+mHx1ptAaS4cknIjnUA7e6j6fwGGJ17NzaTJFUwOV2zwCw==
+  dependencies:
+    "@svgr/babel-plugin-add-jsx-attribute" "^6.5.1"
+    "@svgr/babel-plugin-remove-jsx-attribute" "*"
+    "@svgr/babel-plugin-remove-jsx-empty-expression" "*"
+    "@svgr/babel-plugin-replace-jsx-attribute-value" "^6.5.1"
+    "@svgr/babel-plugin-svg-dynamic-title" "^6.5.1"
+    "@svgr/babel-plugin-svg-em-dimensions" "^6.5.1"
+    "@svgr/babel-plugin-transform-react-native-svg" "^6.5.1"
+    "@svgr/babel-plugin-transform-svg-component" "^6.5.1"
+
+"@svgr/core@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.npmjs.org/@svgr/core/-/core-6.5.1.tgz#d3e8aa9dbe3fbd747f9ee4282c1c77a27410488a"
+  integrity sha512-/xdLSWxK5QkqG524ONSjvg3V/FkNyCv538OIBdQqPNaAta3AsXj/Bd2FbvR87yMbXO2hFSWiAe/Q6IkVPDw+mw==
+  dependencies:
+    "@babel/core" "^7.19.6"
+    "@svgr/babel-preset" "^6.5.1"
+    "@svgr/plugin-jsx" "^6.5.1"
+    camelcase "^6.2.0"
+    cosmiconfig "^7.0.1"
+
+"@svgr/hast-util-to-babel-ast@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.npmjs.org/@svgr/hast-util-to-babel-ast/-/hast-util-to-babel-ast-6.5.1.tgz#81800bd09b5bcdb968bf6ee7c863d2288fdb80d2"
+  integrity sha512-1hnUxxjd83EAxbL4a0JDJoD3Dao3hmjvyvyEV8PzWmLK3B9m9NPlW7GKjFyoWE8nM7HnXzPcmmSyOW8yOddSXw==
+  dependencies:
+    "@babel/types" "^7.20.0"
+    entities "^4.4.0"
+
+"@svgr/plugin-jsx@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.npmjs.org/@svgr/plugin-jsx/-/plugin-jsx-6.5.1.tgz#0e30d1878e771ca753c94e69581c7971542a7072"
+  integrity sha512-+UdQxI3jgtSjCykNSlEMuy1jSRQlGC7pqBCPvkG/2dATdWo082zHTTK3uhnAju2/6XpE6B5mZ3z4Z8Ns01S8Gw==
+  dependencies:
+    "@babel/core" "^7.19.6"
+    "@svgr/babel-preset" "^6.5.1"
+    "@svgr/hast-util-to-babel-ast" "^6.5.1"
+    svg-parser "^2.0.4"
 
 "@testing-library/dom@^8.0.0":
   version "8.19.0"
@@ -2616,6 +3398,11 @@
   version "0.0.51"
   resolved "https://registry.npmjs.org/@types/estree/-/estree-0.0.51.tgz#cfd70924a25a3fd32b218e5e420e6897e1ac4f40"
   integrity sha512-CuPgU6f3eT/XgKKPqKd/gLZV1Xmvf1a2R5POBOGQa6uv82xpls89HU5zKeVoyR8XzHd1RGNOlQlvUe3CFkjWNQ==
+
+"@types/estree@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@types/estree/-/estree-1.0.1.tgz#aa22750962f3bf0e79d753d3cc067f010c95f194"
+  integrity sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==
 
 "@types/express-serve-static-core@*", "@types/express-serve-static-core@^4.17.31":
   version "4.17.31"
@@ -4238,7 +5025,7 @@ cosmiconfig@^6.0.0:
     path-type "^4.0.0"
     yaml "^1.7.2"
 
-cosmiconfig@^7.0.0:
+cosmiconfig@^7.0.0, cosmiconfig@^7.0.1:
   version "7.1.0"
   resolved "https://registry.npmjs.org/cosmiconfig/-/cosmiconfig-7.1.0.tgz#1443b9afa596b670082ea46cbd8f6a62b84635f6"
   integrity sha512-AdmX6xUzdNASswsFtmwSt7Vj8po9IuqXm0UXz7QKPuEUmPB4XyjGfaAr2PSuELMwkRMVH1EpIkX5bTZGRB3eCA==
@@ -4794,6 +5581,11 @@ entities@^2.0.0:
   resolved "https://registry.npmjs.org/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
   integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
 
+entities@^4.4.0:
+  version "4.5.0"
+  resolved "https://registry.npmjs.org/entities/-/entities-4.5.0.tgz#5d268ea5e7113ec74c4d033b79ea5a35a488fb48"
+  integrity sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==
+
 env-paths@^2.2.0:
   version "2.2.1"
   resolved "https://registry.npmjs.org/env-paths/-/env-paths-2.2.1.tgz#420399d416ce1fbe9bc0a07c62fa68d67fd0f8f2"
@@ -5089,6 +5881,11 @@ estraverse@^5.1.0, estraverse@^5.2.0:
   version "5.3.0"
   resolved "https://registry.npmjs.org/estraverse/-/estraverse-5.3.0.tgz#2eea5290702f26ab8fe5370370ff86c965d21123"
   integrity sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==
+
+estree-walker@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
+  integrity sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
 
 esutils@^2.0.2:
   version "2.0.3"
@@ -7156,6 +7953,11 @@ json5@^2.1.2, json5@^2.2.1:
   resolved "https://registry.npmjs.org/json5/-/json5-2.2.2.tgz#64471c5bdcc564c18f7c1d4df2e2297f2457c5ab"
   integrity sha512-46Tk9JiOL2z7ytNQWFLpj99RZkVgeHf87yGQKsIkaPz1qSH9UczKH1rO7K3wgRselo0tYMUNfecYpm/p1vC7tQ==
 
+json5@^2.2.2:
+  version "2.2.3"
+  resolved "https://registry.npmjs.org/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
+  integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
+
 jsonfile@^6.0.1:
   version "6.1.0"
   resolved "https://registry.npmjs.org/jsonfile/-/jsonfile-6.1.0.tgz#bc55b2634793c679ec6403094eb13698a6ec0aae"
@@ -7445,6 +8247,13 @@ lower-case@^2.0.2:
   integrity sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==
   dependencies:
     tslib "^2.0.3"
+
+lru-cache@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.npmjs.org/lru-cache/-/lru-cache-5.1.1.tgz#1da27e6710271947695daf6848e847f01d84b920"
+  integrity sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==
+  dependencies:
+    yallist "^3.0.2"
 
 lru-cache@^6.0.0:
   version "6.0.0"
@@ -9838,6 +10647,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
+svg-parser@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.npmjs.org/svg-parser/-/svg-parser-2.0.4.tgz#fdc2e29e13951736140b76cb122c8ee6630eb6b5"
+  integrity sha512-e4hG1hRwoOdRb37cIMSgzNsxyzKfayW6VOflrwvR+/bzrkyxY/31WkbgnQpgtrNp1SdpJvpUAGTa/ZoiPNDuRQ==
+
 symbol-observable@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
@@ -10394,6 +11208,14 @@ vary@~1.1.2:
   resolved "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
+vite-plugin-svgr@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.npmjs.org/vite-plugin-svgr/-/vite-plugin-svgr-2.4.0.tgz#9b14953955e79893ea7718089b9777a494e38fc6"
+  integrity sha512-q+mJJol6ThvqkkJvvVFEndI4EaKIjSI0I3jNFgSoC9fXAz1M7kYTVUin8fhUsFojFDKZ9VHKtX6NXNaOLpbsHA==
+  dependencies:
+    "@rollup/pluginutils" "^5.0.2"
+    "@svgr/core" "^6.5.1"
+
 w3c-hr-time@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/w3c-hr-time/-/w3c-hr-time-1.0.2.tgz#0a89cdf5cc15822df9c360543676963e0cc308cd"
@@ -10787,6 +11609,11 @@ y18n@^5.0.5:
   version "5.0.8"
   resolved "https://registry.npmjs.org/y18n/-/y18n-5.0.8.tgz#7f4934d0f7ca8c56f95314939ddcd2dd91ce1d55"
   integrity sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==
+
+yallist@^3.0.2:
+  version "3.1.1"
+  resolved "https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz#dbb7daf9bfd8bac9ab45ebf602b8cbad0d5d08fd"
+  integrity sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==
 
 yallist@^4.0.0:
   version "4.0.0"
