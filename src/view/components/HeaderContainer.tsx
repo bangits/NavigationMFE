@@ -1,9 +1,11 @@
 import { AtomNavigationContext } from '@/adapter/react-context';
 import { Balance } from '@atom/account-management';
 import { AuthenticatedContext } from '@atom/authorization';
-import { HttpService } from '@atom/common';
+import { HttpService, historyService } from '@atom/common';
 import { useCallback, useContext, useEffect, useState } from 'react';
 import { Header } from './Header';
+import { ROUTES as AUTHORIZATION_ROUTES, LOCAL_STORAGE_CONSTANTS } from '@atom/authorization';
+import { PasswordChangeTypes } from '@atom/user-management';
 
 export const HeaderContainer = () => {
   const { user, updateUserInfo } = useContext(AuthenticatedContext);
@@ -20,13 +22,13 @@ export const HeaderContainer = () => {
   const updateBalanceInfo = useCallback(
     (balance: Balance) => {
       updateUserInfo({
-        currencyId: balance.currencyId,
-        currencyName: balance.currencyIso
+        currencyId: balance?.currencyId,
+        currencyName: balance?.currencyIso
       });
 
       setUserBalance({
-        currency: balance.currencyIso,
-        money: balance.balance
+        currency: balance?.currencyIso,
+        money: balance?.balance
       });
     },
     [updateUserInfo]
@@ -47,6 +49,18 @@ export const HeaderContainer = () => {
   useEffect(() => {
     if (user.currencyName && user.currencyName !== userBalance.currency) {
       getUserBalance();
+    }
+
+    if (
+      user &&
+      // @ts-ignore
+      (user.passwordChangeTypeId === PasswordChangeTypes.FORCED ||
+        // @ts-ignore
+        user.passwordChangeTypeId === PasswordChangeTypes.RECOMENDED) &&
+      // @ts-ignore
+      !localStorage.getItem(LOCAL_STORAGE_CONSTANTS.IS_CHANGE_PASSWORD_SKIPPED)
+    ) {
+      historyService.redirectToURL(AUTHORIZATION_ROUTES.baseUrl + AUTHORIZATION_ROUTES.passChange);
     }
   }, [user]);
 

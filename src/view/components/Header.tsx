@@ -1,5 +1,5 @@
 import { AuthenticatedContext, isBetShopUser } from '@atom/authorization';
-import { convertDate, useTranslation } from '@atom/common';
+import { convertDate, historyService, useTranslation } from '@atom/common';
 import { Header as DesignSystemHeader } from '@atom/design-system';
 import { AtomPlayerProvider, BalanceCorrection } from '@atom/player-management';
 import { FC, useContext, useEffect, useState } from 'react';
@@ -35,7 +35,12 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
     <>
       <DesignSystemHeader
         avatarProps={{
-          dropdownLinks: [],
+          dropdownLinks: [
+            {
+              label: t.get('userDetails'),
+              onClick: () => historyService.redirectToURL(`/users/${user.userId}?tab=1`)
+            }
+          ],
 
           bottomButtonLabel: 'Log Out',
           onBottomButtonClick: onLogOut,
