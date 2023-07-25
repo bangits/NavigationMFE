@@ -146,7 +146,9 @@ export const Sidebar = () => {
         {
           label: t.get('paymentRequests'),
           icon: <Icons.PaymentSideBarIcon width='1.8rem' height='2.4rem' />,
-          isActive: checkIfLocationStartsWith('/payment-requests/deposits') || checkIfLocationStartsWith('/payment-requests/withdrawals'),
+          isActive:
+            checkIfLocationStartsWith('/payment-requests/deposits') ||
+            checkIfLocationStartsWith('/payment-requests/withdrawals'),
           subItems: [
             {
               label: t.get('deposits'),
@@ -409,7 +411,7 @@ export const Sidebar = () => {
               onClick: createRedirectHandler('/reports/bets'),
               isActive: checkIfLocation('/reports/bets'),
               showWhen: hasPermission(PermissionSlugs.GET_REPORT_BY_BETS)
-            },
+            }
             // {
             //   label: t.get('reportByCashInOut'),
             //   onClick: createRedirectHandler('/reports/transfers'),
