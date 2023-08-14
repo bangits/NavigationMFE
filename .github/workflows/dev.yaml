@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: ['staging']
+    branches: ['develop']
   pull_request:
-    branches: ['staging']
+    branches: ['develop']
 
   workflow_dispatch:
 
@@ -26,7 +26,7 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Run az storage blob update
-        run: az storage blob upload --overwrite --container-name mfe-staging --account-name storageaccountatom --file ./dist/atom-navigation.js --name atom-navigation.js --account-key ${{ secrets.AZURE_ACCOUNT_KEY }}
+        run: az storage blob upload --overwrite --container-name mfe-dev --account-name storageaccountatom --file ./dist/atom-navigation.js --name atom-navigation.js --account-key ${{ secrets.AZURE_ACCOUNT_KEY }}
 
       - name: Purge CDN endpoint
-        run: az cdn endpoint purge --profile-name atom --resource-group AksAtom9f2e-rg --name atom-cdn --content-paths '/mfe-staging/atom-navigation.js'
+        run: az cdn endpoint purge --profile-name atom --resource-group AksAtom9f2e-rg --name atom-cdn --content-paths '/mfe-dev/atom-navigation.js'
