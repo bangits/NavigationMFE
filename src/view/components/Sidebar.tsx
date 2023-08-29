@@ -507,14 +507,14 @@ export const Sidebar = () => {
               onClick: createRedirectHandler('/payment-requests/report-by-players'),
               isActive: checkIfLocation('/payment-requests/report-by-players'),
               showWhen: hasPermission(PermissionSlugs.USER_TRANSACTIONS)
-            },
-            {
-              label: t.get('reportByBalances'),
-              href: '/payment-requests/player-balances',
-              onClick: createRedirectHandler('/payment-requests/player-balances'),
-              isActive: checkIfLocation('/payment-requests/player-balances'),
-              showWhen: hasPermission(PermissionSlugs.USER_TRANSACTIONS)
             }
+            // {
+            //   label: t.get('reportByBalances'),
+            //   href: '/payment-requests/player-balances',
+            //   onClick: createRedirectHandler('/payment-requests/player-balances'),
+            //   isActive: checkIfLocation('/payment-requests/player-balances'),
+            //   showWhen: hasPermission(PermissionSlugs.USER_TRANSACTIONS)
+            // }
           ]
         },
         {
