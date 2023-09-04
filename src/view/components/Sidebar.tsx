@@ -481,7 +481,7 @@ export const Sidebar = () => {
           ]
         },
         {
-          label: t.get('financicalReports'),
+          label: t.get('financialReports'),
           icon: <Icons.FinacicalReportSideBarIcon width='1.8rem' height='2.4rem' />,
           isActive:
             checkIfLocationIncludes('/payment-requests/report') ||
