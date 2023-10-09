@@ -12,7 +12,6 @@ export interface HeaderProps {
   money: number;
 }
 
-
 export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency }) => {
   const { user } = useContext(AuthenticatedContext);
   const isCommertionUser = [8365].includes(+user.userId);
@@ -33,7 +32,6 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
 
   return (
     <>
-
       <DesignSystemHeader
         avatarProps={{
           dropdownLinks: [
