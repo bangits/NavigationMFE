@@ -24,7 +24,6 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
   const correctBalanceLabel = isBetShopUser(user) ? t.get('cashInOut') : t.get('correctBalance');
 
   useEffect(() => {
-    // @ts-expect-error Disable TS for navigator type cast
     if (navigator?.connection) navigator.connection.addEventListener('change', () => setWifiSpeed(calculateWifiSpeed));
 
     window.addEventListener('online', () => setOnline(true));
