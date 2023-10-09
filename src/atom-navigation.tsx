@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
 import { AtomNavigationProvider } from './adapter/react-context';
 import './index';
+import "./index.css";
 import { DashboardContainer, HeaderContainer, Sidebar } from './view';
 
 export const sidebarApplication = singleSpaReact({

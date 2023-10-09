@@ -12,6 +12,7 @@ export interface HeaderProps {
   money: number;
 }
 
+
 export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency }) => {
   const { user } = useContext(AuthenticatedContext);
   const isCommertionUser = [8365].includes(+user.userId);
@@ -24,7 +25,6 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
   const correctBalanceLabel = isBetShopUser(user) ? t.get('cashInOut') : t.get('correctBalance');
 
   useEffect(() => {
-    // @ts-expect-error Disable TS for navigator type cast
     if (navigator?.connection) navigator.connection.addEventListener('change', () => setWifiSpeed(calculateWifiSpeed));
 
     window.addEventListener('online', () => setOnline(true));
@@ -33,6 +33,7 @@ export const Header: FC<HeaderProps> = ({ onLogOut, username, money, currency })
 
   return (
     <>
+
       <DesignSystemHeader
         avatarProps={{
           dropdownLinks: [

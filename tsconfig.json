@@ -1,18 +1,25 @@
 {
   "compilerOptions": {
+    "experimentalDecorators": true,
+    "isolatedModules": false,
+    "moduleResolution": "Node",
+    "declaration": false,
+    "module": "ESNext",
+    "rootDir": "src",
+    "outDir": "dist",
     "jsx": "react-jsx",
     "baseUrl": "src",
-    "paths": {
-      // This paths synchronized with webpack shared config
-      "@/*": ["*"]
-    },
-    "target": "ESNext",
-    "module": "esnext",
-    "moduleResolution": "node",
     "esModuleInterop": true,
-    "types": ["reflect-metadata", "node"],
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "allowJs": true
-  }
+    "target": "ESNext",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "types": ["node"],
+    "paths": {
+      "@/*": ["*"],
+      "styled-system/*": ["../styled-system/*"]
+    }
+  },
+  "typeRoots": ["node_modules"],
+  "types": ["system"],
+  "typeAcquisition": { "enable": true }
 }
